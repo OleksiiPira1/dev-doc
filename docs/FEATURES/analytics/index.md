@@ -49,6 +49,8 @@ Roku automatically generates the following app analytics and sales reports as [L
 
 * [Tax Withholding](doc:tax-withholding-report) - Breaks down how net payouts are calculated after Roku's revenue share, tax withholding, and currency conversion are applied to app gross revenue.
 
+* [Cancellation Offers Analytics](doc:cancellation-offers-analytics-report) - shows how viewers move through the cancellation flow and how retention offers perform, including redemptions by plan and currency
+
   Because apps differ in both business model and technical implementation, the relevancy of specific report and availability of data therein will vary. If a report does not pertain to your app type, it will not be made available to you.
 
 ### App Analytics
