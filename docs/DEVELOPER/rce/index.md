@@ -1,16 +1,21 @@
 ---
 title: Cloud Emulator
-excerpt: 'Create, run, and manage virtual Roku players and TVs from the Cloud Emulator web UI'
+excerpt: >-
+  Create, run, and manage virtual Roku players and TVs from the Cloud Emulator
+  web UI
 deprecated: false
 hidden: false
 metadata:
-  title: "Roku Cloud Emulator User's Guide"
-  description: 'Set up and run virtual Roku devices in the Roku Cloud Emulator: add and run devices, save snapshots, sideload and debug apps, and manage users and subscriptions.'
+  title: Roku Cloud Emulator User's Guide
+  description: >-
+    Set up and run virtual Roku devices in the Roku Cloud Emulator: add and run
+    devices, save snapshots, sideload and debug apps, and manage users and
+    subscriptions.
   robots: index
 next:
   description: ''
 ---
-> The Roku Cloud Emulator is currently being deployed to developer accounts as part of a phased rollout. If you are interested in getting early access to it, please contact [Partner Success](https://developer.roku.com/contact) and select **Other** from the topic list. 
+> The Roku Cloud Emulator is currently being deployed to developer accounts as part of a phased rollout. If you are interested in getting early access to it, please contact [Partner Success](https://developer.roku.com/contact) and select **Other** from the topic list.
 
 The Roku Cloud Emulator (RCE) enables you to create virtual Roku streaming players and TVs to develop and test your apps. You can use the RCE to automate CI/CD merges and nightly testing, and to iteratively validate features that do not require hardware-specific performance.
 
@@ -46,17 +51,18 @@ To get started with the RCE, follow these steps:
    ![The Cloud Emulator Devices page listing virtual devices with their status and firmware](https://image.roku.com/ZHZscHItMTc2/rce-devices-page.png)
 
 3. Use the page to add and manage your virtual Roku devices. You can filter the listed devices by name, state, and type.
+
 4. For each device, the following information is listed:
 
-| Field | Description |
-| --- | --- |
-| Device name | The user-specified name of the virtual device. |
-| Device type | Indicates whether the device is a player (a Roku Streaming Stick or streaming player, for example) or a TV. |
-| Status | The status of the virtual device: running, stopped, or pending. |
-| Runtime | The amount of time the virtual device has been running. |
-| ESN | The serial number of the Roku device. |
-| Firmware | The Roku OS version running on the device. |
-| Actions | The commands you can run on the device: **Start/Stop device** (close the virtual device UI), **View device** (launch the virtual device viewer UI), **View logs** (launch the BrightScript debug console), **Snapshot** (save the state of a virtual device at a specific time so you can restore it later; see [Saving snapshots](#saving-snapshots)), and **Copy Instance API URL** (copy the address of the virtual device to your clipboard for later API requests). |
+| Field       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Device name | The user-specified name of the virtual device.                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Device type | Indicates whether the device is a player (a Roku Streaming Stick or streaming player, for example) or a TV.                                                                                                                                                                                                                                                                                                                                                              |
+| Status      | The status of the virtual device: running, stopped, or pending.                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Runtime     | The amount of time the virtual device has been running.                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| ESN         | The serial number of the Roku device.                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| Firmware    | The Roku OS version running on the device.                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| Actions     | The commands you can run on the device: **Start/Stop device** (close the virtual device UI), **View device** (launch the virtual device viewer UI), **View logs** (launch the BrightScript debug console), **Snapshot** (save the state of a virtual device at a specific time so you can restore it later; see [Saving snapshots](#saving-snapshots)), and **Copy Instance API URL** (copy the address of the virtual device to your clipboard for later API requests). |
 
 ### Adding devices
 
@@ -83,7 +89,9 @@ To launch and run a virtual device, follow these steps:
    - **Use this snapshot**: If you have saved snapshots, select the one to run. By default, the last known device state is used.
      1. Enable the **Use this snapshot** checkbox.
      2. From the **Snapshot** drop-down, select the snapshot to use.
+
 3. Click **Run device**.
+
 4. Once the device status changes to **Running**, click **View device** (the TV icon) to launch the web interface.
 
 > Link only one account to a virtual device. Changing accounts on any snapshot affects the behavior of other snapshots.
@@ -142,8 +150,11 @@ To take a snapshot, follow these steps:
    ![The Add snapshot dialog with fields for a snapshot name and note](https://image.roku.com/ZHZscHItMTc2/rce-add-snapshot-dialog.png)
 
 2. Enter a unique, descriptive name for the snapshot that makes it easy to identify the device state.
+
 3. Optionally, enter any notes for the snapshot.
+
 4. Click **Save**.
+
 5. You can manage snapshots from the **Device Details** page.
 
 ## Managing devices
@@ -156,37 +167,37 @@ Click a device to open the **Device details** page. This page lets you view devi
 
 You can view the following information for each device:
 
-| Field | Description |
-| --- | --- |
-| Device name | The user-specified name of the virtual device. |
-| Device type | Indicates whether the device is a Roku streaming player (STB) or a TV. |
-| Current run time | The amount of time the virtual device has been running. |
-| Date created | The date the device was created. |
-| Note | Any user-specified notes about the device. |
+| Field            | Description                                                            |
+| ---------------- | ---------------------------------------------------------------------- |
+| Device name      | The user-specified name of the virtual device.                         |
+| Device type      | Indicates whether the device is a Roku streaming player (STB) or a TV. |
+| Current run time | The amount of time the virtual device has been running.                |
+| Date created     | The date the device was created.                                       |
+| Note             | Any user-specified notes about the device.                             |
 
 ### Manage snapshots
 
 You can view the following information for each device snapshot:
 
-| Field | Description |
-| --- | --- |
-| Name | The user-entered name of the snapshot. |
-| Note | Any user-specified notes about the snapshot. |
-| Date created | The date the snapshot was created. |
-| Build | The Roku OS version and build number used in the device snapshot. |
-| Actions | You can edit the name and notes of the snapshot, or delete the snapshot. You cannot delete the initial snapshot. |
+| Field        | Description                                                                                                      |
+| ------------ | ---------------------------------------------------------------------------------------------------------------- |
+| Name         | The user-entered name of the snapshot.                                                                           |
+| Note         | Any user-specified notes about the snapshot.                                                                     |
+| Date created | The date the snapshot was created.                                                                               |
+| Build        | The Roku OS version and build number used in the device snapshot.                                                |
+| Actions      | You can edit the name and notes of the snapshot, or delete the snapshot. You cannot delete the initial snapshot. |
 
 ### History
 
 You can view the activity log for the device, which includes the following information for each device run:
 
-| Field | Description |
-| --- | --- |
-| Log ID | The unique ID generated for the run. |
-| User | The email address of the user running the device. |
-| Snapshot | The snapshot used for the device run. |
-| Time started | The time the device run started. |
-| Time ended | The time the device run ended. |
+| Field            | Description                                                   |
+| ---------------- | ------------------------------------------------------------- |
+| Log ID           | The unique ID generated for the run.                          |
+| User             | The email address of the user running the device.             |
+| Snapshot         | The snapshot used for the device run.                         |
+| Time started     | The time the device run started.                              |
+| Time ended       | The time the device run ended.                                |
 | Firmware version | The Roku OS version and build number used for the device run. |
 
 ## Sideloading apps
@@ -237,19 +248,91 @@ To set up a device outside the US, use a VPN with a US exit node.
 
 The RCE can play unprotected content and content with the following DRM protection:
 
-| DRM | Level | Resolution |
-| --- | --- | --- |
-| Widevine | L3 | HD content (1080p or 720p) |
+| DRM      | Level | Resolution                 |
+| -------- | ----- | -------------------------- |
+| Widevine | L3    | HD content (1080p or 720p) |
 
 ## Troubleshooting
 
 You can resolve common virtual device issues by following these troubleshooting steps for audio problems and screen responsiveness:
 
-| Issue | Description | Cause | Solution |
-| --- | --- | --- | --- |
-| No audio from virtual device | You can see video but cannot hear audio. | Browsers may automatically mute audio on page load. | Unmute the audio in your browser. The method varies by browser, so consult your browser's documentation for specific instructions. |
-| Screen blackout with no response | The screen blacks out and stops responding if there is no interaction with it over time. | Inactivity timeout or power-saving mode activation. | 1. [Disable auto power savings settings](https://support.roku.com/en-us/article/disable-auto-power-savings) on the virtual device. <br />2. In the Device Viewer, click **Wake Device**. You may need to close and reopen the Device Viewer. If the **Wake Device** button does not work, restart the virtual device. |
-| Sideload button returns a 403 AccessDenied error | When you click **Sideload**, the UI opens a page with a 403 AccessDenied error. | The virtual device is not in developer mode. | In the Device Viewer, click **Dev Mode** to activate developer mode. |
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Issue
+      </th>
+
+      <th>
+        Description
+      </th>
+
+      <th>
+        Cause
+      </th>
+
+      <th>
+        Solution
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        No audio from virtual device
+      </td>
+
+      <td>
+        You can see video but cannot hear audio.
+      </td>
+
+      <td>
+        Browsers may automatically mute audio on page load.
+      </td>
+
+      <td>
+        Unmute the audio in your browser. The method varies by browser, so consult your browser's documentation for specific instructions.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Screen blackout with no response
+      </td>
+
+      <td>
+        The screen blacks out and stops responding if there is no interaction with it over time.
+      </td>
+
+      <td>
+        Inactivity timeout or power-saving mode activation.
+      </td>
+
+      <td>
+        1. [Disable auto power savings settings](https://support.roku.com/en-us/article/disable-auto-power-savings) on the virtual device. <br />2. In the Device Viewer, click **Wake Device**. You may need to close and reopen the Device Viewer. If the **Wake Device** button does not work, restart the virtual device.
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Sideload button returns a 403 AccessDenied error
+      </td>
+
+      <td>
+        When you click **Sideload**, the UI opens a page with a 403 AccessDenied error.
+      </td>
+
+      <td>
+        The virtual device is not in developer mode.
+      </td>
+
+      <td>
+        In the Device Viewer, click **Dev Mode** to activate developer mode.
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 ## Appendix A: Adding users to the Roku Cloud Emulator
 
@@ -279,16 +362,18 @@ Once the 5-hour free trial elapses, you can only access the **Devices** page to 
 
 ### Subscribing to the Roku Cloud Emulator
 
-> See the [RCE AWS Marketplace listing](https://aws.amazon.com/marketplace/pp/prodview-2tgxu23jpyueq?sr=0-0&ref_=ucaf&applicationId=AWSMPContessa) for pricing, terms of service (TOS), and the end user license agreement (EULA).
+> See the [RCE AWS Marketplace listing](https://aws.amazon.com/marketplace/pp/prodview-2tgxu23jpyueq?sr=0-0\&ref_=ucaf\&applicationId=AWSMPContessa) for pricing, terms of service (TOS), and the end user license agreement (EULA). The RCE subscription is only available to users in the USA.
 
 To continue accessing your RCE devices and create additional instances, the root account owner or a user with the Admin or Cloud Manager role can purchase an RCE subscription from the AWS Marketplace by following these steps:
 
 1. Click **Upgrade Plan** on the **Devices** page.
+
 2. Read the instructions on the **Upgrade** page for how to provide the displayed instructions to your AWS administrator, if you have one.
 
    ![The Upgrade plan page showing the subscription instructions and the invite code](https://image.roku.com/ZHZscHItMTc2/rce-invite-code.png)
 
 3. If you have an AWS administrator, pass the upgrade instructions and the invite code to them by following these steps:
+
    1. Copy and store the **Invite code** on the page. The code is needed to activate your subscription.
    2. Your AWS administrator completes steps 4 through 8.
 
@@ -316,7 +401,7 @@ To continue accessing your RCE devices and create additional instances, the root
 
 ### Video tutorial
 
-The following video demonstrates how to purchase an RCE subscription from the AWS Marketplace: 
+The following video demonstrates how to purchase an RCE subscription from the AWS Marketplace:
 
 <video src="https://image.roku.com/ZHZscHItMTc2/rce-aws-flow.mp4" width="720" height="480" controls></video>
 
