@@ -1,5 +1,5 @@
 ---
-title: Cancellation Offers Analytics Report
+title: Cancellation Offers Report
 excerpt: 'See how viewers move through the cancellation flow and how retention offers perform for your app'
 deprecated: false
 hidden: false
