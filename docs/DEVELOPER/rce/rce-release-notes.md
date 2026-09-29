@@ -1,21 +1,25 @@
 ---
 title: Release notes
-excerpt: 'Known issues for the Roku Cloud Emulator, including critical, major, and minor severity items'
+excerpt: >-
+  Known issues for the Roku Cloud Emulator, including critical, major, and minor
+  severity items
 deprecated: false
 hidden: false
 metadata:
-  title: 'Roku Cloud Emulator Release Notes'
-  description: 'Current known issues for the Roku Cloud Emulator (RCE), grouped by severity, including snapshot creation, log uploads, DevMode reboot, and third-party app playback.'
+  title: Roku Cloud Emulator Release Notes
+  description: >-
+    Current known issues for the Roku Cloud Emulator (RCE), grouped by severity,
+    including snapshot creation, log uploads, DevMode reboot, and third-party
+    app playback.
   robots: index
 next:
   description: ''
 ---
-
 # Roku Cloud Emulator — Release Notes
 
 **Date:** September 22, 2026
 
-**Known Issues**  
+**Known Issues**
 
 Critical
 
@@ -41,5 +45,6 @@ Minor
 - On newly activated devices, the home screen may briefly appear before the splash screen.
 - Highlighting can jump unexpectedly on some settings screens, and some controls are misaligned.
 - Channels that require companion hardware on the same local network are not supported.
+- RCE subscriptions are only available to users in the USA.
 
-©2026 Roku, Inc. All rights reserved. Roku, the Roku logo, and the purple d-pad design are trademarks or registered trademarks of Roku, Inc. in the United States and other countries. All other trademarks are the property of their respective owners. This document contains confidential and proprietary information of Roku, Inc. Reproduction in whole or in part without written permission is prohibited. (edited) 
+©2026 Roku, Inc. All rights reserved. Roku, the Roku logo, and the purple d-pad design are trademarks or registered trademarks of Roku, Inc. in the United States and other countries. All other trademarks are the property of their respective owners. This document contains confidential and proprietary information of Roku, Inc. Reproduction in whole or in part without written permission is prohibited. (edited)
