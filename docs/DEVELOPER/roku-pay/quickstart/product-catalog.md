@@ -412,6 +412,8 @@ To create a cancellation offer, follow these steps:
 
 10. if you are publishing the cancellation offer, click Yes to confirm its publishing. If you are using offer variations, the confirmation dialog includes the variation ID, offer ID, and price for each one.
 
+> Once your cancellation offers are live, use the [Cancellation Offers Analytics Report](doc:cancellation-offers-analytics-report) to see how many viewers enter the cancellation flow, how your offers perform, and which offers get redeemed by plan and currency.
+
 ### Scheduling a price change for a purchase option
 
 You can schedule a price increase/decrease of a purchase option. The price change may be applied to either new subscribers or existing subscribers. If you increase the price for existing subscribers, you must give them notice at least 7 days prior but no more than 30 days of the day the increase takes effect. The notice should provide a simple and easy method to cancel.
