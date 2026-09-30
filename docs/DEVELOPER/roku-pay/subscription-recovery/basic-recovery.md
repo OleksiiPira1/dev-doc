@@ -52,7 +52,7 @@ The publisher should routinely synchronize their entitlement service with the Ro
 | In recovery (3-day grace period) | true             | current or past date | false           |
 | Canceled                         | false            | past date            | true            |
 
-> **Free trials:** When a free trial ends and the customer's method of payment fails, the `is_entitled` flag is set to "false", and the subscription is automatically cancelled (there is no grace period in this case).
+> **Free trials:** When a free trial ends and the customer's method of payment fails, the `isEntitled` flag is set to "false", and the subscription is automatically cancelled (there is no grace period in this case).
 
 ## Push notifications
 
