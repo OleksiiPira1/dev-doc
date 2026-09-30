@@ -412,7 +412,7 @@ To create a cancellation offer, follow these steps:
 
 10. if you are publishing the cancellation offer, click Yes to confirm its publishing. If you are using offer variations, the confirmation dialog includes the variation ID, offer ID, and price for each one.
 
-> Once your cancellation offers are live, use the [Cancellation Offers Analytics Report](doc:cancellation-offers-analytics-report) to see how many viewers enter the cancellation flow, how your offers perform, and which offers get redeemed by plan and currency.
+> Once your cancellation offers are live, use the [Cancellation Offers Report](doc:cancellation-offers-report) to see how many viewers enter the cancellation flow, how your offers perform, and which offers get redeemed by plan and currency.
 
 ### Scheduling a price change for a purchase option
 

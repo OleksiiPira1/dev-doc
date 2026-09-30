@@ -4,13 +4,13 @@ excerpt: 'See how viewers move through the cancellation flow and how retention o
 deprecated: false
 hidden: false
 metadata:
-  title: 'Cancellation Offers Analytics Report | Roku Developer Docs'
-  description: 'The Cancellation Offers Analytics Report shows how many viewers enter the cancellation flow, how many are shown a retention offer, what they do after seeing it, and which offers are redeemed by plan and currency.'
+  title: 'Cancellation Offers Report | Roku Developer Docs'
+  description: 'The Cancellation Offers Report shows how many viewers enter the cancellation flow, how many are shown a retention offer, what they do after seeing it, and which offers are redeemed by plan and currency.'
   robots: index
 next:
   description: ''
 ---
-You can use the Cancellation Offers Analytics Report to see how many viewers enter the manage-subscription/cancellation experience, how many are shown a retention offer, what viewers do after seeing an offer (accept, cancel anyway, or take no action), and which offers are ultimately redeemed by plan and currency.
+You can use the Cancellation Offers Report to see how many viewers enter the manage-subscription/cancellation experience, how many are shown a retention offer, what viewers do after seeing an offer (accept, cancel anyway, or take no action), and which offers are ultimately redeemed by plan and currency.
 
 This report is especially useful for evaluating the health of your retention strategy: whether offers are reaching the right viewers, how effective they are at preventing churn, and which price points and billing cadences drive the most redemptions. Reviewing these trends week over week helps you spot shifts in cancellation behavior early and adjust your offer strategy before churn accelerates.
 
