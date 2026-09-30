@@ -234,11 +234,11 @@ The following table summarizes the action to be taken after checking the `expira
 
 Roku Pay supports on-device upgrades and downgrades between subscription products. Once an upgrade/downgrade has been completed, apps should call the `validate-transaction` API with the transaction ID from the `purchaseid` field of the [**doOrder** command](doc:channelstore) to update their system. For subscription upgrades and downgrades, the `validate-transaction` API response includes the following fields to identify the transaction:
 
-* `purchase_type:` Indicates whether the transaction is an `UPGRADE` or `DOWNGRADE`.
+* `purchaseType:` Indicates whether the transaction is an `UPGRADE` or `DOWNGRADE`.
 
-* `cancelled_transaction_ids`: The transaction ID of the original subscription purchase that was upgraded/downgraded.
+* `cancelledTransaction_ids`: The transaction ID of the original subscription purchase that was upgraded/downgraded.
 
-* `purchase_status`: Indicates the current state of the subscription. The following table outlines how this field relates to the `isEntitled` and `cancelled` fields:
+* `purchaseStatus`: Indicates the current state of the subscription. The following table outlines how this field relates to the `isEntitled` and `cancelled` fields:
 
   | purchase\_ status | isEntitled | cancelled | Description                                                                                                                                                                                                                                                                                                                                                                  |
   | :---------------- | :--------- | :-------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
