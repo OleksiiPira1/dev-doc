@@ -24,66 +24,80 @@ The filters applied to this report are:
 
 ## Visualizations
 
-The report includes the following three charts, which are aggregated weekly along the horizontal axis (Date Key Week):
+The report includes the following charts:
 
-* Weekly Retention offer funnel
-* Weekly Cancellations without offer
-* Weekly offer redemptions by plan cadence and currency
+* **Retention**: Track the cancellation and acceptance funnel daily.
+  * Cancellation flow metrics: Daily cancellation initiation events, and how many of those viewers are shown a retention offer versus not shown one.
+  * Daily offer acceptance: Of the viewers shown a cancel offer, how many accept it each day.
+* **Redemption**: Track redemptions and product-level performance over a 30-day window
+  * Daily offer redemptions: The total number of retention offers redeemed each day.
+  * Offer acceptance by product: How many users see a cancel offer and how many accept it, broken down by product SKU.
+  * Offer redemptions by product and country: Cancellation offer redemptions by SKU, with duration, country, and discount interval type.
 
 You can click any item in the legend at the bottom of a chart to isolate or combine metrics.
 
 > Some legend labels use internal shorthand ("AR" refers to auto-renew). The plain-language definition beneath each label explains what the metric represents from the viewer's perspective.
 
-### Weekly Retention offer funnel
+### Cancellation flow metrics
 
-![roku815px - cancellation-weekly-retention](https://image.roku.com/ZHZscHItMTc2/cancellation-weekly-retention.png "cancellation-weekly-retention")
+![roku815px - cancellation-daily-flow-metrics](https://image.roku.com/ZHZscHItMTc2/cancellation-daily-flow-metrics.jpg "cancellation-daily-flow-metrics")
 
-The Weekly Subscriptions and Offers visualization shows the top of the retention funnel, from entering the cancellation flow through the outcome after an offer is shown.
+This chart tracks the top of the retention funnel: how many viewers start the cancellation flow each day, and whether they see a retention offer during that flow, over the last 4 full weeks.
 
-The metrics in this report track how many viewers reach the manage-subscription experience, how many are shown a retention offer, and what they do next:
-
-* **Manage Subscription Events** – The number of times viewers entered the manage-subscription/cancellation experience.
+* **Cancellation Initiation Events** – The number of viewers who started the cancellation flow that day.
 
 * **Shown Offer** – Viewers who were presented with a retention offer during that flow.
 
-* **Shown Offer Accept Offer** – Viewers who were shown an offer and accepted it (a successful save).
+* **Not Shown Offer** – Viewers who went through the cancellation flow without seeing a retention offer.
 
-* **Shown Offer And Cancel** – Viewers who were shown an offer but chose to cancel anyway (offer did not save them).
+### Daily offer acceptance
 
-* **Shown Offer No Accept No Cancel** – Viewers who were shown an offer, did not accept it, and did not cancel — effectively a passive save where the viewer took no further action.
+![roku815px - cancellation-daily-offer-acceptance](https://image.roku.com/ZHZscHItMTc2/cancellation-daily-offer-acceptance.jpg "cancellation-daily-offer-acceptance")
 
-### Weekly cancellations without offer
+Of the viewers shown a retention offer, this chart tracks how many accept it, day by day, over the last 4 full weeks.
 
-![roku815px - cancellation-weekly-events](https://image.roku.com/ZHZscHItMTc2/cancellation-weekly-events.png "cancellation-weekly-events")
+* **Shown Offer** – The daily count of viewers shown an offer (repeated here for reference).
 
-The Weekly Cancellation Events report shows cancellation activity, including viewers who were not shown an offer and their eventual outcome.
+* **Accepted Offer** – The daily count of viewers who accepted the offer they were shown.
 
-The metrics in this report break down cancellation activity, focusing on viewers who initiated cancellation but were not shown a retention offer, and whether they ultimately canceled.
+### Daily offer redemptions
 
-* **Cancellation Flow Started** (dashboard label: Cancel Initiation Events) – Viewers who started the cancellation flow.
+![roku815px - cancellation-daily-offer-redemptions](https://image.roku.com/ZHZscHItMTc2/cancellation-daily-offer-redemptions.jpg "cancellation-daily-offer-redemptions")
 
-* **Started Cancellation, No Action Taken** – Viewers who started cancellation but neither accepted an offer nor turned off auto-renew — a passive save where the viewer took no action and did not cancel.
+Tracks how many accepted offers are ultimately redeemed, aggregated across all products and countries, over the last 30 days. Use this alongside "Offer acceptance by product" and "Offer redemptions by product and country" to see which products and countries drive the totals shown here.
 
-* **Started Cancellation, No Offer Shown** – Viewers who initiated cancellation and were not shown a retention offer. This group splits into the two outcomes below.
+* **Offer Redemptions** – The total number of retention offers redeemed that day, across all products.
 
-* **No Offer Shown, Subscription Canceled** – Viewers not shown an offer who went through with the cancellation (auto-renew turned off).
+### Offer acceptance by product
 
-* **No Offer Shown, Subscription Retained** – Viewers not shown an offer who did not go through with the cancellation. Comparing this against the "Subscription Canceled" group gives the save rate for viewers who were never shown an offer.
+![roku815px - cancellation-offer-acceptance-by-product](https://image.roku.com/ZHZscHItMTc2/cancellation-offer-acceptance-by-product.jpg "cancellation-offer-acceptance-by-product")
 
-### Weekly offer redemptions by cadence and currency
+This table breaks offer performance down by product so you can see which plans see the most offers and which convert best, over the last 30 days.
 
-![roku815px - cancellation-weekly-redemption](https://image.roku.com/ZHZscHItMTc2/cancellation-weekly-redemption.png "cancellation-weekly-redemption")
+* **Product Name** – The subscription plan the offer was shown against.
 
-The Weekly Redemption Offers visualization shows the number of offers redeemed each week, broken down by currency and billing cadence.
+* **SKU** – A per-product identifier. The aggregated "Other" row has no SKU since it spans multiple products.
 
-The metrics in this report track the total number of retention offers redeemed each week (vertical axis: Offer Redemptions), stacked by currency and billing cadence so you can see which price points and plan types drive the most saves:
+* **Shown Offers** – The number of viewers on that product shown a retention offer.
 
-* **BRL - Monthly** – Offers redeemed on monthly plans billed in Brazilian Real.
+* **Accept Offers** – The number of viewers on that product who accepted the offer.
 
-* **MXN - Monthly** – Offers redeemed on monthly plans billed in Mexican Peso.
+The table shows the top seven products individually; the remaining products roll up into an "Other" row.
 
-* **USD - Monthly** – Offers redeemed on monthly plans billed in US dollars.
+### Offer redemptions by product and country
 
-* **MXN - Yearly** – Offers redeemed on annual plans billed in Mexican Peso.
+![roku815px - cancellation-offer-redemptions-by-product-country](https://image.roku.com/ZHZscHItMTc2/cancellation-offer-redemptions-by-product-country.jpg "cancellation-offer-redemptions-by-product-country")
 
-* **USD - Yearly** – Offers redeemed on annual plans billed in US dollars.
+Use this table to assess how discount offers are performing against different products, so you can tell whether the discount itself is what's driving the save, over the last 30 days.
+
+* **Product** – The subscription plan the redeemed offer applied to.
+
+* **Offer Duration** – The length of the discount interval, in months.
+
+* **Renewal Cadence** – How often the underlying plan renews, Monthly or Yearly.
+
+* **Country** – The viewer's country.
+
+* **SKU** – A per-product identifier.
+
+* **Total Redemptions** – The number of times that product/duration/cadence/country combination was redeemed in the period.
