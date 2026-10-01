@@ -42,8 +42,7 @@ midpoints. CINT(2.1) returns 2; CINT(2.5) returns 3; CINT(-2.2) returns
 
 ## Cos(x as Float) as Float
 
-Returns the cosine of the argument (argument must be in radians). To
-obtain the cosine of X when X is in degrees, use CGS(X\*.01745329).
+Returns the cosine of the argument (argument must be in radians). To<br />obtain the cosine of X when X is in degrees, use COS(X\*.01745329).
 
 ## Csng(x as Integer) as Float
 
