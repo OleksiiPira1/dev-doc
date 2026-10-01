@@ -96,7 +96,7 @@ Deletes an entry from an associative array based on the key.
 
 ##### Return Value
 
-A flag indicating whether an entry is associated with the specified key exists. If there is no associated object then false is returned. If there is such an object then true is returned.
+A flag indicating whether the specified array entry has been removed. If the entry was successfully deleted, returns true. If the index is out of range, returns false and does not change the array.
 
 ### Clear() as Void
 
