@@ -131,7 +131,7 @@ Fields derived from the [Group](doc:group) base class can also be used.
             <td>Specifies the text color</td>
         </tr>
         <tr>
-            <td>monospacedDigits<br /><br /><em>Available since [Roku OS 14.0](doc:release-notes#roku-os-140)</em></td>
+            <td>monospacedDigits<br /><br /><em>Available since <a href="https://developer.roku.com/dev/docs/release-notes#roku-os-140">Roku OS 14.0</a></em></td>
             <td>Boolean</td>
             <td>false</td>
             <td>READ_WRITE</td>

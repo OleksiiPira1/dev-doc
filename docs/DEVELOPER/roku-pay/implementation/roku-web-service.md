@@ -96,7 +96,7 @@ The following table summarizes the basic information for the Roku Pay web servic
       </td>
 
       <td>
-        All Roku Pay API requests must include the developer's API key. See [Setting up Roku Pay web services](doc:setting-up-web-services) for more information about getting and managing the key. For all requests, the app associated with the transaction ID or refund ID passed into the call must be owned by the developer associated with the Roku Pay API Key.
+        All Roku Pay API requests must include the developer's API key. See <a href="https://developer.roku.com/dev/docs/setting-up-web-services">Setting up Roku Pay web services</a> for more information about getting and managing the key. For all requests, the app associated with the transaction ID or refund ID passed into the call must be owned by the developer associated with the Roku Pay API Key.
       </td>
     </tr>
   </tbody>

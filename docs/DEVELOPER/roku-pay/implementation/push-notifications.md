@@ -150,7 +150,7 @@ Roku Pay sends push notifications for the following transactions:
       </td>
 
       <td>
-        The customer accepts a [cancellation offer](doc:product-catalog) and its specified pricing and billing terms for the subscription go into effect.
+        The customer accepts a <a href="https://developer.roku.com/dev/docs/product-catalog">cancellation offer</a> and its specified pricing and billing terms for the subscription go into effect.
       </td>
 
       <td>
@@ -167,7 +167,7 @@ Roku Pay sends push notifications for the following transactions:
       </td>
 
       <td>
-        The pricing and billing terms specified in the [cancellation offer](doc:product-catalog) elapse.
+        The pricing and billing terms specified in the <a href="https://developer.roku.com/dev/docs/product-catalog">cancellation offer</a> elapse.
       </td>
 
       <td>

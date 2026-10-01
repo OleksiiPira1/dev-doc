@@ -109,7 +109,7 @@ When a deep link is sent to your app, it will include **contentId** and a **medi
       </td>
 
       <td>
-        Play the movie identified by the contentId. Use [bookmarks](doc:bookmarking) to determine the playback position.
+        Play the movie identified by the contentId. Use <a href="https://developer.roku.com/dev/docs/bookmarking">bookmarks</a> to determine the playback position.
       </td>
     </tr>
 
@@ -123,7 +123,7 @@ When a deep link is sent to your app, it will include **contentId** and a **medi
       </td>
 
       <td>
-        Play the episode identified by the contentId. Use [bookmarks](doc:bookmarking) to determine the playback position.
+        Play the episode identified by the contentId. Use <a href="https://developer.roku.com/dev/docs/bookmarking">bookmarks</a> to determine the playback position.
       </td>
     </tr>
 
@@ -179,7 +179,7 @@ When a deep link is sent to your app, it will include **contentId** and a **medi
       </td>
 
       <td>
-        Play the TV special identified by the contentId. Use [bookmarks](doc:bookmarking) to determine the playback position.
+        Play the TV special identified by the contentId. Use <a href="https://developer.roku.com/dev/docs/bookmarking">bookmarks</a> to determine the playback position.
       </td>
     </tr>
 
@@ -399,7 +399,7 @@ The following attributes are required:
 
         <ul>
           <li><strong>dev</strong>: Sideloaded app.</li>
-          <li><strong>Public/Beta</strong>: Public or [beta](doc:channel-publishing-guide#beta-channel-guidelines) apps. To find your app ID, use the preview page on the Developer Dashboard.</li>
+          <li><strong>Public/Beta</strong>: Public or <a href="https://developer.roku.com/dev/docs/channel-publishing-guide#beta-channel-guidelines">beta</a> apps. To find your app ID, use the preview page on the Developer Dashboard.</li>
         </ul>
 
         <p>The following examples show how to send ECP commands via cURL HTTP POST requests. The examples are based on a sideloaded app with contentId of 1234 and a mediaType of movie. The <strong>launch</strong> command is used to test deep linking into content when the app is launched; the <strong>input</strong> command is used for when the app is already running. When sending the <strong>input</strong> command, the app(<strong>dev</strong>) is not required.</p> <pre><code>curl -d '' '[http://192.168.1.114:8060/launch/dev?contentId=1234\&amp;mediaType=movie](http://192.168.1.114:8060/launch/dev?contentId=1234\&amp;mediaType=movie)'</code></pre> <pre><code>curl -d '' '[http://192.168.1.114:8060/input?contentId=1234\&amp;mediaType=movie](http://192.168.1.114:8060/input?contentId=1234\&amp;mediaType=movie)'</code></pre> <p>To test deep links on your production app, replace "dev" with your app ID (an app ID of 50000 is used in the following example). Because the <strong>input</strong> command does not require the app ID, the same command can be used for testing in development and production.</p> <pre><code>curl -d '' '[http://192.168.1.114:8060/launch/50000?contentId=1234\&amp;mediaType=movie](http://192.168.1.114:8060/launch/50000?contentId=1234\&amp;mediaType=movie)'</code></pre> <pre><code>curl -d '' '[http://192.168.1.114:8060/input?contentId=1234\&amp;mediaType=movie](http://192.168.1.114:8060/input?contentId=1234\&amp;mediaType=movie)'</code></pre>

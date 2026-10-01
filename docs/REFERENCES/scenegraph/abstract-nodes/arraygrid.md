@@ -161,7 +161,7 @@ Each node class extended from the ArrayGrid abstract node class will have custom
 <td>node</td>
 <td></td>
 <td>READ_ONLY</td>
-<td>The Poster node that the list or grid uses to draw its focus indicator. Use this field to apply the same treatment to the focus indicator that you apply to custom list or grid items, such as an <a href="/dev/docs/effect" title="Effect">Effect</a> that gives the indicator rounded or asymmetric corners matching the item shape</td>
+<td>The Poster node that the list or grid uses to draw its focus indicator. Use this field to apply the same treatment to the focus indicator that you apply to custom list or grid items, such as an <a href="https://developer.roku.com/dev/docs/effect" title="Effect">Effect</a> that gives the indicator rounded or asymmetric corners matching the item shape</td>
 </tr>
 <tr>
 <td>focusBitmapBlendColor</td>

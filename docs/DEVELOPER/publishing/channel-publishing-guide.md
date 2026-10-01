@@ -289,7 +289,7 @@ Select whether you plan on monetizing your app, and if so, the monetization meth
         My app offers subscriptions.
       </td>
       <td>
-        The app must [implement Roku Pay](doc:roku-pay) and adhere to all [Roku Pay certification requirements](doc:roku-pay-requirements#rp-3-payment-requirements).
+        The app must <a href="https://developer.roku.com/dev/docs/roku-pay">implement Roku Pay</a> and adhere to all <a href="https://developer.roku.com/dev/docs/roku-pay-requirements#rp-3-payment-requirements">Roku Pay certification requirements</a>.
       </td>
     </tr>
     <tr>
@@ -300,7 +300,7 @@ Select whether you plan on monetizing your app, and if so, the monetization meth
         My app offers one-time purchases (movie rentals/purchases, PPVs, sporting events, and other transactional content).
       </td>
       <td>
-        The app must [implement Roku Pay](doc:roku-pay) and adhere to all [Roku Pay certification requirements](doc:roku-pay-requirements#rp-3-payment-requirements).
+        The app must <a href="https://developer.roku.com/dev/docs/roku-pay">implement Roku Pay</a> and adhere to all <a href="https://developer.roku.com/dev/docs/roku-pay-requirements#rp-3-payment-requirements">Roku Pay certification requirements</a>.
       </td>
     </tr>
     <tr>
@@ -472,7 +472,7 @@ The Static Analysis tool checks the app's code for the use of deprecated APIs, a
         Certification Requirement
       </td>
       <td>
-        Provides a link to any related certification requirements in the [Certification Criteria](doc:certification) document.
+        Provides a link to any related certification requirements in the <a href="https://developer.roku.com/dev/docs/certification">Certification Criteria</a> document.
       </td>
     </tr>
   </tbody>
@@ -588,7 +588,7 @@ To run App Behavior Analysis testing on your app, follow these steps:
         Certification requirements
       </td>
       <td>
-        Provides a link to the section in the [Certification Criteria](doc:certification) document, where the criterion in question is located.
+        Provides a link to the section in the <a href="https://developer.roku.com/dev/docs/certification">Certification Criteria</a> document, where the criterion in question is located.
       </td>
     </tr>
     <tr>

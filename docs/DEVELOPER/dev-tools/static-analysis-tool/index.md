@@ -63,7 +63,7 @@ The Static Analysis Tool is available from the [Developer Dashboard](https://dev
     </tr>
     <tr>
       <td>Certification Requirement</td>
-      <td>Provides a link to any related certification requirements in the [Certification Criteria](doc:certification) document.</td>
+      <td>Provides a link to any related certification requirements in the <a href="https://developer.roku.com/dev/docs/certification">Certification Criteria</a> document.</td>
     </tr>
   </tbody>
 </table>

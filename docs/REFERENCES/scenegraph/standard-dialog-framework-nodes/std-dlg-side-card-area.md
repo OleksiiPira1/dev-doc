@@ -61,14 +61,14 @@ The **StdDlgSideCardArea** node never gains key focus; therefore, it should not 
 <td>boolean</td>
 <td>false</td>
 <td>READ_WRITE</td>
-<td>Specifies whether a thin vertical divider line is displayed between the <strong>StdDlgSideCardArea</strong> and the vertical column that contains the dialog's child <strong>StdDlgAreaBase</strong> nodes ([TitleArea](doc:std-dlg-title-area), [StdDlgContentArea(s)](doc:std-dlg-content-area), and/or [StdDlgButtonArea](doc:std-dlg-button-area)). The divider line, if shown, uses the <strong>DialogSecondaryItemColor</strong> field from the current [RSG palette](doc:scene#fields).</td>
+<td>Specifies whether a thin vertical divider line is displayed between the <strong>StdDlgSideCardArea</strong> and the vertical column that contains the dialog's child <strong>StdDlgAreaBase</strong> nodes (<a href="https://developer.roku.com/dev/docs/std-dlg-title-area">TitleArea</a>, <a href="https://developer.roku.com/dev/docs/std-dlg-content-area">StdDlgContentArea(s)</a>, and/or <a href="https://developer.roku.com/dev/docs/std-dlg-button-area">StdDlgButtonArea</a>). The divider line, if shown, uses the <strong>DialogSecondaryItemColor</strong> field from the current <a href="https://developer.roku.com/dev/docs/scene#fields">RSG palette</a>.</td>
 </tr>
 <tr>
 <td>width</td>
 <td>float</td>
 <td>0.0f</td>
 <td>READ_WRITE</td>
-<td>Specifies the width of the <strong>StdDlgSideCardArea</strong> node.<br /><br />If this field is set to its default value (0.0), the width is set to the width of the [<strong>StdDlgContentArea</strong>](doc:std-dlg-content-area)) node's bounding rectangle (the union of the width of all of its child nodes).<br /><br />If set to a value greater than 0.0, the width of the <strong>StdDlgSideCardArea</strong> node is fixed to that explicit value.<br /><br />The height of <strong>StdDlgSideCardArea</strong> node is based on the StandardDialog layout logic. This sets the height to a maximum of the height of the <strong>StdDlgSideCardArea</strong> bounding rectangle and the height of the vertical column containing the dialog's child [<strong>StdDlgAreaBase</strong>](doc:std-dlg-area-base) nodes. This is constrained by the maximum permissible height of the dialog such that it is fully visible onscreen.</td>
+<td>Specifies the width of the <strong>StdDlgSideCardArea</strong> node.<br /><br />If this field is set to its default value (0.0), the width is set to the width of the <a href="https://developer.roku.com/dev/docs/std-dlg-content-area"><strong>StdDlgContentArea</strong></a>) node's bounding rectangle (the union of the width of all of its child nodes).<br /><br />If set to a value greater than 0.0, the width of the <strong>StdDlgSideCardArea</strong> node is fixed to that explicit value.<br /><br />The height of <strong>StdDlgSideCardArea</strong> node is based on the StandardDialog layout logic. This sets the height to a maximum of the height of the <strong>StdDlgSideCardArea</strong> bounding rectangle and the height of the vertical column containing the dialog's child <a href="https://developer.roku.com/dev/docs/std-dlg-area-base"><strong>StdDlgAreaBase</strong></a> nodes. This is constrained by the maximum permissible height of the dialog such that it is fully visible onscreen.</td>
 </tr>
 </tbody>
 </table>
