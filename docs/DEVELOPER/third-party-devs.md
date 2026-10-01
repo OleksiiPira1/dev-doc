@@ -17,7 +17,7 @@ next:
 
 Many digital media development studios have incorporated Roku development into their offerings. Publishing partners sometimes find it beneficial to leverage these studios' existing familiarity with the Roku platform to help build their apps.
 
-Below is a list of studios that have demonstrated success effectively developing and launching apps on the Roku platform:
+Below is a list of studios that have demonstrated success in effectively developing and launching apps on the Roku platform:
 
 <HTMLBlock>{`
 <table>
