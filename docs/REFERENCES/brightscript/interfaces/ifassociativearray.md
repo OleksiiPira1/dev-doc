@@ -96,7 +96,7 @@ Deletes an entry from an associative array based on the key.
 
 ##### Return Value
 
-A flag indicating whether an entry is associated with the specified key exists. If there is no associated object then false is returned. If there is such an object then true is returned.
+A flag indicating whether the specified array entry has been removed. If the entry was successfully deleted, returns true. If the index is out of range, returns false and does not change the array.
 
 ### Clear() as Void
 
@@ -178,4 +178,4 @@ Returns the values within the associative array in key order.
 
 ##### Return Value
 
-An array of associative array keys/value pairs in key order.
+An array of the associative array's values only (no keys), in key order (for example, for {b: 2, a: 1}, Values() returns \[1, 2] (ordered by key: a, b)).

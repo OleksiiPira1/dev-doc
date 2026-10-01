@@ -1,24 +1,28 @@
 ---
 title: ifArray
-excerpt: 'Interface providing Push, Pop, Peek, Shift, and other array manipulation methods'
+excerpt: >-
+  Interface providing Push, Pop, Peek, Shift, and other array manipulation
+  methods
 deprecated: false
 hidden: false
 metadata:
-  title: 'ifArray'
-  description: 'Documents the ifArray interface, which provides methods such as Push, Pop, Peek, Shift, Unshift, Delete, Count, Clear, and Append for manipulating arrays.'
+  title: ifArray
+  description: >-
+    Documents the ifArray interface, which provides methods such as Push, Pop,
+    Peek, Shift, Unshift, Delete, Count, Clear, and Append for manipulating
+    arrays.
   robots: index
 next:
   description: ''
 ---
-
 ## Implemented by
 
-| Name                                                                                                                                | Description                                                                                                                                     |
-| ----------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| <Anchor label="roArray" title="roArray" href="/dev/docs/roarray">roArray</Anchor>                 | An array stores an indexed collection of BrightScript objects. Each entry of an array can be a different type, or they may all of the same type |
-| <Anchor label="roByteArray" title="roByteArray" href="/dev/docs/robytearray">roByteArray</Anchor> | The byte array component is used to contain and manipulate an arbitrary array of bytes                                                          |
-| <Anchor label="roList" title="roList" href="/dev/docs/rolist">roList</Anchor>                     | The list object implements the interfaces: ifList, ifArray, ifEnum and therefore can behave like an array that can dynamically add members      |
-| <Anchor label="roXMLList" title="roXMLList" href="/dev/docs/roxmllist">roXMLList</Anchor>         | Contains a list of roXML objects                                                                                                                |
+| Name                                               | Description                                                                                                                                     |
+| -------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| [roArray](/dev/docs/roarray "roArray")             | An array stores an indexed collection of BrightScript objects. Each entry of an array can be a different type, or they may all of the same type |
+| [roByteArray](/dev/docs/robytearray "roByteArray") | The byte array component is used to contain and manipulate an arbitrary array of bytes                                                          |
+| [roList](/dev/docs/rolist "roList")                | The list object implements the interfaces: ifList, ifArray, ifEnum and therefore can behave like an array that can dynamically add members      |
+| [roXMLList](/dev/docs/roxmllist "roXMLList")       | Contains a list of roXML objects                                                                                                                |
 
 ## Supported methods
 
@@ -30,7 +34,7 @@ Returns the last (highest index) array entry without removing it. If the array i
 
 ##### Return Value
 
-Invalid
+The last (highest index) array entry.
 
 ### Pop() As Dynamic
 
@@ -50,9 +54,9 @@ Adds the specified value to the end of the array.
 
 ##### Parameters
 
-| Name   | Type    | Description                                    |
-| ------ | ------- | ---------------------------------------------- |
-| value  | Dynamic | The value to be added to the end of the array. |
+| Name  | Type    | Description                                    |
+| ----- | ------- | ---------------------------------------------- |
+| value | Dynamic | The value to be added to the end of the array. |
 
 ### Shift() As Dynamic
 
@@ -72,9 +76,9 @@ Adds the specified value to the beginning of the array (at the zero index) and s
 
 ##### Parameters
 
-| Name   | Type    | Description                                          |
-| ------ | ------- | ---------------------------------------------------- |
-| value  | Dynamic | The value to be added to the beginning of the array. |
+| Name  | Type    | Description                                          |
+| ----- | ------- | ---------------------------------------------------- |
+| value | Dynamic | The value to be added to the beginning of the array. |
 
 ### Delete(index as Integer) As Boolean
 
