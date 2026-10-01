@@ -7,8 +7,7 @@ metadata:
   title: Roku Pay web services reference | Roku Developer Docs
   description: >-
     Use the Roku Pay APIs to validate transactions, cancel and refund
-    subscriptions, and issue service credits to Roku
-    accounts.
+    subscriptions, and issue service credits to Roku accounts.
   robots: index
 next:
   description: ''
@@ -39,7 +38,7 @@ The following table summarizes the basic information for the Roku Pay web servic
       </td>
 
       <td>
-        The base URL for the Roku Pay APIs is **[https://apipub.roku.com/listen/transaction-service.svc](https://apipub.roku.com/listen/transaction-service.svc)**. The resource name for the API is then appended to the URL.<br /><br />For example, the URL for the `validate-transaction` API is **[https://apipub.roku.com/listen/transaction-service.svc/validate-transaction](https://apipub.roku.com/listen/transaction-service.svc/validate-transaction)**.
+        The base URL for the Roku Pay APIs is [https://apipub.roku.com/listen/transaction-service.svc](https://apipub.roku.com/listen/transaction-service.svc). The resource name for the API is then appended to the URL.<br /><br />For example, the URL for the `validate-transaction` API is [https://apipub.roku.com/listen/transaction-service.svc/validate-transaction](https://apipub.roku.com/listen/transaction-service.svc/validate-transaction).
       </td>
     </tr>
 
@@ -107,13 +106,13 @@ The following table summarizes the basic information for the Roku Pay web servic
 
 The Roku Pay platform provides the following APIs for managing billing transaction data:
 
-| Method | API                                           | Description                                                                                                                                                                                       |
-| :----- | :-------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| GET    | [validate-transaction](#validate-transaction) | Check whether a customer is entitled to an in-app product such as a Roku Pay subscription or one-time purchase (for example, movie rental, sporting event, pay-per-view)                          |
-| GET    | [validate-refund](#validate-refund)           | Check whether a refund has been issued.                                                                                                                                                           |
-| POST   | [cancel-subscription](#cancel-subscription)   | Cancel a Roku Pay subscription.                                                                                                                                                                   |
-| POST   | [refund-subscription](#refund-subscription)   | Refund a Roku Pay subscription.                                                                                                                                                                   |
-| POST   | [issue-service-credit](#issue-service-credit) | Give a service credit to a Roku account. (More on service credits below.)                                                                                                                         |
+| Method | API                                           | Description                                                                                                                                                              |
+| :----- | :-------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| GET    | [validate-transaction](#validate-transaction) | Check whether a customer is entitled to an in-app product such as a Roku Pay subscription or one-time purchase (for example, movie rental, sporting event, pay-per-view) |
+| GET    | [validate-refund](#validate-refund)           | Check whether a refund has been issued.                                                                                                                                  |
+| POST   | [cancel-subscription](#cancel-subscription)   | Cancel a Roku Pay subscription.                                                                                                                                          |
+| POST   | [refund-subscription](#refund-subscription)   | Refund a Roku Pay subscription.                                                                                                                                          |
+| POST   | [issue-service-credit](#issue-service-credit) | Give a service credit to a Roku account. (More on service credits below.)                                                                                                |
 
 > **transactionId** format: The transactionIds returned by the Roku Pay APIs are ASCII strings of variable length that may be up to 1024 bytes.
 
@@ -221,7 +220,7 @@ To execute the nightly recovery sync with the `validate-transaction` API, follow
 
    c. If the `isEntitled` flag is "false", Roku has completed the payment retry cycle and canceled the subscription. Call the `cancel subscription` API and put the account in an "unsubscribed" state in your entitlement service so it can stop calling the `validate transaction` API for that subscription.
 
-   **Free trials:** When a free trial ends and the customer's method of payment fails, the `is_entitled` flag is "false". For apps using [Enhanced Subscription Recovery](doc:subscription-on-hold), the subscription will automatically be placed on hold; for apps using [Basic Recovery](doc:basic-recovery), the subscription is automatically cancelled (there is no grace period in this case).
+   **Free trials:** When a free trial ends and the customer's method of payment fails, the `isEntitled` flag is "false". For apps using [Enhanced Subscription Recovery](doc:subscription-on-hold), the subscription will automatically be placed on hold; for apps using [Basic Recovery](doc:basic-recovery), the subscription is automatically cancelled (there is no grace period in this case).
 
 The following table summarizes the action to be taken after checking the `expirationDate`:
 
@@ -235,18 +234,18 @@ The following table summarizes the action to be taken after checking the `expira
 
 Roku Pay supports on-device upgrades and downgrades between subscription products. Once an upgrade/downgrade has been completed, apps should call the `validate-transaction` API with the transaction ID from the `purchaseid` field of the [**doOrder** command](doc:channelstore) to update their system. For subscription upgrades and downgrades, the `validate-transaction` API response includes the following fields to identify the transaction:
 
-* `purchase_type:` Indicates whether the transaction is an `UPGRADE` or `DOWNGRADE`.
+* `purchaseType:` Indicates whether the transaction is an `UPGRADE` or `DOWNGRADE`.
 
-* `cancelled_transaction_ids`: The transaction ID of the original subscription purchase that was upgraded/downgraded.
+* `cancelledTransaction_ids`: The transaction ID of the original subscription purchase that was upgraded/downgraded.
 
-* `purchase_status`: Indicates the current state of the subscription. The following table outlines how this field relates to the `isEntitled` and `cancelled` fields:
+* `purchaseStatus`: Indicates the current state of the subscription. The following table outlines how this field relates to the `isEntitled` and `cancelled` fields:
 
-  | purchase_ status | isEntitled | cancelled | Description                                                                                                                                                                                                                                                                                                                                                                  |
-  | :--------------- | :--------- | :-------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-  | Active           | true       | false     |                                                                                                                                                                                                                                                                                                                                                                              |
-  | Inactive         | false      | true      |                                                                                                                                                                                                                                                                                                                                                                              |
-  | Pending_Active   | false      | false     | The "downgrade" subscription will be activated sometime in the future (the expiration date of the original plan); therefore, the downgrade is set to `Pending_Active`. The status will be set to `valid` at the time of activation.                                                                                                                                          |
-  | Pending_Inactive | true       | true      | When a free trial is offered with the upgrade subscription, the original subscription becomes `Pending_Inactive`. Should the user cancel the upgrade, the original subscription will be reinstated (but _will not renew_ after the entitlement period). Upon the first successful renewal of the upgraded subscription, the original subscription will be set to `Inactive`. |
+  | purchase\_ status | isEntitled | cancelled | Description                                                                                                                                                                                                                                                                                                                                                                  |
+  | :---------------- | :--------- | :-------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+  | Active            | true       | false     |                                                                                                                                                                                                                                                                                                                                                                              |
+  | Inactive          | false      | true      |                                                                                                                                                                                                                                                                                                                                                                              |
+  | Pending_Active    | false      | false     | The "downgrade" subscription will be activated sometime in the future (the expiration date of the original plan); therefore, the downgrade is set to `Pending_Active`. The status will be set to `valid` at the time of activation.                                                                                                                                          |
+  | Pending_Inactive  | true       | true      | When a free trial is offered with the upgrade subscription, the original subscription becomes `Pending_Inactive`. Should the user cancel the upgrade, the original subscription will be reinstated (but _will not renew_ after the entitlement period). Upon the first successful renewal of the upgraded subscription, the original subscription will be set to `Inactive`. |
 
 **Upgrade Response Example (JSON)**:
 
@@ -465,7 +464,7 @@ The refund value must be:
 
 Roku Pay automatically calculates and handles any tax that should be included in the refund.
 
-For example, a publisher refunds 50% of a $10 subscription, for which the customer was charged $11 ($10 subscription and 10% tax [$1.00]). In this case, the refund amount should be $5.00 instead of $5.50. When issuing the refund, Roku adds the 10% tax ($0.50) to the $5.00 `amount` specified in the refund-subscription API call ($5.00) and refunds the customer $5.50.
+For example, a publisher refunds 50% of a $10 subscription, for which the customer was charged $11 ($10 subscription and 10% tax \[$1.00]). In this case, the refund amount should be $5.00 instead of $5.50. When issuing the refund, Roku adds the 10% tax ($0.50) to the $5.00 `amount` specified in the refund-subscription API call ($5.00) and refunds the customer $5.50.
 
 The sum of all partial refunds applied against any given transaction cannot exceed the original transaction amount.
 
@@ -602,11 +601,11 @@ POST https://apipub.roku.com/listen/transaction-service.svc/issue-service-credit
 
 ## Rate limiting
 
-The Roku Pay APIs enforce a rate limit of **20 requests per second (rps) per API key**. 
+The Roku Pay APIs enforce a rate limit of **20 requests per second (rps) per API key**.
 
 ### Rate limit error response
 
-Requests that exceed this limit will receive a 429 error response code (too many requests). 
+Requests that exceed this limit will receive a 429 error response code (too many requests).
 
 ```
 HTTP/1.1 429 Too Many Requests
@@ -614,7 +613,7 @@ HTTP/1.1 429 Too Many Requests
 (empty body)
 ```
 
-### Best practices 
+### Best practices
 
 To handle rate limiting, implement exponential backoff and retry logic. Specifically, do the following:
 

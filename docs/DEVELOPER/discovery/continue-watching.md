@@ -1,11 +1,14 @@
 ---
 title: Continue Watching
-excerpt: 'Display and resume in-progress content from the What to Watch home screen row'
+excerpt: Display and resume in-progress content from the What to Watch home screen row
 deprecated: false
 hidden: false
 metadata:
-  title: 'Continue Watching | Roku Developer Docs'
-  description: 'Integrate your app with Continue Watching to display in-progress content on the What to Watch screen and let customers resume playback across Roku devices.'
+  title: Continue Watching | Roku Developer Docs
+  description: >-
+    Integrate your app with Continue Watching to display in-progress content on
+    the What to Watch screen and let customers resume playback across Roku
+    devices.
   robots: index
 next:
   description: ''
@@ -77,36 +80,89 @@ Integrating into Continue Watching entails calling the Roku Continue Watching AP
 <table>
   <thead>
     <tr>
-      <th>Step</th>
-      <th>API</th>
-      <th>Description</th>
+      <th>
+        Step
+      </th>
+
+      <th>
+        API
+      </th>
+
+      <th>
+        Description
+      </th>
     </tr>
   </thead>
+
   <tbody>
     <tr>
-      <td><strong>Retrieve bookmarks when app is launched</strong></td>
-      <td>Publisher backend system</td>
-      <td>The publisher maintains the playback position of content. Roku does not maintain bookmarks because content may be watched across multiple platforms (for example, web and Roku). This ensures that deep links from the Continue Watching row return the customer to the actual playback position.</td>
+      <td>
+        <strong>Retrieve bookmarks when app is launched</strong>
+      </td>
+
+      <td>
+        Publisher backend system
+      </td>
+
+      <td>
+        The publisher maintains the playback position of content. Roku does not maintain bookmarks because content may be watched across multiple platforms (for example, web and Roku). This ensures that deep links from the Continue Watching row return the customer to the actual playback position.
+      </td>
     </tr>
+
     <tr>
-      <td><strong>Update bookmark</strong></td>
-      <td>PUT request to Continue Watching API</td>
-      <td>Once the publisher retrieves the current playback position from their backend system, the app makes a <strong>PUT</strong> request to update the Continue Watching row with that bookmark.</td>
+      <td>
+        <strong>Update bookmark</strong>
+      </td>
+
+      <td>
+        PUT request to Continue Watching API
+      </td>
+
+      <td>
+        Once the publisher retrieves the current playback position from their backend system, the app makes a <strong>PUT</strong> request to update the Continue Watching row with that bookmark.
+      </td>
     </tr>
+
     <tr>
-      <td><strong>Add content to Continue Watching row when content playback starts</strong></td>
-      <td>POST request to Continue Watching API</td>
-      <td>The publisher controls how long content has been watched (for example, one minute) before it is added to the Continue Watching row. Once the publisher-configured interval has been reached, the app makes a POST request to add the content to the Continue Watching row.<br />During playback, do not make Continue Watching API calls to update the playback position. The main purpose of the Continue Watching user experience is to aggregate in-progress content and streamline resumption. The progress bar used to reflect the current bookmark in the Continue Watching row is an approximation. If the customer presses the Home button after the POST request has been sent, the content will still be listed in the Continue Watching row, which is the primary goal of the feature.</td>
+      <td>
+        <strong>Add content to Continue Watching row when content playback starts</strong>
+      </td>
+
+      <td>
+        POST request to Continue Watching API
+      </td>
+
+      <td>
+        The publisher controls how long content has been watched (for example, one minute) before it is added to the Continue Watching row. Once the publisher-configured interval has been reached, the app makes a POST request to add the content to the Continue Watching row.<br />During playback, do not make Continue Watching API calls to update the playback position. The main purpose of the Continue Watching user experience is to aggregate in-progress content and streamline resumption. The progress bar used to reflect the current bookmark in the Continue Watching row is an approximation. If the customer presses the Home button after the POST request has been sent, the content will still be listed in the Continue Watching row, which is the primary goal of the feature.
+      </td>
     </tr>
+
     <tr>
-      <td><strong>Update content playback position when content playback ends</strong></td>
-      <td>POST request to Continue Watching API</td>
-      <td>Once the customer stops content playback, the app makes a <strong>POST</strong> request to update the Continue Watching row the current bookmark for that content.</td>
+      <td>
+        <strong>Update content playback position when content playback ends</strong>
+      </td>
+
+      <td>
+        POST request to Continue Watching API
+      </td>
+
+      <td>
+        Once the customer stops content playback, the app makes a <strong>POST</strong> request to update the Continue Watching row the current bookmark for that content.
+      </td>
     </tr>
+
     <tr>
-      <td><strong>Remove content from Continue Watching row when content has been completed</strong></td>
-      <td>DELETE request to Continue Watching API</td>
-      <td>The publisher controls what constitutes the completion of content (for example, end credits are shown). Once content has been completed, the app makes a DELETE request to remove the content from the Continue Watching row.</td>
+      <td>
+        <strong>Remove content from Continue Watching row when content has been completed</strong>
+      </td>
+
+      <td>
+        DELETE request to Continue Watching API
+      </td>
+
+      <td>
+        The publisher controls what constitutes the completion of content (for example, end credits are shown). Once content has been completed, the app makes a DELETE request to remove the content from the Continue Watching row.
+      </td>
     </tr>
   </tbody>
 </table>
@@ -118,30 +174,65 @@ The following table summarizes the basic information for the Continue Watching R
 <table>
   <thead>
     <tr>
-      <th>Item</th>
-      <th>Description</th>
+      <th>
+        Item
+      </th>
+
+      <th>
+        Description
+      </th>
     </tr>
   </thead>
+
   <tbody>
     <tr>
-      <td><strong>Endpoint</strong></td>
-      <td>The base URLs for the Continue Watching APIs are as follows:<br /><ul><li>[https://userdata.sr.roku.com/user-data/v1/content/continueWatching](https://userdata.sr.roku.com/user-data/v1/content/continueWatching)</li><li>[https://userdata.sr.roku.com/user-data/v1/profile/\\\{](https://userdata.sr.roku.com/user-data/v1/profile/\\\{)<strong>profileId</strong>}/content/continueWatching (use this endpoint if your app has a profile selection screen and the content being passed is specific to the provided <strong>profileId</strong> (the unique user ID \[UUID] of the user profile). The <strong>profileId</strong> is passed back to the app in a deep link request from the Continue Watching feature.</li></ul><blockquote><p>Do not send kids profile data to Roku when calling these endpoints.</p></blockquote></td>
+      <td>
+        <strong>Endpoint</strong>
+      </td>
+
+      <td>
+        The base URLs for the Continue Watching APIs are as follows:<br /><ul><li>[https://userdata.sr.roku.com/user-data/v1/content/continueWatching](https://userdata.sr.roku.com/user-data/v1/content/continueWatching)</li><li>[https://userdata.sr.roku.com/user-data/v1/profile/\\\{](https://userdata.sr.roku.com/user-data/v1/profile/\\\{)<strong>profileId</strong>}/content/continueWatching (use this endpoint if your app has a profile selection screen and the content being passed is specific to the provided <strong>profileId</strong> (the unique user ID \[UUID] of the user profile). The <strong>profileId</strong> is passed back to the app in a deep link request from the Continue Watching feature.</li></ul><blockquote><p>Do not send kids profile data to Roku when calling these endpoints.</p></blockquote>
+      </td>
     </tr>
+
     <tr>
-      <td><strong>Protocol</strong></td>
-      <td>Continue Watching API calls may only be sent using HTTPS.</td>
+      <td>
+        <strong>Protocol</strong>
+      </td>
+
+      <td>
+        Continue Watching API calls may only be sent using HTTPS.
+      </td>
     </tr>
+
     <tr>
-      <td><strong>Methods</strong></td>
-      <td>The Continue Watching APIs support the following REST methods for adding, retrieving, updating, and deleting content items:<br /><ul><li><strong>POST</strong>. Add one or more new content items; update existing items.</li><li><strong>GET</strong>. Retrieve the existing list of content items.</li><li><strong>PUT</strong>. Replace the entire existing list of content items. When making this request, include all the content that should remain in the Continue Watching row (for example, a PUT request with a single item replaces the current list with that one item). Passing an empty body removes all content from the list.</li><li><strong>DELETE</strong>. Remove one or more content items.</li></ul></td>
+      <td>
+        <strong>Methods</strong>
+      </td>
+
+      <td>
+        The Continue Watching APIs support the following REST methods for adding, retrieving, updating, and deleting content items:<br /><ul><li><strong>POST</strong>. Add one or more new content items; update existing items.</li><li><strong>GET</strong>. Retrieve the existing list of content items.</li><li><strong>PUT</strong>. Replace the entire existing list of content items. When making this request, include all the content that should remain in the Continue Watching row (for example, a PUT request with a single item replaces the current list with that one item). Passing an empty body removes all content from the list.</li><li><strong>DELETE</strong>. Remove one or more content items.</li></ul>
+      </td>
     </tr>
+
     <tr>
-      <td><strong>Header</strong></td>
-      <td>Requests to the Continue Watching APIs require the following headers (the Roku OS automatically populates the headers with empty string values):<ul><li><strong>Content-Type:</strong> application/json</li><li><strong>x-roku-reserved-jwt</strong>: ""</li><li><strong>x-roku-reserved-channel-id</strong>: "\<channelId>" (the production app ID is required to sideload and test the app during development because it is linked to the search feed. In production, the Roku OS will override this value, which means you can continue passing it after development has been completed).</li><li><strong>x-roku-reserved-channel-store-code</strong>: ""</li><li><strong>x-roku-reserved-virtual-user-id</strong>: ""</li><li><strong>x-roku-reserved-device-id</strong>: ""</li><li><strong>x-roku-reserved-serial-number</strong>: ""</li></ul><blockquote>See <a href="#appendix-a-sample-brightscript-code-for-adding-http-headers">Appendix A</a> for sample BrightScript code that demonstrates how to add these headers to your app. Do not use the [roHttpAgent.setHeaders()](doc:ifhttpagent#setheadersnamevaluemap-as-object-as-boolean) function to pass the headers.</blockquote></td>
+      <td>
+        <strong>Header</strong>
+      </td>
+
+      <td>
+        Requests to the Continue Watching APIs require the following headers (the Roku OS automatically populates the headers with empty string values):<ul><li><strong>Content-Type:</strong> application/json</li><li><strong>x-roku-reserved-jwt</strong>: ""</li><li><strong>x-roku-reserved-channel-id</strong>: "\<channelId>" (the production app ID is required to sideload and test the app during development because it is linked to the search feed. In production, the Roku OS will override this value, which means you can continue passing it after development has been completed).</li><li><strong>x-roku-reserved-channel-store-code</strong>: ""</li><li><strong>x-roku-reserved-virtual-user-id</strong>: ""</li><li><strong>x-roku-reserved-device-id</strong>: ""</li><li><strong>x-roku-reserved-serial-number</strong>: ""</li></ul><blockquote>See <a href="#appendix-a-sample-brightscript-code-for-adding-http-headers">Appendix A</a> for sample BrightScript code that demonstrates how to add these headers to your app. Do not use the [roHttpAgent.setHeaders()](doc:ifhttpagent#setheadersnamevaluemap-as-object-as-boolean) function to pass the headers.</blockquote>
+      </td>
     </tr>
+
     <tr>
-      <td><strong>Response</strong></td>
-      <td>The Continue Watching APIs return one of the following response codes:<br /><pre><code>- <strong>200</strong>: OK<br />- <strong>204</strong>: No content (DELETE requests only)<br />- <strong>400</strong>: Bad request  (required fields are missing from the payload; a description of the error is returned)<br />- <strong>401</strong>: Unauthorized (DELETE requests only)<br />- <strong>403</strong>: Forbidden (if an invalid partner)</code></pre></td>
+      <td>
+        <strong>Response</strong>
+      </td>
+
+      <td>
+        The Continue Watching APIs return one of the following response codes:<br /><pre><code>- <strong>200</strong>: OK<br />- <strong>204</strong>: No content (DELETE requests only)<br />- <strong>400</strong>: Bad request  (required fields are missing from the payload; a description of the error is returned)<br />- <strong>401</strong>: Unauthorized (DELETE requests only)<br />- <strong>403</strong>: Forbidden (if an invalid partner)</code></pre>
+      </td>
     </tr>
   </tbody>
 </table>
@@ -176,7 +267,7 @@ To add new content items and update existing ones to the Continue Watching row, 
       <td>waitForNextEpisodeAvailability</td>
       <td>Boolean</td>
       <td>Optional</td>
-      <td>This field is used for episodic content. Set it to <strong>true</strong> when an episode has been completed and the next episode has not been released yet; otherwise, set it to <strong>false</strong>.<br /><br />Roku can use this information to show the content in the Continue Watching row whenever the next episode becomes available. <br /><br />This feature requires a <a href="/dev/docs/search-feed">search feed</a> that lists "serial" and "episode" assets.<br /><br />The following matrix demonstrates how to use this field. In this example, E1 and E2 are available, but E3 has not been released yet.<br /><table><tr><td>Event</td><td>episodeId value</td><td>waitForNextEpisodeAvailability flag</td><td>Episode shown in Continue Watching row</td></tr><tr><td>Start E1</td><td>E1</td><td>false</td><td>E1</td></tr><tr><td>Complete E1</td><td>E1</td><td>true</td><td>E2</td></tr><tr><td>Start E2</td><td>E2</td><td>false</td><td>E2</td></tr><tr><td>Complete E2</td><td>E2</td><td>true</td><td>none</td></tr><tr><td>E3 becomes available later</td><td>-</td><td>-</td><td>E3</td></tr><tr><td>Start E3</td><td>E3</td><td>false</td><td>E3</td></tr><tr><td>Complete E3</td><td>E3</td><td>true</td><td>none</td></tr></table></td>
+      <td>This field is used for episodic content. Set it to <strong>true</strong> when an episode has been completed and the next episode has not been released yet; otherwise, set it to <strong>false</strong>.<br /><br />Roku can use this information to show the content in the Continue Watching row whenever the next episode becomes available. <br /><br />This feature requires a <a href="/dev/docs/search-feed">search feed</a> that lists "series" and "episode" assets.<br /><br />The following matrix demonstrates how to use this field. In this example, E1 and E2 are available, but E3 has not been released yet.<br /><table><tr><td>Event</td><td>episodeId value</td><td>waitForNextEpisodeAvailability flag</td><td>Episode shown in Continue Watching row</td></tr><tr><td>Start E1</td><td>E1</td><td>false</td><td>E1</td></tr><tr><td>Complete E1</td><td>E1</td><td>true</td><td>E2</td></tr><tr><td>Start E2</td><td>E2</td><td>false</td><td>E2</td></tr><tr><td>Complete E2</td><td>E2</td><td>true</td><td>none</td></tr><tr><td>E3 becomes available later</td><td>-</td><td>-</td><td>E3</td></tr><tr><td>Start E3</td><td>E3</td><td>false</td><td>E3</td></tr><tr><td>Complete E3</td><td>E3</td><td>true</td><td>none</td></tr></table></td>
     </tr>
     <tr>
       <td>profileLabel</td>
@@ -212,7 +303,7 @@ To retrieve the list of content items in the Continue Watching row, send a **GET
 **URL**:
 
 * GET [https://userdata.sr.roku.com](https://userdata.sr.roku.com/)/user-data/v1/content/continueWatching
-* GET [https://userdata.sr.roku.com](https://userdata.sr.roku.com/)/user-data/v1/profile/\{profileId}/content/continueWatching (app has a profile selection screen)
+* GET [https://userdata.sr.roku.com](https://userdata.sr.roku.com/)/user-data/v1/profile/\{profileId\}/content/continueWatching (app has a profile selection screen)
 
 ### Update API
 
@@ -227,7 +318,7 @@ To remove content items from the Continue Watching row, send a **DELETE** reques
 **URL**:
 
 * DELETE [https://userdata.sr.roku.com/user-data/v1/content/continueWatching](https://userdata.sr.roku.com/user-data/v1/content/continueWatching)
-* DELETE [https://userdata.sr.roku.com/user-data/v1/profile/\{profileId}/content/continueWatching](https://userdata.sr.roku.com/user-data/v1/profile/\{profileId}/content/continueWatching) (app has a profile selection screen)
+* DELETE [https://userdata.sr.roku.com/user-data/v1/profile/\{profileId\}/content/continueWatching](https://userdata.sr.roku.com/user-data/v1/profile/\{profileId\}/content/continueWatching) (app has a profile selection screen)
 
 **JSON body**:
 

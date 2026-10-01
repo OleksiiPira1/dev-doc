@@ -1,11 +1,14 @@
 ---
 title: Development partners
-excerpt: 'A directory of third-party studios experienced in building Roku apps'
+excerpt: A directory of third-party studios experienced in building Roku apps
 deprecated: false
 hidden: false
 metadata:
-  title: 'Development partners | Roku Developer Docs'
-  description: 'Browse a directory of digital media development studios that have demonstrated success building and launching apps on the Roku platform across global regions.'
+  title: Development partners | Roku Developer Docs
+  description: >-
+    Browse a directory of digital media development studios that have
+    demonstrated success building and launching apps on the Roku platform across
+    global regions.
   robots: index
 next:
   description: ''
@@ -14,7 +17,7 @@ next:
 
 Many digital media development studios have incorporated Roku development into their offerings. Publishing partners sometimes find it beneficial to leverage these studios' existing familiarity with the Roku platform to help build their apps.
 
-Below is a list of studios that have demonstrated success effectively developing and launching apps on the Roku platform:
+Below is a list of studios that have demonstrated success in effectively developing and launching apps on the Roku platform:
 
 <HTMLBlock>{`
 <table>
@@ -573,7 +576,7 @@ Below is a list of studios that have demonstrated success effectively developing
 <p>North America</p>
 </td>
 <td class="long-line" colspan="1" rowspan="1">
-<p><a href="mailto:woody.zantzinger@willowtreeapps.comm">Woody Zantzinger</a></p>
+<p><a href="mailto:woody.zantzinger@willowtreeapps.com">Woody Zantzinger</a></p>
 </td>
 <td class="long-line" colspan="1" rowspan="1">
 <p><a href="https://channelstore.roku.com/details/2946">Fox News Channel</a></p>
@@ -617,5 +620,3 @@ Below is a list of studios that have demonstrated success effectively developing
 </tbody>
 </table>
 `}</HTMLBlock>
-
-<br />
