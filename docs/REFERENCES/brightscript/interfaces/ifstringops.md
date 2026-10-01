@@ -333,16 +333,6 @@ Returns the string with the following characters replaced with their correspondi
   </tbody>
 </table>
 
-=======
-
-| Character        | Replaced with |
-| ---------------- | ------------- |
-| " (double quote) | "             |
-| ' (single quote) | '             |
-| \<               | \<            |
-| >                | >             |
-| &                | &             |
-
 ##### Return Value
 
 The encoded string.
