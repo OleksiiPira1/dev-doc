@@ -1006,7 +1006,8 @@ Developers can use the Roku Search feed schema to validate the format of their s
 				"season",
 				"episode",
 				"shortForm",
-				"externalIdOnly"
+				"externalIdOnly",
+                                "liveStream"
 			]
 		},
 		"external_id_source_type": {
