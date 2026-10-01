@@ -38,9 +38,11 @@ you can select the template you want to use, or upload your own zip to edit.
 
 ![roku815px - RALE-SELECTCHANNEL](https://image.roku.com/ZHZscHItMTc2/RALE-SELECTCHANNEL.png "RALE-SELECTCHANNEL")
 
-The code for these templates can be found in our Eclipse Plugin. For instructions on how to download the Eclipse plugin visit
-
-[Download the Eclipse plugin here!](doc:ide-support)
+<!-- TODO: this previously pointed readers to the Eclipse plugin for template source.
+Roku has discontinued the Eclipse plugin (see ide-support.md) and its update site no
+longer serves installable plugin files (confirmed: content.xml/artifacts.xml return
+404 as of 2026-10-01). Confirm with the RALE/DevTools team where template source now
+lives, if anywhere, and replace this paragraph accordingly. -->
 
 ## Editing components in RALE
 

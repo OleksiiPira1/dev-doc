@@ -15,6 +15,8 @@ metadata:
 
 BrightScriptDoc is the BrightScript language documentation generator for inline code comments. It operates inside Roku's Eclipse plug-in, see [Roku Plug-in for Eclipse IDE.](doc:ide-support)
 
+> Roku has discontinued the Eclipse plug-in (see [Roku Plug-in for Eclipse IDE](doc:ide-support)). Existing installations can still generate BrightScriptDoc output, but the plug-in is no longer available for new installations, so this workflow is not available to developers setting up a new environment.
+
 ## Basic commenting
 
 Like many other languages, BrightScript source code can be documented inline using special character sequences to indicate a comment. For BrightScript, a basic comment starts with either the string “REM” or the single quote “'” character.

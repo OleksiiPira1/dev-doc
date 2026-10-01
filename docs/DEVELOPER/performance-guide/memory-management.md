@@ -78,6 +78,8 @@ available:*
 
 ![roku815px - texturememory](https://image.roku.com/ZHZscHItMTc2/texturememory.png "texturememory")
 
+> The "r2d2_bitmaps" command applies to pre-SceneGraph, 2D API, or template apps. If your app is SceneGraph, use the "loaded_textures" command instead.
+
 You can check your texture memory usage by telnetting to port 8080 on
 your Roku device and running the command “r2d2\_bitmaps”. This command
 will output a list of memory addresses representing the assets loaded
