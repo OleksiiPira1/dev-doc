@@ -178,4 +178,4 @@ Returns the values within the associative array in key order.
 
 ##### Return Value
 
-An array of associative array keys/value pairs in key order.
+An array of the associative array's values only (no keys), in key order (for example, for {b: 2, a: 1}, Values() returns \[1, 2] (ordered by key: a, b)).
