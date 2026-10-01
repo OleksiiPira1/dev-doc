@@ -61,7 +61,7 @@ The `control` field includes a `prebuffer` option, which allows the video to beg
 
       <td />
     
-      <td>READ\_ONL</td>
+      <td>READ\_ONLY</td>
       <td>Indicates whether the DRM license was acquired. If a failure occurs, this field provides additional details about the error. The roAssociativeArray contains the following fields:<br /><br /><table><thead><tr><th>Key</th><th>Type</th><th>Value</th></tr></thead><tbody><tr><td>response</td><td>string</td><td>The server response. If a license is not retrieved, the response is empty and the HTTP response code is returned instead.</td></tr><tr><td>status</td><td>string</td><td>The HTTP response code.</td></tr><tr><td>keysystem</td><td>string</td><td>The DRM technology used.</td></tr><tr><td>duration</td><td>string</td><td>The total time elapsed in sending a request to the license server and receiving a response (in milliseconds).</td></tr></tbody></table><br /></td>
     </tr>
     <tr>
@@ -96,7 +96,7 @@ The `control` field includes a `prebuffer` option, which allows the video to beg
       <td>asyncStopSemantics<br /><br /><em>Available since [Roku OS 12.5](doc:release-notes#roku-os-125)</em></td>
       <td>boolean</td>
       <td>false</td>
-      <td>WRITE</td>
+      <td>WRITE\_ONLY</td>
       <td>Indicates whether the "STOP" command is executed asynchronously (true) or synchronously (false). <br /><br />By default, the STOP command is executed synchronously, which blocks the UI thread. Enabling this field makes the STOP command non-blocking, which enables the video to be switched faster. <br /><br />When this field is enabled, the <code>state</code> field is set to "stopping" when the asynchronous stop begins. The <code>state</code> field then changes to "stopped" once the stop has been completed.<br /><br />Any other media player component calls on the UI thread that require the Video node to be re-instantiated should be blocked until the asynchronous stop has been completed (for example, updating the <code>control</code> field to "Play" or "Prebuffer" or updating the <code>seek</code> field). This is because a video node in the "stopping" state is still using the underlying media player, which is not available at that time. As a result, performing these types of operations on a different video while in the "stopping" state may result in a playback failure.</td>
     </tr>
     <tr>
@@ -177,35 +177,35 @@ The `control` field includes a `prebuffer` option, which allows the video to beg
       <td>playbackActionButtonFocusedTextFont</td>
       <td>Font</td>
       <td>SmallBoldSystemFont</td>
-      <td>WRITE</td>
+      <td>WRITE\_ONLY</td>
       <td>Specifies the font of the button label when the button has key focus.</td>
     </tr>
     <tr>
       <td>playbackActionButtonUnfocusedTextFont</td>
       <td>Font</td>
       <td>SmallSystemFont</td>
-      <td>WRITE</td>
+      <td>WRITE\_ONLY</td>
       <td>Specifies the font of the button label when the button does not have key focus.</td>
     </tr>
     <tr>
       <td>playbackActionButtonFocusedTextColor</td>
       <td>Color</td>
       <td>OX121212FF</td>
-      <td>WRITE</td>
+      <td>WRITE\_ONLY</td>
       <td>Specifies the color of the button label text when the button has key focus.</td>
     </tr>
     <tr>
       <td>playbackActionButtonUnfocusedTextColor</td>
       <td>Color</td>
       <td>0xEFEFEFFF</td>
-      <td>WRITE</td>
+      <td>WRITE\_ONLY</td>
       <td>Specifies the color of the button label text when the button does not have key focus.</td>
     </tr>
     <tr>
       <td>playbackActionButtonFocusIndicatorBlendColor</td>
       <td>Color</td>
       <td>-</td>
-      <td>WRITE</td>
+      <td>WRITE\_ONLY</td>
       <td>Specifies the button background color when the button has key focus.</td>
     </tr>
     <tr>
@@ -399,7 +399,7 @@ The `control` field includes a `prebuffer` option, which allows the video to beg
       <td>associative array</td>
       <td>\{ }</td>
       <td>READ\_ONLY</td>
-      <td>Information about the video segment that is currently streaming. This is only meaningful for segmented video transports, such as DASH and HLS. The associative array has the following entries:<br /><br /><table><thead><tr><th>Key</th><th>Type</th><th>Value</th></tr></thead><tbody><tr><td>hdrModeStr</td><td>string</td><td>HDR format of the content, which may be one of the following values: "invalid", "unknown", "none", "hdr10", "dolby\_vision", "hlg10", "hdr10", "sl-hdr2".</td></tr><tr><td>segBitrateBps</td><td>integer</td><td>Bitrate of the segment in bits per second</td></tr><tr><td>segSequence</td><td>integer</td><td>The sequence number of the segment in the video</td></tr><tr><td>segStart</td><td>time</td><td>The start time of the segment from the start of the video, specified in seconds</td></tr><tr><td>segUrl</td><td>string</td><td>URL of the segment</td></tr><tr><td>segType</td><td>integer</td><td>Type of data in the segment: 1=audio, 2=video, 3=captions, 0=mux</td></tr><tr><td>segTypeStr</td><td>String</td><td>Type of data in the segment:  "audio", "video", "captions",  "mux"</td></tr><tr><td>latency</td><td>integer</td><td>The time, in milliseconds, between the current live edge (or most recent available media segment on the CDN) and the segment currently being played.</td></tr><tr><td>path</td><td>string</td><td>A path indicating the Period, AdaptationSet and Representation that is played. This is in UNIX directory notation as: \<period>/\<adaptset>/\<repr>/\<segment></td></tr><tr><td>width</td><td>integer</td><td>For video segments, the width of the encoded video picture</td></tr><tr><td>height</td><td>integer</td><td>For video segments, the height of the encoded video picture</td></tr></tbody></table></td>
+      <td>Information about the video segment that is currently streaming. This is only meaningful for segmented video transports, such as DASH and HLS. The associative array has the following entries:<br /><br /><table><thead><tr><th>Key</th><th>Type</th><th>Value</th></tr></thead><tbody><tr><td>hdrModeStr</td><td>string</td><td>HDR format of the content, which may be one of the following values: "invalid", "unknown", "none", "hdr10", "dolby\_vision", "hlg10", "hdr10+", "sl-hdr2".</td></tr><tr><td>segBitrateBps</td><td>integer</td><td>Bitrate of the segment in bits per second</td></tr><tr><td>segSequence</td><td>integer</td><td>The sequence number of the segment in the video</td></tr><tr><td>segStart</td><td>time</td><td>The start time of the segment from the start of the video, specified in seconds</td></tr><tr><td>segUrl</td><td>string</td><td>URL of the segment</td></tr><tr><td>segType</td><td>integer</td><td>Type of data in the segment: 1=audio, 2=video, 3=captions, 0=mux</td></tr><tr><td>segTypeStr</td><td>String</td><td>Type of data in the segment:  "audio", "video", "captions",  "mux"</td></tr><tr><td>latency</td><td>integer</td><td>The time, in milliseconds, between the current live edge (or most recent available media segment on the CDN) and the segment currently being played.</td></tr><tr><td>path</td><td>string</td><td>A path indicating the Period, AdaptationSet and Representation that is played. This is in UNIX directory notation as: \<period>/\<adaptset>/\<repr>/\<segment></td></tr><tr><td>width</td><td>integer</td><td>For video segments, the width of the encoded video picture</td></tr><tr><td>height</td><td>integer</td><td>For video segments, the height of the encoded video picture</td></tr></tbody></table></td>
     </tr>
     <tr>
       <td>downloadedSegment</td>
@@ -433,7 +433,7 @@ The `control` field includes a `prebuffer` option, which allows the video to beg
       <td>trickPlayBackgroundOverlay</td>
       <td>uri</td>
       <td>""</td>
-      <td>WRITE</td>
+      <td>WRITE\_ONLY</td>
       <td>The background overlay to be displayed whenever the playback UI is visible during the video playback experience.</td>
     </tr>
   </tbody>

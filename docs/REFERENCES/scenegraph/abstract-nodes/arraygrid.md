@@ -201,7 +201,7 @@ Each node class extended from the ArrayGrid abstract node class will have custom
 <tr>
 <td>wrapDividerHeight</td>
 <td>float</td>
-<td>36</td>
+<td>0.0</td>
 <td>READ_WRITE</td>
 <td>If the vertFocusAnimationStyle field value is set to fixedFocusWrap, specifies the height of a bitmap used as a visual divider between the last and first list or grid items, when the list or grid wraps. Only set this field to use a value with a different appearance than the system default</td>
 </tr>
@@ -264,14 +264,14 @@ Each node class extended from the ArrayGrid abstract node class will have custom
 <tr>
 <td>sectionDividerTextColor</td>
 <td>color</td>
-<td>system default</td>
+<td>0xddddddff</td>
 <td>READ_WRITE</td>
 <td>If the ContentNode specifies sections for a list or grid, specifies a custom color to use for the section title text. Only set this field to use a different text color than the system default</td>
 </tr>
 <tr>
 <td>sectionDividerSpacing</td>
 <td>float</td>
-<td>0.0</td>
+<td>10</td>
 <td>READ_WRITE</td>
 <td>If the ContentNode specifies sections for a list or grid, and the section dividers are specified to include an icon and/or a label, specifies the spacing between the icon, label, and section divider bitmap</td>
 </tr>
@@ -285,14 +285,14 @@ Each node class extended from the ArrayGrid abstract node class will have custom
 <tr>
 <td>sectionDividerHeight</td>
 <td>float</td>
-<td>0.0</td>
+<td>40</td>
 <td>READ_WRITE</td>
 <td>If the ContentNode specifies sections for a list or grid, specifies the height of the section divider bitmap</td>
 </tr>
 <tr>
 <td>sectionDividerMinWidth</td>
 <td>float</td>
-<td>0.0</td>
+<td>117</td>
 <td>READ_WRITE</td>
 <td>If the ContentNode specifies sections for a list or grid, specifies the minimum width of the section divider bitmap</td>
 </tr>
