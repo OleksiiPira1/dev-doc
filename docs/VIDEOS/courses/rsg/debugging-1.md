@@ -20,6 +20,8 @@ next:
 
 This lesson explains how to access the [debug console](doc:debugging) via Telnet and the [Roku Eclipse Plug-in](https://devtools.web.roku.com/ide/eclipse/plugin) and use the different debug ports. It describes how to view the crash logs, stack traces, and app performance metrics in the console. And it guides you on how to use the interactive debugger to type commands for checking and updating variable values, calling functions, and stepping through the application.
 
+> Roku has discontinued support for its Eclipse IDE plug-in. You can use IDE extensions maintained by the Roku developer community, such as the [BrightScript extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=celsoaf.brightscript).
+
 ## Resources
 
 | Item                                                         | Description                                                  |

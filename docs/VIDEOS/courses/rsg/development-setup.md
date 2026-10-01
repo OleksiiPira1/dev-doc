@@ -33,6 +33,8 @@ This lesson explains how to create the required user and developer accounts for 
 | [Roku Developer Forums](https://community.roku.com/t5/Roku-Developer-Program/bd-p/roku-developer-program) | Interact with the Roku developer community. Participate in discussions on wide range of development topics from using the SceneGraph and BrightScript APIs to using certification testing tools. |
 | [Roku Developer Slack channel](https://rokudevelopers.slack.com) | Get the latest news for the Roku development community. Participate in chats about Roku development tools, feature requests, and bugs. Directly message members of the community. |
 
+> Roku has discontinued support for its Eclipse IDE plug-in. You can use IDE extensions maintained by the Roku developer community, such as the [BrightScript extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=celsoaf.brightscript).
+
 ## Related
 
 ### Videos
