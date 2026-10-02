@@ -10,8 +10,8 @@ metadata:
 
 Roku supports **one video file per title**. Where a title requires additional language support, that support **must** be delivered as:
 
-- Sidecar subtitle files, and/or
-- Additional audio tracks
+* Sidecar subtitle files, and/or
+* Additional audio tracks
 
 associated with the single video asset — **not** as separate video files.
 
@@ -25,12 +25,12 @@ associated with the single video asset — **not** as separate video files.
 
 All video delivered to Roku **must** contain the **full program only**:
 
-- No bars/tone or slates at program start
-- No textless video after program end
-- No more than 2 seconds of black at program start (**head black**)
-- No more than 2 seconds of black after program end (**tail black**)
-- No FBI warnings or MPAA cards
-- No promotional material referencing theatrical, home video, or streaming release dates
+* No bars/tone or slates at program start
+* No textless video after program end
+* No more than 2 seconds of black at program start (**head black**)
+* No more than 2 seconds of black after program end (**tail black**)
+* No FBI warnings or MPAA cards
+* No promotional material referencing theatrical, home video, or streaming release dates
 
 Video files **should** be **semi-textless** — meaning opening and end credit text may remain, but all subtitles for foreign dialogue must be removed. _(Also referred to as "texted with no subtitles" or "textless with main, ends, and graphic text.")_
 
@@ -38,27 +38,37 @@ Video files **should** be **semi-textless** — meaning opening and end credit t
 
 ## Advertising & Commercial Blacks
 
-- Do **not** include advertisements within the video. All ad insertion points for ad-supported content are provided separately in the metadata file, per [Roku Ad Policy guidelines](#ad-policy).
-- **Commercial blacks** (black frames at internal ad-break points, distinct from head/tail black above) **may** be included, provided each is no longer than 2 seconds.
-- Commercial blacks are acceptable for episodic TV content but not expected for movie content.
+* Do **not** include advertisements within the video. All ad insertion points for ad-supported content are provided separately in the metadata file, per [Roku Ad Policy guidelines](#ad-policy).
+* **Commercial blacks** (black frames at internal ad-break points, distinct from head/tail black above) **may** be included, provided each is no longer than 2 seconds.
+* Commercial blacks are acceptable for episodic TV content but not expected for movie content.
 
 ***
 
 ## File Delivery Format
 
-- Video **must** be delivered as a **single, seamless file**.
-- Do **not** deliver hard-parted files (i.e., broken into segments at ad-break points).
-- Calls to action (CTAs) or links to external platforms/sites (including QR codes) are **not permissible** and must be removed prior to delivery.
-- **High-quality mezzanine-level files are preferred** — the highest bitrate and resolution available should be used.
+* Video **must** be delivered as a **single, seamless file**.
+* Do **not** deliver hard-parted files (i.e., broken into segments at ad-break points).
+* Calls to action (CTAs) or links to external platforms/sites (including QR codes) are **not permissible** and must be removed prior to delivery.
+* **High-quality mezzanine-level files are preferred** — the highest bitrate and resolution available should be used.
+
+***
+
+## Timecode
+
+Roku **ignores** the timecode track and any timecode embedded in the video file. All video is treated as beginning at timecode hour `00:00:00:00`, regardless of the start timecode in the file (for example, a program that starts at `01:00:00:00`).
+
+For this reason, sidecar [closed captions/SDH](#closed-captions), [full subtitles](#subtitles), and [forced narrative subtitles](#forced-narrative-subtitles) **must** also be timed to hour `00:00:00:00` so they stay in sync with the video.
+
+Ad-break and cue-point times in the metadata are also measured from hour `00:00:00:00`.
 
 ***
 
 ## Aspect Ratio & Frame
 
-- **Full-frame presentation (1.78 aspect ratio) is preferred** whenever available.
-- Letterboxed 16:9 is allowed but **should be minimized**.
-- HD video content **must** be delivered in a 16:9 container.
-- SD 16:9 content **must not** be delivered in a 4:3 container with letterboxing (i.e., do not pillarbox 16:9 content into a 4:3 frame).
+* **Full-frame presentation (1.78 aspect ratio) is preferred** whenever available.
+* Letterboxed 16:9 is allowed but **should be minimized**.
+* HD video content **must** be delivered in a 16:9 container.
+* SD 16:9 content **must not** be delivered in a 4:3 container with letterboxing (i.e., do not pillarbox 16:9 content into a 4:3 frame).
 
 ***
 
