@@ -71,7 +71,7 @@ Los títulos de formato corto, independientes o auxiliares, pensados como comple
 * `rating_system`
 * `short_synopsis`
 * `video file_name`
-* `captions file_name` _(si se requieren subtítulos)_
+* `captions file_name` _(donde se requieran subtítulos)_
 * `key_art file_name`
 
 ### TV — Campos obligatorios
@@ -89,7 +89,7 @@ Los títulos de formato corto, independientes o auxiliares, pensados como comple
 * `rating_system`
 * `episode short_synopsis`
 * `video file_name`
-* `captions file_name` _(si se requieren subtítulos)_
+* `captions file_name` _(donde se requieran subtítulos)_
 * `episode thumbnail file_name`
 
 **A nivel de serie:**
