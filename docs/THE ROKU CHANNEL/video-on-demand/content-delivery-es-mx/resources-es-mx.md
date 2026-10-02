@@ -58,6 +58,12 @@ metadata:
 | Descripción de audio de la FCC                                         | [fcc.gov/audio-description](https://www.fcc.gov/audio-description)                                                                           |
 | Subtítulos descriptivos de la FCC — Programación de video por internet | [fcc.gov/consumers/guides/captioning-internet-video-programming](https://www.fcc.gov/consumers/guides/captioning-internet-video-programming) |
 
+## Normativa del CRTC (Canadá)
+
+| Recurso                                                                                           | Enlace                                                                                     |
+| ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| Política regulatoria de radiodifusión CRTC 2026-98 (Subtítulos descriptivos — Streaming en línea) | [crtc.gc.ca/eng/archive/2026/2026-98.htm](https://crtc.gc.ca/eng/archive/2026/2026-98.htm) |
+
 ## MovieLabs
 
 | Recurso                              | Enlace                                                                                                           |
