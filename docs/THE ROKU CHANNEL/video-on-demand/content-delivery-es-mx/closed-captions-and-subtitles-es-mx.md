@@ -29,7 +29,7 @@ Roku admite tres tipos distintos de pistas de texto: **Subtítulos descriptivos 
 | **Activación por la persona usuaria** | Se puede activar/desactivar                                                                                                                                                         | Se puede activar/desactivar                                                                                                                                                                           | **No se puede** activar/desactivar — se muestra automáticamente                                                                                                 |
 | **Emparejamiento de idioma/audio**    | Debe coincidir con el idioma y la configuración regional de su pista de audio correspondiente; no está disponible si no se entrega una pista de audio con el idioma correspondiente | Disponible sin importar qué pista(s) de audio se entreguen                                                                                                                                            | Vinculada a la pista de audio que haya seleccionado quien ve el contenido; se muestra automáticamente cuando esa pista incluye contenido ininteligible          |
 | **Contenido incluido**                | Transcripción completa del diálogo + efectos de sonido/indicaciones musicales/letras + todo el contenido de narrativa forzada                                                       | Traducción completa del diálogo/texto narrativamente importante; no describe efectos de sonido ni indicaciones musicales (las letras de canciones se traducen solo si son narrativamente importantes) | Solo los momentos específicos ininteligibles — no una transcripción completa                                                                                    |
-| **Regulatorio**                       | Puede ser exigido por agencias regulatorias en determinados territorios                                                                                                             | —                                                                                                                                                                                                     | —                                                                                                                                                               |
+| **Regulatorio**                       | Puede ser exigido por agencias regulatorias en determinados territorios (por ejemplo, la FCC en EE. UU. y el CRTC en Canadá)                                                        | —                                                                                                                                                                                                     | —                                                                                                                                                               |
 
 ***
 
@@ -45,13 +45,22 @@ Las narrativas forzadas traducen o transmiten información que quien ve el conte
 
 Debido a que el reproductor de Roku muestra solo una pista de texto a la vez, activar una pista de subtítulos descriptivos (SDH) o subtítulos completos suprimirá la pista de narrativa forzada. Por esta razón, **las pistas de subtítulos descriptivos (SDH) y de subtítulos completos deben incluir todo el contenido de narrativa forzada**, para que quien ve el contenido nunca pierda esa información al activar los subtítulos descriptivos o los subtítulos.
 
+### Reglas de entrega
+
+* Los subtítulos narrativos forzados **NO deben** grabarse (incrustarse de forma permanente) en el video.
+* Los subtítulos narrativos forzados sidecar **deben** estar sincronizados con la hora de código de tiempo `00:00:00:00` — el codificador de Roku **no** respeta el código de tiempo incrustado en el archivo de video.
+* **No** proporciones un archivo vacío (un archivo sin texto) como entregable de subtítulos narrativos forzados sidecar.
+* Los datos de posición de TTML y WebVTT **sí** se admiten y se respetarán tal como se definan en el archivo.
+* El contenido de narrativa forzada **debe** incluirse también en cada pista de subtítulos descriptivos (SDH) y de subtítulos completos (consulta más arriba).
+* Los formatos admitidos, la compatibilidad de estilo de texto, el etiquetado de idioma y la denominación de archivos siguen las mismas reglas que los [subtítulos completos](#full-subtitles).
+
 ***
 
 ## Subtítulos descriptivos / SDH
 
 _También conocidos como: subtítulos para personas sordas o con dificultades auditivas (SDH)._
 
-Roku **prefiere** recibir los subtítulos descriptivos (SDH) de todo el contenido.
+Los subtítulos descriptivos (SDH) **deberían** entregarse para todo el contenido. Roku no establece los subtítulos descriptivos como un requisito general, pero se prefieren ampliamente y son obligatorios donde la normativa así lo exige (consulta a continuación).
 
 ### Requisitos regulatorios (EE. UU.)
 
@@ -71,7 +80,20 @@ Para el contenido destinado a EE. UU., Roku se adhiere a las **normas de subtitu
 | 5      | El contenido no pertenece a una categoría de programación en línea que requiere subtítulos descriptivos según las normas de la FCC (47 C.F.R. § 79.4(b)). |
 | 6      | La FCC o el Congreso de EE. UU. concedieron una exención de los requisitos de subtítulos descriptivos para este contenido.                                |
 
-Para el contenido destinado a territorios fuera de EE. UU., Roku cumple con los requisitos de cada territorio.
+### Requisitos regulatorios (Canadá)
+
+A partir del **25 de mayo de 2027**, la Comisión Canadiense de Radio, Televisión y Telecomunicaciones (CRTC) exige que los servicios de streaming audiovisual en línea en Canadá proporcionen subtítulos descriptivos ([Política regulatoria de radiodifusión CRTC 2026-98](https://crtc.gc.ca/eng/archive/2026/2026-98.htm)). El requisito abarca los programas en inglés y francés, incluidos los programas originales nuevos, los programas que se emitieron previamente en la televisión lineal canadiense con subtítulos descriptivos, el contenido promocional y de formato corto, y el contenido de terceros cuando el proveedor pone a disposición los subtítulos descriptivos.
+
+Dado que los servicios de streaming dependen de los subtítulos descriptivos entregados por los proveedores para cumplir con este requisito, los subtítulos descriptivos (SDH) **deberían** entregarse para todo el contenido, incluido el contenido destinado a Canadá. Los subtítulos descriptivos también deberían cumplir con los criterios de calidad de la CRTC:
+
+* **Precisión:** coinciden con el diálogo hablado, con ortografía correcta, y transmiten la información que no es habla (ruidos de fondo, música y otros sonidos), la identidad de quienes hablan y su manera de hablar
+* **Ubicación:** no cubren la acción ni los elementos visuales necesarios para entender el contenido, no se superponen entre sí y no se salen del borde de la pantalla
+* **Sincronización:** coinciden con el habla y los sonidos correspondientes, y se muestran a una velocidad que permita leerlos
+* **Integridad:** abarcan desde el inicio hasta el final del programa
+
+### Otros territorios
+
+Para el contenido destinado a territorios distintos de EE. UU. y Canadá, Roku cumple con los requisitos de cada territorio.
 
 ### Método de entrega
 
@@ -88,7 +110,7 @@ Roku **prefiere** un archivo sidecar legible por humanos (`.ttml`, `.dfxp`, `.vt
 * **No** proporciones un archivo vacío (un archivo sin texto) como entregable de subtítulos descriptivos/SDH sidecar.
 * Los datos de posición de TTML y WebVTT **sí** se admiten y se respetarán tal como se definan en el archivo.
 * Los archivos de video de QuickTime **deben** ir acompañados de un archivo sidecar de subtítulos descriptivos — Roku **no** admite la pista de texto de QuickTime.
-* La compatibilidad de estilo de texto se limita a: etiquetas en negrita (`<b>`) y cursiva (`<i>`), color de texto y posicionamiento de texto. _(Esto aplica de manera idéntica a los Subtítulos completos — consulta&#x20;_[Compatibilidad de estilo de texto](#text-styling-support)_.)_
+* La compatibilidad de estilo de texto se limita a: etiquetas en negrita (`<b>`) y cursiva (`<i>`), color de texto y posicionamiento de texto. _(Esto aplica de manera idéntica a los Subtítulos completos — consulta [Compatibilidad de estilo de texto](#text-styling-support).)_
 
 ### Formatos admitidos
 
@@ -103,7 +125,7 @@ Roku **prefiere** un archivo sidecar legible por humanos (`.ttml`, `.dfxp`, `.vt
 
 > **Nota sobre el idioma de CC/SDH:** debido a que los subtítulos descriptivos/SDH son un complemento de accesibilidad para una pista de audio _específica_, su idioma simplemente sigue la pista de audio (principal o de doblaje) que acompañan — no requieren una declaración de código de idioma independiente, como sí la requieren los Subtítulos completos (ver más abajo).
 
-##### Formato heredado (admitido, no preferido)
+#### Formato heredado (admitido, no preferido)
 
 | Nombre del formato                                                         | Datos de posición | Datos de estilo | Extensión | Codificación | Tipo de entrega | Idiomas                                                                |
 | -------------------------------------------------------------------------- | ----------------- | --------------- | --------- | ------------ | --------------- | ---------------------------------------------------------------------- |
