@@ -60,6 +60,12 @@ metadata:
 | FCC Audio Description                              | [fcc.gov/audio-description](https://www.fcc.gov/audio-description)                                                                           |
 | FCC Closed Captioning — Internet Video Programming | [fcc.gov/consumers/guides/captioning-internet-video-programming](https://www.fcc.gov/consumers/guides/captioning-internet-video-programming) |
 
+## CRTC Regulatory (Canada)
+
+| Resource                                                                           | Link                                                                                       |
+| ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| CRTC Broadcasting Regulatory Policy 2026-98 (Closed Captioning — Online Streaming) | [crtc.gc.ca/eng/archive/2026/2026-98.htm](https://crtc.gc.ca/eng/archive/2026/2026-98.htm) |
+
 ## MovieLabs
 
 | Resource                        | Link                                                                                                             |

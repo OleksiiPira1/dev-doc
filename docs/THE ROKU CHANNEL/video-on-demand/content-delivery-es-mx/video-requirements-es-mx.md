@@ -10,6 +10,8 @@ link:
 metadata:
   robots: index
 ---
+##
+
 ## Política de idioma y versión
 
 Roku admite **un solo archivo de video por título**. Cuando un título requiera compatibilidad con idiomas adicionales, dicha compatibilidad **debe** entregarse como:
@@ -54,6 +56,16 @@ Los archivos de video **deberían** tener **muy poco texto** — es decir, puede
 * **No** entregues archivos fragmentados (es decir, divididos en segmentos en los puntos de corte publicitario).
 * Las llamadas a la acción (CTA) o los enlaces a plataformas/sitios externos (incluidos códigos QR) **no están permitidos** y deben eliminarse antes de la entrega.
 * Se **prefieren archivos de nivel intermedio (mezzanine) de alta calidad** — debe utilizarse la mayor tasa de bits y resolución disponibles.
+
+***
+
+## Código de tiempo
+
+Roku **ignora** la pista de código de tiempo y cualquier código de tiempo incrustado en el archivo de video. Todo el video se trata como si comenzara en la hora de código de tiempo `00:00:00:00`, sin importar el código de tiempo inicial del archivo (por ejemplo, un programa que comienza en `01:00:00:00`).
+
+Por este motivo, los [subtítulos descriptivos/SDH](#closed-captions), los [subtítulos completos](#subtitles) y los [subtítulos narrativos forzados](#forced-narrative-subtitles) sidecar **deben** estar sincronizados también con la hora `00:00:00:00` para mantenerse alineados con el video.
+
+Los tiempos de los cortes publicitarios y de los puntos de referencia (cue points) en los metadatos también se miden desde la hora `00:00:00:00`.
 
 ***
 

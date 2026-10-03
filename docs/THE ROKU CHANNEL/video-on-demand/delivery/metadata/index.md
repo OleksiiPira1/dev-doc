@@ -12,17 +12,17 @@ metadata:
 
 Roku uses a **transform engine** that normalizes different metadata formats to fit Roku's ingestion needs. The exact element or field names you use matter less than **consistent delivery** of agreed-upon element/field names — but regardless of naming, the _data_ within any field **must** conform to the Roku Channel Ingest Specification.
 
-- If you already use an XML format to deliver content to other platforms, you **may** be able to repurpose it for Roku delivery.
-- You **may** provide a sample of your existing metadata format during onboarding for Roku to evaluate its validity for ingest.
-- Regardless of which format is delivered, **all required elements/fields must be provided** in the metadata deliverable.
+* If you already use an XML format to deliver content to other platforms, you **may** be able to repurpose it for Roku delivery.
+* You **may** provide a sample of your existing metadata format during onboarding for Roku to evaluate its validity for ingest.
+* Regardless of which format is delivered, **all required elements/fields must be provided** in the metadata deliverable.
 
 ### Related Documentation
 
 This page covers concepts that apply across all metadata delivery formats. Format-specific field-level detail lives in dedicated sub-pages:
 
-- **MovieLabs**: MEC/MMC delivery (see the MovieLabs Migration Playbook / MovieLabs guide)
-- **Roku XML**: three sub-pages, one per content type: **Film**, **TV**, **Clip**
-- **Roku Excel**: three sub-pages, one per content type: **Film**, **TV**, **Clip**
+* **MovieLabs**: MEC/MMC delivery (see the MovieLabs Migration Playbook / MovieLabs guide)
+* **Roku XML**: three sub-pages, one per content type: **Film**, **TV**, **Clip**
+* **Roku Excel**: three sub-pages, one per content type: **Film**, **TV**, **Clip**
 
 ***
 
@@ -34,9 +34,9 @@ Roku Channel supports **three content types**: `tv`, `film`, and `clip`. All con
 
 Content structured in a **series > season > episode** hierarchy should be delivered under the TV specification.
 
-- **Series** — a collection of programs/episodes released under a common title with a consistent narrative, characters, or theme. In North America, each year of a series is called a season; a series can span several seasons.
-- **Season** — a group of programs/episodes released in one year, attributed to one series.
-- **Episode** — a single self-contained narrative or informational segment of a series. An episode belongs to exactly one season of exactly one series.
+* **Series** — a collection of programs/episodes released under a common title with a consistent narrative, characters, or theme. In North America, each year of a series is called a season; a series can span several seasons.
+* **Season** — a group of programs/episodes released in one year, attributed to one series.
+* **Episode** — a single self-contained narrative or informational segment of a series. An episode belongs to exactly one season of exactly one series.
 
 ### Film
 
@@ -48,9 +48,9 @@ Short-form, stand-alone or ancillary titles intended as a companion to a longer 
 
 **Clip presentation and on-platform behavior differs from Film:**
 
-- Runtime and title are **superimposed directly on the content tile** — a viewer sees this information without clicking in.
-- Clips **do not** have a content details page. Unlike Film, a viewer cannot click into a Clip to reach a synopsis or additional information screen.
-- A Clip's synopsis is instead accessible by pressing the **\* (asterisk/options) button** on the Roku remote.
+* Runtime and title are **superimposed directly on the content tile** — a viewer sees this information without clicking in.
+* Clips **do not** have a content details page. Unlike Film, a viewer cannot click into a Clip to reach a synopsis or additional information screen.
+* A Clip's synopsis is instead accessible by pressing the **\* (asterisk/options) button** on the Roku remote.
 
 ***
 
@@ -58,51 +58,51 @@ Short-form, stand-alone or ancillary titles intended as a companion to a longer 
 
 ### Film / Clip — Required Fields
 
-- `provider`
-- `content_type`
-- `asset_id`
-- `title`
-- `release_date`
-- `runtime`
-- `genres`
-- `rating`
-- `rating_system`
-- `short_synopsis`
-- `video file_name`
-- `captions file_name` _(if captions are required)_
-- `key_art file_name`
+* `provider`
+* `content_type`
+* `asset_id`
+* `title`
+* `release_date`
+* `runtime`
+* `genres`
+* `rating`
+* `rating_system`
+* `short_synopsis`
+* `video file_name`
+* `captions file_name` _(where captions are required)_
+* `key_art file_name`
 
 ### TV — Required Fields
 
 **Episode-level:**
 
-- `provider`
-- `content_type`
-- `asset_id`
-- `episode title`
-- `episodeNumber`
-- `episode release_date`
-- `runtime`
-- `rating`
-- `rating_system`
-- `episode short_synopsis`
-- `video file_name`
-- `captions file_name` _(if captions are required)_
-- `episode thumbnail file_name`
+* `provider`
+* `content_type`
+* `asset_id`
+* `episode title`
+* `episodeNumber`
+* `episode release_date`
+* `runtime`
+* `rating`
+* `rating_system`
+* `episode short_synopsis`
+* `video file_name`
+* `captions file_name` _(where captions are required)_
+* `episode thumbnail file_name`
 
 **Series-level:**
 
-- `series_id`
-- `series title`
-- `series release_date`
-- `series genres`
-- `series short_synopsis`
-- `series key_art file_name`
+* `series_id`
+* `series title`
+* `series release_date`
+* `series genres`
+* `series short_synopsis`
+* `series key_art file_name`
 
 **Season-level:**
 
-- `season_id`
-- `seasonNumber`
+* `season_id`
+* `seasonNumber`
 
 > Film/Clip and TV field lists are shown separately (rather than side-by-side) because they don't correspond 1:1 — TV carries substantially more required fields due to its series/season/episode hierarchy.
 
@@ -110,18 +110,18 @@ Short-form, stand-alone or ancillary titles intended as a companion to a longer 
 
 ## ID Requirements and Expectations
 
-- Roku does **not** supply IDs — all IDs are generated and supplied **by the partner**.
-- Every **clip and movie** must be delivered with an `asset_id`.
-- Every **episode** must be delivered with **three IDs**: `asset_id`, `series_id`, and `season_id`.
-- IDs should be **meaningful to your team**, since they are how Roku positively identifies a title in its system.
-- The `asset_id` in the ingest metadata **must match** the Title ID provided in the Avails document — this links the content across Roku's pipeline, from Avails submission through publication.
-- Any update to a title already ingested into Roku's system **MUST** be accompanied by its `asset_id`.
+* Roku does **not** supply IDs — all IDs are generated and supplied **by the partner**.
+* Every **clip and movie** must be delivered with an `asset_id`.
+* Every **episode** must be delivered with **three IDs**: `asset_id`, `series_id`, and `season_id`.
+* IDs should be **meaningful to your team**, since they are how Roku positively identifies a title in its system.
+* The `asset_id` in the ingest metadata **must match** the Title ID provided in the Avails document — this links the content across Roku's pipeline, from Avails submission through publication.
+* Any update to a title already ingested into Roku's system **MUST** be accompanied by its `asset_id`.
 
 **All ID types share these rules:**
 
-- **Maximum 50 characters**
-- **Alphanumeric characters, hyphens, and underscores only**
-- **⚠️ Spaces or special characters in any ID will fail ingestion**
+* **Maximum 50 characters**
+* **Alphanumeric characters, hyphens, and underscores only**
+* **⚠️ Spaces or special characters in any ID will fail ingestion**
 
 | ID          | Identifies                       | Uniqueness / Consistency Rule                                                                                   | Required For |
 | ----------- | -------------------------------- | --------------------------------------------------------------------------------------------------------------- | ------------ |
@@ -133,10 +133,10 @@ Short-form, stand-alone or ancillary titles intended as a companion to a longer 
 
 ## Availability Sheets / Planners
 
-- At onboarding, Roku requests an **initial launch list** of titles/episodes/clips currently available for licensing, plus a schedule for when content will be refreshed.
-- For ongoing delivery, Roku requests:
-  - **Avails** at least **60 days** prior to the licensing window start
-  - **Content delivery** at least **30 days** before curation onto the channel
+* At onboarding, Roku requests an **initial launch list** of titles/episodes/clips currently available for licensing, plus a schedule for when content will be refreshed.
+* For ongoing delivery, Roku requests:
+  * **Avails** at least **60 days** prior to the licensing window start
+  * **Content delivery** at least **30 days** before curation onto the channel
 
 This lead time allows for processing and QC before the content goes live. Delivery capacity is coordinated after signing.
 
@@ -165,8 +165,8 @@ Roku supports two time designations:
 | Relative       | `yyyy-mm-ddThh:mm:ss`  | `2019-11-01T21:00:00`  |
 | Absolute (UTC) | `yyyy-mm-ddThh:mm:ssZ` | `2019-11-02T01:00:00Z` |
 
-- **Absolute times must be expressed in UTC.** In the example above, 9:00 PM Eastern on November 1 is 1:00 AM UTC on November 2.
-- **If no time is provided**, Roku assumes a relative start of `12:00:00 AM` and a relative end of `11:59:59 PM`.
+* **Absolute times must be expressed in UTC.** In the example above, 9:00 PM Eastern on November 1 is 1:00 AM UTC on November 2.
+* **If no time is provided**, Roku assumes a relative start of `12:00:00 AM` and a relative end of `11:59:59 PM`.
 
 ***
 
@@ -178,10 +178,10 @@ Roku uses **CDATA sections** to allow special characters (e.g., `! @ # $ % ^ & *
 
 **Only the following nodes support CDATA sections:**
 
-- `title`
-- `long_synopsis`
-- `short_synopsis`
-- `display_name`
+* `title`
+* `long_synopsis`
+* `short_synopsis`
+* `display_name`
 
 **For every other node** (i.e., any field not in the list above), certain characters will render the XML document unreadable to Roku's ingest platform unless properly escaped. These characters **must** be provided in their escaped form:
 
@@ -199,9 +199,9 @@ Roku uses **CDATA sections** to allow special characters (e.g., `! @ # $ % ^ & *
 
 ## Supported Metadata Formats
 
-- **XML** is the **preferred** format.
-- **One complete XML file** must be delivered for **each** movie, clip, or TV episode video file delivered.
-- Metadata **must** be delivered via Aspera to the **same folder location** as its associated video, captions, and artwork files.
+* **XML** is the **preferred** format.
+* **One complete XML file** must be delivered for **each** movie, clip, or TV episode video file delivered.
+* Metadata **must** be delivered via Aspera to the **same folder location** as its associated video, captions, and artwork files.
 
 | Format            | Extension | Encoding | Package Version(s)                                                                                   |
 | ----------------- | --------- | -------- | ---------------------------------------------------------------------------------------------------- |
