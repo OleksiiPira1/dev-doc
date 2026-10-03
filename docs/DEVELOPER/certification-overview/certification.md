@@ -128,7 +128,7 @@ Certification criteria may be applicable to one or more app model types supporte
 
 ## Certification criteria
 
-**Last updated**: April, 2026
+**Last updated**: October, 2026
 
 Certification criteria are listed by functionality. <br />
 
@@ -206,9 +206,11 @@ Apps must adhere to [Roku’s autoplay policy](doc:autoplay).
 
 **4.12** Apps must use [Roku voice keyboards](doc:dynamic-keyboard-base) for [email](doc:dynamic-keyboard), [PIN](doc:dynamic-pinpad), and [password](doc:dynamic-keyboard) entry.
 
-**4.13** Apps in the U.S. Roku Streaming Store that have streamed more than an average of 5 million hours per month over the last three months and apps outside the U.S. Streaming Store that have streamed more than an average of 1million hours per month over the last three months (effective October 1, 2026) must implement Roku’s [Continue Watching](doc:continue-watching) feature. This requirement is also applicable to new apps projected to reach the specified streaming hours threshold shortly after launch. TVOD, live linear, and made-for-kids apps are excluded from this requirement.
+**4.13** Apps in the U.S. Roku Streaming Store that have streamed more than an average of 5 million hours per month over the last three months and apps outside the U.S. Streaming Store that have streamed more than an average of 1 million hours per month over the last three months must implement Roku’s [Continue Watching](doc:continue-watching) feature. This requirement is also applicable to new apps projected to reach the specified streaming hours threshold shortly after launch. TVOD, live linear, and made-for-kids apps are excluded from this requirement.
 
-**4.14** Apps in the U.S. Roku Streaming Store that have streamed more than an average of 5 million hours per month over the last three months must implement Roku’s [Instant Resume feature](doc:instant-resume) (effective October 1, 2026).
+**4.14** Apps in the U.S. Roku Streaming Store that have streamed more than an average of 5 million hours per month over the last three months must implement Roku’s [Instant Resume feature](doc:instant-resume).
+
+**4.15** Apps may not use the end user's device, network connection, or bandwidth to route network traffic for third parties (including through SDKs or libraries); operate as a proxy, relay, or exit node; join a proxy or VPN network; scrape or crawl for third parties, or collect data for third parties except as Roku expressly permits; or for any purpose not directly related to the app's stated purpose.
 
 ### 5. Deep linking
 
