@@ -16,7 +16,7 @@ next:
 ---
 ## Architectural overview
 
-![roku815px - Architecture block diagram](https://image.roku.com/ZHZscHItMTc2/roku-architecture.png "devenvironmentarchoverview")
+![roku815px - Architecture block diagram](https://image.roku.com/ZHZscHItMTc2/roku-architecture-v2.png "devenvironmentarchoverview")
 
 The diagram above provides a high-level overview of the main system
 components for the Roku Streaming Player platform. Developer
