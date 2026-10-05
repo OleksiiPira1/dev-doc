@@ -556,7 +556,7 @@ To run App Behavior Analysis testing on your app, follow these steps:
         Test title
       </td>
       <td>
-        The name of the test being executed ("Channel Launch Performance", "Channel Deep Linking Basic", "Channel Content Play Performance").
+        The name of the test being executed ("App Launch Performance", "App Deep Linking Basic", "App Content Play Performance").
       </td>
     </tr>
     <tr>
