@@ -22,4 +22,18 @@ The [App Behavior Analysis tool](doc:channel-publishing-guide), which is a part 
 | App content play performance | Content starts playing within 8 seconds of initiation. Apps that use the Roku video player need no extra work. Apps with a custom video player must fire the video start beacons. | [3.6](doc:cert-tests) |
 | App deep linking | The app supports deep linking for all media types, including `series`, per the [deep linking policy](doc:implementing-deep-linking). When the app is already running, direct playback commands deep link to content without a launch delay, using [roInputEvent](doc:roinputevent). | [5.1](doc:cert-tests) |
 
-For authenticated apps, the tool also runs your sign-in and sign-out scripts before and after the tests. See [Authenticated app testing](doc:authenticated-cert-testing).
+## Tests for authenticated apps
+
+For apps that require customers to sign in, the tool runs the same tests after signing in with the [sign-in and sign-out scripts](doc:authenticated-cert-testing) you upload. The tool runs the following tests:
+
+| Test | Category | Certification criterion |
+| --- | --- | --- |
+| Sign In Flow | Setup | N/A |
+| App Launch Performance | Performance | [3.2](doc:cert-tests) |
+| App Content Play Performance | Performance | [3.6](doc:cert-tests) |
+| App Deep Linking Basic | Deep Linking | [5.1](doc:cert-tests) |
+| Sign Out Flow | Teardown | N/A |
+
+The tool runs the sign-in script to sign in to the app, runs the performance and deep linking tests, and then runs the sign-out script to return the app to its signed-out state. Content play and deep linking tests can run more than once, for example once for each media type.
+
+If the sign-in and sign-out scripts are missing, the tests fail with the error "Required RASP scripts for sign-in/sign-out flow not provided."
