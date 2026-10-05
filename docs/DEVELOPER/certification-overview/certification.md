@@ -32,7 +32,7 @@ Use the certification criteria and the [list of pre-certification tests](doc:cer
 
 * [Static Analysis tool](doc:static-analysis-tool): Checks the app's code for certification-related errors.
 
-* [App Behavior Analysis tool](doc:channel-publishing-guide): For SVOD, AVOD, and free apps, verifies whether app performance and deep linking meet applicable certification requirements.
+* [App Behavior Analysis tool](doc:channel-publishing-guide#app-behavior-analysis): For SVOD, AVOD, and free apps, verifies whether app performance and deep linking meet applicable certification requirements.
 
 * [Test automation software](doc:automated-channel-testing): Enables developers to write and execute automated test cases, including app purchasing, performance, deep linking, and other certification criteria.
 

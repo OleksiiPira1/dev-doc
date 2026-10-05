@@ -162,7 +162,7 @@ Mixing Specifications:
 
 Mixing Specifications:
 
-* Target - 24 LKFS +/- 2 (any average between -22 & -26). Based on ITU-R 1170-3 measurement.
+* Target - 24 LKFS +/- 2 (any average between -22 & -26). Based on ITU-R BS.1770-3 measurement.
 * Audio should not peak above -2 dBfs (True Peak)
 
 ##### 2.4.3 Texted video masters

@@ -511,7 +511,7 @@ For the Final Texted Masters, all audio should be contained within the delivered
 
 Mixing Specifications:
 
-- Target -24LKFS +/- 2 (any average between -22 & -26). Based on ITU-R 1170-3 measurement.
+- Target -24LKFS +/- 2 (any average between -22 & -26). Based on ITU-R BS.1770-3 measurement.
 - Audio should not peak above -2 dBfs (True Peak)
 
 ##### 7.6.3 Texted video masters
