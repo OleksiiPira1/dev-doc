@@ -1,20 +1,25 @@
 ---
-title: Analytics and sales reports for apps
-excerpt: 'Access analytics and sales report dashboards for app health, viewership, and transactions'
+title: Analytics
+excerpt: >-
+  Access analytics and sales report dashboards for app health, viewership, and
+  transactions
 deprecated: false
 hidden: false
 link:
   new_tab: false
 metadata:
-  title: 'Analytics and sales reports for apps | Roku Developer Docs'
-  description: 'Roku''s web-based analytics and sales reports provide standardized dashboards covering app health, viewership, engagement, and transaction data for your app.'
+  title: Analytics and sales reports for apps | Roku Developer Docs
+  description: >-
+    Roku's web-based analytics and sales reports provide standardized dashboards
+    covering app health, viewership, engagement, and transaction data for your
+    app.
   robots: index
 ---
 > This section describes the reports for Roku apps. If you distribute content on The Roku Channel, see [Roku Content Partner Portal analytics](doc:roku-content-partner-portal-analytics).
 
 You can use Roku's web-based app analytics and sales reports to analyze your app's health, viewership trends, and metrics for specific titles and devices. The following video highlights the different app analytics available to you.
 
-<video title="App analytic reports" poster="https://image.roku.com/ZHZscHItMTc2/channel-analytics-poster.png" src="https://image.roku.com/ZHZscHItMTc2/channel-analytics.mp4" width="720" height="480" controls />
+<video title="App analytic reports" poster="https://image.roku.com/ZHZscHItMTc2/channel-analytics-poster.png" src="https://image.roku.com/ZHZscHItMTc2/channel-analytics.mp4" width="720" height="480" controls></video>
 
 As a service to our partners, Roku provides some basic analytics for all apps on the platform in the form of standardized dashboards with metrics on app health, viewership and engagement, and so forth. Dashboards are read-only - meaning users cannot modify the dashboards themselves (apart from applying filters), create new dashboards, or change any of the underlying data.
 
@@ -34,14 +39,14 @@ Reports also distinguish between "visitors" and "viewers" according to the follo
 
 Roku automatically generates the following app analytics and sales reports as [Looker](https://looker.com/guide) dashboards for your app (Looker is the business intelligence platform that Roku uses for providing app analytics):
 
-**[App analytics](doc:app-analytics):**
+[App analytics](doc:app-analytics)**:**
 
 * [App Engagement](doc:channel-engagement): installs, visits and streaming data for all apps
 * [App Health](doc:channel-health): BrightScript crashes and buffering data for all apps
 * [Viewership Summary](doc:viewership-summary): small selection of app engagement and app health data.
 * [App Stability](doc:channel-stability): BrightScript crashes and memory closures for all apps across all Roku device models.
 
-**[Sales reports](doc:sales-reports):**
+[Sales reports](doc:sales-reports)**:**
 
 * [Transaction](doc:transaction-report): records all in-app transactions for SVOD or TVOD apps, such as product purchases, free trial initiations, and returns
 
@@ -135,26 +140,55 @@ You can create a schedule to automatically email a report in a recurring daily, 
 <table>
   <thead>
     <tr>
-      <th>Field</th>
-      <th>Description</th>
+      <th>
+        Field
+      </th>
+
+      <th>
+        Description
+      </th>
     </tr>
   </thead>
+
   <tbody>
     <tr>
-      <td>Schedule name</td>
-      <td>By default, the report name is based on the report type (for example, "App Engagement" or "App Health"). <br /><br />It is recommended that you enter a descriptive name for the schedule that makes it easy to identify in your list of schedules. For example, you can include the app name, format, frequency, time period or any other relevant information that distinguishes the schedule.</td>
+      <td>
+        Schedule name
+      </td>
+
+      <td>
+        By default, the report name is based on the report type (for example, "App Engagement" or "App Health"). <br /><br />It is recommended that you enter a descriptive name for the schedule that makes it easy to identify in your list of schedules. For example, you can include the app name, format, frequency, time period or any other relevant information that distinguishes the schedule.
+      </td>
     </tr>
+
     <tr>
-      <td>Recurrence</td>
-      <td>Configure the cadence used to email the report. You can send the report <strong>Daily</strong>, <strong>Weekly</strong>, <strong>Monthly</strong>, <strong>Hourly</strong>, or <strong>By Minute</strong>, or on specific months or days:<ul><li><strong>Daily</strong>. Email the report every day, every weekday, or one ore more specific days. The report is emailed every day at 8:00AM by default.</li><li><strong>Weekly</strong>. Email the report once a week on a specific day and time. The report is emailed every Monday at 8:00AM by default.</li><li><strong>Monthly</strong>. Email the report once a month on a specific date and time, every quarter (January, April, July, and October), or one or more specific months. The report is emailed on the 1st of each month at 6:00AM by default.</li><li><strong>Hourly</strong>. Email the report every 1, 2, 3, 4, 6, 8, or 12 hours within a specific time range. You can configure on which 5-minute interval the report is sent. The report is emailed every hour on the hour between 6:00AM and 6:00PM by default.</li><li><strong>By Minute</strong>. Email the report every 5, 10, 15, 20, 25, 30 minutes within a specific time range. The report is emailed every 5 minutes between 6:00AM and 6:00PM by default.</li></ul>Once you select a cadence, configure the <strong>Time</strong> to send the report.</td>
+      <td>
+        Recurrence
+      </td>
+
+      <td>
+        Configure the cadence used to email the report. You can send the report <strong>Daily</strong>, <strong>Weekly</strong>, <strong>Monthly</strong>, <strong>Hourly</strong>, or <strong>By Minute</strong>, or on specific months or days:<ul><li><strong>Daily</strong>. Email the report every day, every weekday, or one ore more specific days. The report is emailed every day at 8:00AM by default.</li><li><strong>Weekly</strong>. Email the report once a week on a specific day and time. The report is emailed every Monday at 8:00AM by default.</li><li><strong>Monthly</strong>. Email the report once a month on a specific date and time, every quarter (January, April, July, and October), or one or more specific months. The report is emailed on the 1st of each month at 6:00AM by default.</li><li><strong>Hourly</strong>. Email the report every 1, 2, 3, 4, 6, 8, or 12 hours within a specific time range. You can configure on which 5-minute interval the report is sent. The report is emailed every hour on the hour between 6:00AM and 6:00PM by default.</li><li><strong>By Minute</strong>. Email the report every 5, 10, 15, 20, 25, 30 minutes within a specific time range. The report is emailed every 5 minutes between 6:00AM and 6:00PM by default.</li></ul>Once you select a cadence, configure the <strong>Time</strong> to send the report.
+      </td>
     </tr>
+
     <tr>
-      <td>Destination</td>
-      <td>Select one of the following destinations to send the report:<ul><li><strong>Email</strong>: Send the report to one on more recipients by entering their email address and then clicking <strong>Add</strong>. Optionally, select the <strong>Include a Custom Message</strong> check box to include any additional information in the body of the email message.</li><li><strong>Webhook</strong>: Enter the Webhook URL.</li><li><strong>Amazon S3</strong>: Enter the S3 bucket, path (optional), access key, secret key, and region.</li><li><strong>SFTP</strong>: Enter the address, username, password, and preferred key exchange algorithm.</li></ul>The SFTP, S3, and Webhook options enable you to create automation pipelines for ingesting Roku analytics into your backend systems.</td>
+      <td>
+        Destination
+      </td>
+
+      <td>
+        Select one of the following destinations to send the report:<ul><li><strong>Email</strong>: Send the report to one on more recipients by entering their email address and then clicking <strong>Add</strong>. Optionally, select the <strong>Include a Custom Message</strong> check box to include any additional information in the body of the email message.</li><li><strong>Webhook</strong>: Enter the Webhook URL.</li><li><strong>Amazon S3</strong>: Enter the S3 bucket, path (optional), access key, secret key, and region.</li><li><strong>SFTP</strong>: Enter the address, username, password, and preferred key exchange algorithm.</li></ul>The SFTP, S3, and Webhook options enable you to create automation pipelines for ingesting Roku analytics into your backend systems.
+      </td>
     </tr>
+
     <tr>
-      <td>Format</td>
-      <td>Select whether to attach the Transaction Report as a <strong>PDF</strong> (tiled or single column), <strong>PNG Visualization</strong> (tiled or single-column chart in a PNG file), or CSV zip file.</td>
+      <td>
+        Format
+      </td>
+
+      <td>
+        Select whether to attach the Transaction Report as a <strong>PDF</strong> (tiled or single column), <strong>PNG Visualization</strong> (tiled or single-column chart in a PNG file), or CSV zip file.
+      </td>
     </tr>
   </tbody>
 </table>
