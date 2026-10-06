@@ -36,22 +36,22 @@ Roku automatically generates the following app analytics and sales reports as [L
 
 **[App analytics](doc:app-analytics):**
 
-* [App Engagement](doc:channel-engagement) - installs, visits and streaming data for all apps
-* [App Health](doc:channel-health) - BrightScript crashes and buffering data for all apps
-* [Viewership Summary](doc:viewership-summary) - small selection of app engagement and app health data.
+* [App Engagement](doc:channel-engagement): installs, visits and streaming data for all apps
+* [App Health](doc:channel-health): BrightScript crashes and buffering data for all apps
+* [Viewership Summary](doc:viewership-summary): small selection of app engagement and app health data.
 * [App Stability](doc:channel-stability): BrightScript crashes and memory closures for all apps across all Roku device models.
 
 **[Sales reports](doc:sales-reports):**
 
-* [Transaction](doc:transaction-report) - records all in-app transactions for SVOD or TVOD apps, such as product purchases, free trial initiations, and returns
+* [Transaction](doc:transaction-report): records all in-app transactions for SVOD or TVOD apps, such as product purchases, free trial initiations, and returns
 
-* [Sales Activity](doc:sales-activity-report) - displays daily transaction revenue totals by app, product, and currency within a window of up to one month
+* [Sales Activity](doc:sales-activity-report): displays daily transaction revenue totals by app, product, and currency within a window of up to one month
 
-* [Payout Audit](doc:payout-audit-report) - assists with reconciliation between app revenue activity and payouts received from Roku
+* [Payout Audit](doc:payout-audit-report): assists with reconciliation between app revenue activity and payouts received from Roku
 
-* [Tax Withholding](doc:tax-withholding-report) - Breaks down how net payouts are calculated after Roku's revenue share, tax withholding, and currency conversion are applied to app gross revenue.
+* [Tax Withholding](doc:tax-withholding-report): Breaks down how net payouts are calculated after Roku's revenue share, tax withholding, and currency conversion are applied to app gross revenue.
 
-* [Cancellation Offers Report](doc:cancellation-offers-report) - shows how viewers move through the cancellation flow and how retention offers perform, including redemptions by plan and currency
+* [Cancellation Offers Report](doc:cancellation-offers-report): shows how viewers move through the cancellation flow and how retention offers perform, including redemptions by plan and currency
 
   Because apps differ in both business model and technical implementation, the relevancy of specific report and availability of data therein will vary. If a report does not pertain to your app type, it will not be made available to you.
 
@@ -97,10 +97,10 @@ Dashboards may contain several sections and changing filters will cause some sec
 
 Information on available filters is also included in the discussion of individual dashboards, and not all of the same filters will be available on all reports.  The most common filters include:
 
-* **Time Period** - Sets the data sample period for the entire report. Changing this filter changes measurements for the entire report.  By default, Time Period is set to "8 days ago for 7 days" in most reports to include the most recent 7 complete day period; the most recent day is always an incomplete day.
-* **Time Grain** - Changing this filter changes the values of metrics with a time dimensions, such as visitors or viewers.  The "day" Time Grain equates to a daily aggregate measurement, "week" to a weekly aggregate and "month" to a monthly aggregate.  Any conflicts between Time Grain and Time Period (e.g. a Time Grain longer than the Time Period specified) will prevent data from displaying correctly.
-* **Streaming Store Code** - Identifies the [code for a market](https://developer.roku.com/publish/analytics-metrics/analytics-index#usingchannelstorecodes), usually a country code, where your app can legally be distributed (i.e. made available for download to a Roku device). More than one code is allowed. Leave Streaming Store Code blank to include all markets where your app is currently published or enter one or more codes to display only data on specific markets.
-* **Device Type** - Available in the App Health dashboard, this filters data to specific types of Roku devices.
+* **Time Period**: Sets the data sample period for the entire report. Changing this filter changes measurements for the entire report.  By default, Time Period is set to "8 days ago for 7 days" in most reports to include the most recent 7 complete day period; the most recent day is always an incomplete day.
+* **Time Grain**: Changing this filter changes the values of metrics with a time dimensions, such as visitors or viewers.  The "day" Time Grain equates to a daily aggregate measurement, "week" to a weekly aggregate and "month" to a monthly aggregate.  Any conflicts between Time Grain and Time Period (e.g. a Time Grain longer than the Time Period specified) will prevent data from displaying correctly.
+* **Streaming Store Code**: Identifies the [code for a market](https://developer.roku.com/publish/analytics-metrics/analytics-index#usingchannelstorecodes), usually a country code, where your app can legally be distributed (i.e. made available for download to a Roku device). More than one code is allowed. Leave Streaming Store Code blank to include all markets where your app is currently published or enter one or more codes to display only data on specific markets.
+* **Device Type**: Available in the App Health dashboard, this filters data to specific types of Roku devices.
 
 ## Exporting reports
 
@@ -179,27 +179,27 @@ Streaming Store codes identify your app's market. Each code identifies a country
 
 Each Streaming Store code consists of two or more letters, such as "US" for United States or "FR" for France. For example:
 
-* AR - Argentina
-* BR - Brazil
-* CA - Canada
-* CL - Chile
-* CO - Colombia
-* CR - Costa Rica
-* DE - Germany
-* FR - France
-* GB - United Kingdom
-* GT - Guatemala
-* HN - Honduras
-* IE - Ireland
-* MX - Mexico
-* NI - Nicaragua
-* OT - Rest of the world
-* PA - Panama
-* PE - Peru
-* SKYIE - Sky Ireland
-* SKYUK - Sky United Kingdom
-* SV - El Salvador
-* US - United States
+* AR: Argentina
+* BR: Brazil
+* CA: Canada
+* CL: Chile
+* CO: Colombia
+* CR: Costa Rica
+* DE: Germany
+* FR: France
+* GB: United Kingdom
+* GT: Guatemala
+* HN: Honduras
+* IE: Ireland
+* MX: Mexico
+* NI: Nicaragua
+* OT: Rest of the world
+* PA: Panama
+* PE: Peru
+* SKYIE: Sky Ireland
+* SKYUK: Sky United Kingdom
+* SV: El Salvador
+* US: United States
 
 In Developer Dashboard you can find out which countries your app has been published in by navigating to **Manage My Apps** > **Preview and Publish** > **Properties**.
 
