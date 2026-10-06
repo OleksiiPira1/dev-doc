@@ -10,7 +10,7 @@ metadata:
 next:
   description: ''
 ---
-The Roku Platform is designed to protect each app's intellectual property, while ensuring the audience is safe from malicious attacks.
+The Roku platform is designed to protect each publisher's intellectual property, while ensuring the audience is safe from malicious attacks. This page covers security for apps. For DRM and content protection specifications, see [DRM and content protection](doc:content-protection) in the Specifications section.
 
 Roku devices are designed to play a variety of streaming
 content directly from the Internet. We understand that this content is
@@ -111,7 +111,7 @@ For more details, see [Content Protection](doc:content-protection).
 
 **Related resources:**
 
-* [How apps work](doc:features-overview)
+* [How apps work](doc:how-channels-work)
 * [Packaging apps](doc:packaging-channels)
 * [DRM details](doc:content-protection)
 * [Content protection](doc:content-protection)

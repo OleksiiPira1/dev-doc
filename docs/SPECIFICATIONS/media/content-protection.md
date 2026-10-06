@@ -56,7 +56,7 @@ m.video.content = contentNode
 
 Starting from [Roku OS version 8.1](doc:release-notes#roku-os-81), all Roku devices with MStar chips are updating to the PlayReady 3 library. Prior to this update, all platforms were using PlayReady 2.5.
 
-While PlayReady 3 is expected to be backward compatible with PlayReady 2.5, we encourage all developers using PlayReady to test their streams on a range of MStar and non-MStar devices.
+While PlayReady 3 is expected to be backward compatible with PlayReady 2.5, we encourage all publishers using PlayReady to test their streams on a range of MStar and non-MStar devices.
 
 The following devices contain MStar chips:
 

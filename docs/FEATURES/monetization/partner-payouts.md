@@ -10,11 +10,13 @@ metadata:
 next:
   description: ''
 ---
-Publishers must enroll in the [Roku Partner Payouts Program](https://developer.roku.com/payments/) to monetize content in a Roku app. This enables publishers to receive payouts from video ads, subscriptions, one-time purchases, and pay-to-install apps (games and screensavers). Monetized apps cannot be published without enrollment.
+Publishers must enroll in the [Roku Partner Payouts Program](https://developer.roku.com/payments/) to receive payments from Roku. This applies to publishers who monetize content in a Roku app and to publishers who distribute content on The Roku Channel. Enrollment enables you to receive payouts from video ads, subscriptions, one-time purchases, pay-to-install apps (games and screensavers), and content distributed on The Roku Channel. Monetized apps cannot be published without enrollment.
 
 > **Entering your payout settings**
 >
-> * If you already have an existing Roku developer account, use those account credentials to log in to the Developer Dashboard and enter your payout settings. Do not create a new developer account.
+> * If you already have an existing Roku developer account, use those account credentials to sign in and enter your payout settings. Do not create a new account.
+>
+> * To enter payout settings, you must have the **Payout admin** or **Administrator** role on the account. If you cannot complete the payout forms, ask an Administrator to assign you one of these roles. See [User access management](doc:user-access-management).
 >
 > * If you are already monetizing your app on the Roku platform, you must still enter your payout settings to continue receiving payouts.
 >
@@ -24,21 +26,21 @@ Publishers must enroll in the [Roku Partner Payouts Program](https://developer.r
 
 > **About maximum tax withholding**
 >
-> Per IRS guidelines, Roku is required to withhold taxes at rates governed by the tax treaty between the United States and the developer's tax country. For developers in the United States, a valid W-9 is required for zero withholding.
+> Per IRS guidelines, Roku is required to withhold taxes at rates governed by the tax treaty between the United States and the publisher's tax country. For publishers in the United States, a valid W-9 is required for zero withholding.
 >
-> Without proper tax documentation (W-9 for the United States and applicable W-8 for non-US countries) and a tax treaty between the United States and the developer's tax country, Roku is required to withhold at a maximum rate of 24% for developers in the United States and 30% for developers outside the United States.
+> Without proper tax documentation (W-9 for the United States and applicable W-8 for non-US countries) and a tax treaty between the United States and the publisher’s tax country, Roku is required to withhold at a maximum rate of 24% for publishers in the United States and 30% for publishers outside the United States.
 >
-> It is the developer’s responsibility to complete payout enrollment which includes providing their latest tax forms. If the developer does not  provide this information by **March 31st, 2024**, the maximum tax withholding will be applied to all future payouts.
+> It is the publisher’s responsibility to complete payout enrollment which includes providing their latest tax forms. If the publisher does not provide this information by **March 31st, 2024**, the maximum tax withholding will be applied to all future payouts.
 >
-> Once the developer has provided valid tax documentation, the system will apply the correct withholding tax rate on all future payouts. Any tax withheld from payouts will be deposited by Roku to the IRS. The withheld tax can be re-claimed back by developers from IRS directly when they file taxes at the end of the year by submitting proper documentation. Roku will provide an annual receipt of withheld taxes by January of the following year.
+> Once the publisher has provided valid tax documentation, the system will apply the correct withholding tax rate on all future payouts. Any tax withheld from payouts will be deposited by Roku to the IRS. The withheld tax can be re-claimed back by publishers from the IRS directly when they file taxes at the end of the year by submitting proper documentation. Roku will provide an annual receipt of withheld taxes by January of the following year.
 
 ## Entering payout settings
 
 To enroll in the Roku Partner Payouts Program, enter your payout settings following these steps:
 
-1. Verify that you have [created a Roku account](https://my.roku.com/signup) and [enrolled in the Roku Developer Program](https://developer.roku.com/enrollment/standard).
+1. Verify that you have [created a Roku account](https://my.roku.com/signup) and [enrolled in the Roku Developer Program](https://developer.roku.com/enrollment/standard). For instructions, see [Set up your Roku account](doc:account-setup).
 
-2. In the Developer Dashboard, select [**Payout settings**](https://developer.roku.com/developer/billing). If you are using the Payout Settings workflow for the first time, review the steps and then click **Get started**.
+2. Sign in, and then select [**Payout settings**](https://developer.roku.com/developer/billing). If you are using the Payout Settings workflow for the first time, review the steps and then click **Get started**.
 
    ![roku600px - ](https://image.roku.com/ZHZscHItMTc2/payout-settings-get-started.png)
 
@@ -134,7 +136,7 @@ Once your entity and payout method have been verified, provide your tax forms fo
 
     ![roku600px - ](https://image.roku.com/ZHZscHItMTc2/payment-settings-complete-tax-forms.png)
 
-12. Select **Exit** to return to the Developer Dashboard.
+12. Select **Exit** to close the tax form workflow.
 
 > Once you submit your tax forms, they are reviewed and approved immediately, provided that no manual review is required.
 >
@@ -145,6 +147,10 @@ Once your entity and payout method have been verified, provide your tax forms fo
 Once you have entered payout settings, you can update them anytime.
 
 ## Receiving payouts
+
+Payout timing depends on how you distribute your content. For payment schedules for content on The Roku Channel, see [Publisher payouts](doc:payouts#receiving-payouts-for-the-roku-channel).
+
+### Payouts for apps
 
 Until your enrollment in Roku Pay is complete, Roku will not bill customers for transactions associated with your app. Any pre-enrollment transactions, including those executed via billing test accounts, are treated as test transactions with no fees collected. All pre-enrollment transactions are cancelled once you complete enrollment in Roku Pay,
 

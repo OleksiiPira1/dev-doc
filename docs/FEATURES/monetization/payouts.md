@@ -12,7 +12,7 @@ next:
 ---
 Roku’s Partner Payouts Program is the vehicle through which partners receive payments for apps, games, content, and ads served to millions of active Roku users.
 
-To sign up for Roku Partner Payouts Program, see the [Enrolling in the Roku Partner Payouts Program](doc:partner-payouts) guide.
+To sign up for Roku Partner Payouts Program, see the [Enrolling in the Roku Partner Payouts Program](doc:partner-payouts) guide. If you have not yet created your account, start with [Set up your Roku account](doc:account-setup).
 
 ## Publisher payouts
 
@@ -28,7 +28,7 @@ For all partners, wire transfer and ACH payments are made in USD only. If there 
 
 With PayPal there is no payment fee. With wire transfers and ACH payments, your bank will charge you bank fees.
 
-## Receiving payouts
+## Receiving payouts for apps
 
 Once Roku verifies a publisher's bank information and tax documents, the publisher's account will be enrolled in the Roku Partner Payouts Program. The publisher can then publish a monetized app and begin recognizing revenue immediately.
 
@@ -40,7 +40,22 @@ No minimum sum is required to receive payouts from purchases made through Roku P
 
 For more information on payout terms, see the [Roku Distribution Agreement](https://docs.roku.com/doc/developerdistribution/en-us).
 
-### Restricted payout countries
+## Receiving payouts for The Roku Channel
+
+Publishers who distribute content on The Roku Channel must also enroll in the Roku Partner Payouts Program. Payments are sent to the payout method in your account settings. Revenue reports are sent by email. If you would like to be included in the revenue report distribution list, contact [trcpartnersupport@roku.com](mailto:trcpartnersupport@roku.com).
+
+Payments and revenue reports are sent quarterly, 60 days after the quarter closes:
+
+| Quarter | Date             |
+| :------ | :--------------- |
+| Q1      | By May 31st      |
+| Q2      | By August 31st   |
+| Q3      | By November 30th |
+| Q4      | By February 28th |
+
+Publishers are not paid until the aggregate sums due are equal to or exceed $100.00. Detailed payout terms are found in the Commercial Terms Exhibit of the [Roku Distribution Agreement](https://docs.roku.com/doc/developerdistribution/en-us).
+
+## Restricted payout countries
 
 Roku cannot make any payouts to the entities from these regions (countries/territories).
 
@@ -194,7 +209,7 @@ Roku cannot make any payouts to the entities from these regions (countries/terri
 
 **Can I publish an app that monetizes without enrolling in the Roku Partner Payouts Program?**
 
-All partners with monetized apps are required to enroll in the Roku Partner Payouts Program. In fact, our system will prevent you from publishing a monetized app until your account has been enrolled in the program.
+All partners with monetized apps are required to enroll in the Roku Partner Payouts Program. In fact, our system will prevent you from publishing a monetized app until your account has been enrolled in the program. Publishers who distribute on The Roku Channel must enroll to receive payments.
 
 **When does the payment process start?**
 
@@ -203,6 +218,8 @@ As soon as our system verifies your bank information and tax documents, your acc
 Please note the importance of entering accurate and correct information when enrolling in the Roku Partner Payouts Program. If, for example, the wrong bank account number information is added, our system will not notify you of the error until our payment to you fails to clear. Of course, you will be notified to update your bank account information, but this will delay the amount of time until you're paid.
 
 **When can I expect to receive my first payment?**
+
+Payments for content on The Roku Channel follow the [quarterly schedule](#receiving-payouts-for-the-roku-channel) above.
 
 Transactional apps are paid no later than 60 days after the end of each month in which Roku received payments through Roku Pay. There are no minimum revenue requirements for billing disbursements.
 
@@ -220,13 +237,15 @@ The Roku Ad Framework automatically redirects empty or failed ad calls to Roku's
 
 ## Chargeback FAQs
 
+These questions apply to transactions that customers make in apps by using Roku Pay.
+
 **What is a chargeback?**
 
 A chargeback is a dispute raised by a cardholder against any transaction, through their issuing bank. As per card network rules, the merchant (Roku) can either dispute the chargeback to prove it is legitimate or return the transaction amount to the issuer.
 
 **When a chargeback occurs, how does Roku notify the publisher?**
 
-When a customer disputes a transaction made through Roku Pay that results in a chargeback, Roku will send a [refund push notification message](doc:push-notifications) to the developer. The **transactionType** field in the [n](doc:push-notifications)otification will be set to "Chargeback", "ChargebackReversed", or "SecondChargeback". Each of these values is described as follows:
+When a customer disputes a transaction made through Roku Pay that results in a chargeback, Roku will send a [refund push notification message](doc:push-notifications) to the publisher. The **transactionType** field in the [n](doc:push-notifications)otification will be set to "Chargeback", "ChargebackReversed", or "SecondChargeback". Each of these values is described as follows:
 
 - "Chargeback": The customer has initiated a transaction dispute. Roku will dispute the chargeback if it is $8.99 or more. If the chargeback is reversed, Roku will send a subsequent refund notification with the **transactionType** set to "ChargebackReversed". If the chargeback is not reversed, no further notifications are sent.
 

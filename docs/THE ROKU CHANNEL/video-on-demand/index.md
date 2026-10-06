@@ -29,7 +29,7 @@ The Roku Channel Partners must enroll in Roku’s Partner Payouts Program, which
 
 ##### Enrolling in Roku's Partner Payouts Program
 
-To sign up for Roku Partner Payouts Program:
+To sign up for Roku Partner Payouts Program, see [Set up your Roku account](doc:account-setup) for a complete walkthrough, or follow these steps:
 
 * Create a [Roku customer account](https://developer.roku.com/enrollment/standard)
 * Enroll your [Roku account in the Developer Program](https://developer.roku.com/developer/billing)

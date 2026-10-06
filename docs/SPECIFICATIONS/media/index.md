@@ -322,7 +322,7 @@ Encoding in Dolby Digital Plus (instead of Dolby Digital) is recommended with th
 | Multi-channel 7.1 | 384 kbps |
 
 
-Developers can encode video content using services like Azure or [Encoding.com](http://Encoding.com). For more information, visit [developer.dolby.com](https://developer.dolby.com/)
+You can encode video content using services like Azure or [Encoding.com](http://Encoding.com). For more information, visit [developer.dolby.com](https://developer.dolby.com/)
 
 ### 4K UHD video streaming requirements
 

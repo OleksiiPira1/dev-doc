@@ -15,7 +15,9 @@ The Roku platform has thousands of apps, streaming billions of hours of content 
 You can distribute your content in two ways:
 
 1. [Build a streaming app](#new-app-requirements).
-2. [Distribute content on The Roku Channel](doc:overview), which is Roku's own streaming app for linear and on-demand content. 
+2. [Distribute content on The Roku Channel](doc:overview), which is Roku's own streaming app for linear and on-demand content.
+
+This page describes the first option, building your own app. To compare the two options, see the [Roku platform overview](doc:features-overview). Either way, begin by [setting up your Roku account](doc:account-setup).
 
 ### New app requirements
 

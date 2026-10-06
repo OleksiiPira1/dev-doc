@@ -12,6 +12,8 @@ next:
 ---
 The [Developer Dashboard](http://developer.roku.com/dev/dashboard) serves as the central control center from which a developer can manage apps, Roku Pay products, or search feeds, as well as view analytics and enroll in the partner payouts program.
 
+> If you distribute content on The Roku Channel instead of building an app, you manage your content in the [Roku Content Partner Portal](doc:roku-content-partner-portal). Both tools use the same Roku account. To create one, see [Set up your Roku account](doc:account-setup).
+
 ## My apps
 
 The **My apps** section provides easy access to recently updated apps, enabling developers to quickly click into their most high-touch projects.
@@ -79,7 +81,7 @@ This section provides tools that enable developers to promote their apps to Roku
 The Account section to is used to configure personal and business account information, share payout information with Roku so you can collect revenues due to you, and grant account access to other users.
 
 * **Developer information –** Use this page to manage your basic developer account information, as the developer name displayed on apps you own in the Streaming Store, or your address and legal contact information.
-* **Payment settings –** This is where developers can enroll in the Roku Partner Payouts Program, which enables your account for remittances and payments. Refer to the [Publisher Payouts](doc:payouts) article for more information.
+* **Payment settings –** This is where developers can enroll in the Roku Partner Payouts Program, which enables your account for remittances and payments. Refer to the [Publisher Payouts](doc:payouts) article for more information, or [Enrolling in the Roku Partner Payouts Program](doc:partner-payouts) for instructions.
 * **User access –** Developers can grant additional users access to manage elements of their account from this page, as well as configure the exact access permissions these third-party enjoy. Refer to [User access management in the Developer Dashboard](doc:user-access-management) for instructions on user setup.
 * **Switch accounts –** Developers that have been granted access to manage someone _else_'s account must use this page to switch between the various accounts. Refer to [User access management in the Developer Dashboard](doc:user-access-management) for details on how to switch accounts.
 * **RokuTV CA –** The RokuTV Certification Authority page provides the RokuTV Certification Authority (CA) client-side certificate used in SSL/TLS-based secure transactions. The certificate can be copied and pasted as text, or downloaded as a text file.

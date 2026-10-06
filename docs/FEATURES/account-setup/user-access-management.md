@@ -1,21 +1,21 @@
 ---
 title: User access management
-excerpt: Invite team members and assign roles and permissions to your launchpad account
+excerpt: Invite team members and assign roles and permissions to your Roku Launchpad account
 deprecated: false
 hidden: false
 metadata:
   title: User access management | Roku Developer Docs
   description: >-
     Use the Roles and access page to invite team members, assign roles and
-    permissions, manage user accounts, and view activity logs for your developer
-    account.
+    permissions, manage user accounts, and view activity logs for your Roku
+    account, whether you build apps or distribute content on The Roku Channel.
   robots: index
 next:
   description: ''
 ---
-You can use the [**Roles and access** page in the Roku Launchpad](https://developer.roku.com/account/user-access-list) to enable team members to manage your account or specific apps within it. A **_role_** gives a user a set of one or more **_permissions_** to complete specific tasks in your account. Each role has an **_access level_**, which determines whether the user can complete tasks for all the apps in your account or just one or more selected apps.
+You can use the [**Roles and access** page in the Roku Launchpad](https://developer.roku.com/account/user-access-list) to enable team members to manage your account, specific apps within it, or your content on The Roku Channel. If you have not yet created your account, see [Set up your Roku account](doc:account-setup). A **_role_** gives a user a set of one or more **_permissions_** to complete specific tasks in your account. Each role has an **_access level_**, which determines whether the user can complete tasks for all the apps in your account or just one or more selected apps.
 
-For example, the _app management_ role lets users manage and publish one or more apps, the _financial reports_ role lets users view transaction and sales activity reports for one or more apps in the account, and the _administrative_ role lets users complete all tasks in the account.
+For example, the _App management_ role lets app developers manage and publish one or more apps, the _Financial reports_ role lets users view Roku Pay transaction and sales activity reports for one or more apps in the account, the _Operations Manager_ role lets content partners manage title assets and operational reports, and the _Administrator_ role lets users complete all tasks in the account.
 
 ![roku815px - multi-user-access-2-roles-access](https://image.roku.com/ZHZscHItMTc2/multi-user-access-2-roles-access.png)
 
@@ -41,11 +41,11 @@ To add a user to your account and assign them roles and permissions, follow thes
    <tbody>
    <tr>
    <td class="short-line">Email</td>
-   <td class="long-line">The email address of the user to be added to your developer account.</td>
+   <td class="long-line">The email address of the user to be added to your account.</td>
    </tr>
    <tr>
    <td class="short-line">Organization</td>
-   <td class="long-line">The name of the company associated with the Roku developer.</td>
+   <td class="long-line">The name of the company associated with your account.</td>
    </tr>
    <tr>
    <td class="short-line">Roles</td>
@@ -69,9 +69,9 @@ To add a user to your account and assign them roles and permissions, follow thes
 
    ![roku600px - mua\_app\_mgmt](https://image.roku.com/ZHZscHItMTc2/roku-user-access-accept-invite.png)
 
-### Roles and permissions for Roku developers
+### Roles and permissions for app developers
 
-Roku developer accounts can have the following roles and permissions:
+Accounts that build and publish Roku apps can have the following roles and permissions:
 
 <HTMLBlock>{`
 <table>
@@ -153,9 +153,9 @@ Roku developer accounts can have the following roles and permissions:
 
 <br />
 
-### Roles and permissions for Roku content partners
+### Roles and permissions for content partners
 
-Roku Content Partner accounts can have the following roles and permissions:
+Accounts that distribute content on The Roku Channel can have the following roles and permissions. Users need one of these roles to access the [Roku Content Partner Portal](doc:roku-content-partner-portal):
 
 <Table align={["left","left"]}>
   <thead>
@@ -239,7 +239,7 @@ Roku Content Partner accounts can have the following roles and permissions:
   </tbody>
 </Table>
 
-### Roles and permissions for Roku partner payouts
+### Roles and permissions for payouts
 
 <Table align={["left","left"]}>
   <thead>
@@ -261,8 +261,8 @@ Roku Content Partner accounts can have the following roles and permissions:
       </td>
 
       <td>
-        - Enter and edit payout settings, which include contact information, entity and payout method, and tax forms. This role (or Admin) is needed for enrolling a Roku developer account in the [Roku Partner Payouts Program](https://developer.roku.com/payments/) in order to monetize content in a Roku app.
-        - Access the Roku Pay transaction, sales activity, and payout financial reports.
+        - Enter and edit payout settings, which include contact information, entity and payout method, and tax forms. This role (or Administrator) is needed for enrolling your account in the [Roku Partner Payouts Program](https://developer.roku.com/payments/) in order to receive payments for content in a Roku app or on The Roku Channel.
+        - Access the Roku Pay transaction, sales activity, and payout financial reports for apps.
       </td>
     </tr>
   </tbody>
@@ -284,11 +284,11 @@ You can edit the organization and roles of existing users. To edit a user, click
 
 ### Re-sending users invites
 
-If you have the Admin role (or are the root account owner), you can re-send an invite to a user. To do this, click the menu icon on the right-hand side of the user’s row, and then click **Resend invite** in the shortcut menu.
+If you have the Administrator role (or are the root account owner), you can re-send an invite to a user. To do this, click the menu icon on the right-hand side of the user’s row, and then click **Resend invite** in the shortcut menu.
 
 ### Removing users
 
-If you have the Admin role (or are the root account owner), you can remove a user from the account. To do this, click the menu icon on the right-hand side of the user’s row, click **Remove user** in the shortcut menu, and then click **Yes** in the confirmation dialog.
+If you have the Administrator role (or are the root account owner), you can remove a user from the account. To do this, click the menu icon on the right-hand side of the user’s row, click **Remove user** in the shortcut menu, and then click **Yes** in the confirmation dialog.
 
 ![roku600px - multi-user-access-2-roles-access](https://image.roku.com/ZHZscHItMTc2/multi-user-access-2-remove-user.png)
 
@@ -296,9 +296,9 @@ Removing a user does not affect the user's own Roku account. If you need to add 
 
 ## Viewing user activity logs
 
-If you have the Admin role (or are the root account owner), you can access the user activity log, which tracks the actions taken by each user in the account.
+If you have the Administrator role (or are the root account owner), you can access the user activity log, which tracks the actions taken by each user in the account.
 
-The log lists the user’s email address, page they accessed, action taken, subject app, and the date and time of the action.
+The log lists the user’s email address, page they accessed, action taken, subject app or content, and the date and time of the action.
 
 You can search log entries by email address, page name, action, or app name, and you can sort the entries by clicking the **Email**, **Page**, and **Channel**, and **Date** headers.
 
