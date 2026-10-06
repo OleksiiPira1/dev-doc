@@ -39,14 +39,14 @@ Reports also distinguish between "visitors" and "viewers" according to the follo
 
 Roku automatically generates the following app analytics and sales reports as [Looker](https://looker.com/guide) dashboards for your app (Looker is the business intelligence platform that Roku uses for providing app analytics):
 
-[App analytics](doc:app-analytics)**:**
+**[App analytics](doc:app-analytics):**
 
 * [App Engagement](doc:channel-engagement): installs, visits and streaming data for all apps
 * [App Health](doc:channel-health): BrightScript crashes and buffering data for all apps
 * [Viewership Summary](doc:viewership-summary): small selection of app engagement and app health data.
 * [App Stability](doc:channel-stability): BrightScript crashes and memory closures for all apps across all Roku device models.
 
-[Sales reports](doc:sales-reports)**:**
+**[Sales reports](doc:sales-reports):**
 
 * [Transaction](doc:transaction-report): records all in-app transactions for SVOD or TVOD apps, such as product purchases, free trial initiations, and returns
 
