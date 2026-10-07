@@ -227,8 +227,6 @@ Provide a list of IDs and sources to be used for linking external metadata to th
 | country     | String\[]                      | countries where playOption available | Required |
 | restriction | [Restriction](#restriction)\[] | any restriction information          |          |
 
-\<\<\<\<\<\<\< Updated upstream
-
 #### Restriction
 
 | Field     | Type                                                                                                                                    | Description                             | Required |
@@ -237,18 +235,6 @@ Provide a list of IDs and sources to be used for linking external metadata to th
 | type      | [RestrictionType](https://roku.atlassian.net/wiki/spaces/NPIPM/pages/450330792/Live+Search+feed+requirements#RestrictionType)           | geo                                     | Required |
 | valueType | [RestrictionValueType](https://roku.atlassian.net/wiki/spaces/NPIPM/pages/450330792/Live+Search+feed+requirements#RestrictionValueType) | type of the values (postal_code or dma) | Required |
 | values    | String\[]                                                                                                                               | values for the valueType                | Required |
-| =======   |                                                                                                                                         |                                         |          |
-
-##### Restriction
-
-| Field     | Type                                                                                                                                    | Description                             | Required |
-| :-------- | :-------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------- | :------- |
-| allow     | boolean                                                                                                                                 | true for allowlist, false for blocklist | Required |
-| type      | [RestrictionType](https://roku.atlassian.net/wiki/spaces/NPIPM/pages/450330792/Live+Search+feed+requirements#RestrictionType)           | geo                                     | Required |
-| valueType | [RestrictionValueType](https://roku.atlassian.net/wiki/spaces/NPIPM/pages/450330792/Live+Search+feed+requirements#RestrictionValueType) | type of the values (postal_code or dma) | Required |
-| values    | String\[]                                                                                                                               | values for the valueType                | Required |
-
-> > > > > > > Stashed changes
 
 ### Managing a feed that includes VOD content
 
