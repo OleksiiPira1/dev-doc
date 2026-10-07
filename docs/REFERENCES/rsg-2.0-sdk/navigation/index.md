@@ -1,10 +1,10 @@
 ---
-title: '@roku-sdk/navigation'
+title: 'Navigation'
 excerpt: ''
 deprecated: false
 hidden: true
 metadata:
-  title: '@roku-sdk/navigation'
+  title: 'Navigation'
   description: 'Navigation primitives for Roku SDK applications.'
   robots: index
 next:
