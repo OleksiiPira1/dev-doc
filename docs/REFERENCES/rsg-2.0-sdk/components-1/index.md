@@ -1,5 +1,5 @@
 ---
-title: RSG SDK 2.0 Components
+title: Components (RSG SDK 2.0)
 excerpt: ''
 deprecated: false
 hidden: true
