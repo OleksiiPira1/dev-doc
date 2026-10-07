@@ -1,5 +1,5 @@
 ---
-title: RSG 2.0 SDK co
+title: RSG 2.0 SDK
 excerpt: ''
 deprecated: false
 hidden: true
