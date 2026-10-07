@@ -1,6 +1,6 @@
 ---
 title: 'Effect'
-excerpt: 'Effect applies GPU shader-based rendering to a Rectangle or Poster'
+excerpt: ''
 deprecated: false
 hidden: true
 metadata:
@@ -23,35 +23,33 @@ _Available since Roku OS 16.0_
 import { Effect } from "@roku-sdk/components";
 ```
 
-> Effect applies GPU shader-based rendering to a Rectangle or Poster.
->
-> Hoist it into a `const` and pass that as the `effect` prop on a Rectangle or
-> Poster to enable rounded corners, borders, and gradient fills. Set
-> `shaderCompatible` on a Poster that takes one.
->
-> Prefer the `<effect>` intrinsic for most uses. The `Effect` wrapper is a pure
-> passthrough (`<effect {...props} />`) and exists for consistency with the component
-> library.
+## Overview
+<!-- generator-heading -->
 
-<!-- src: rsg-sdk/external/packages/components/src/sg-nodes/effect.props.ts#IEffectProps.intro -->
+<!-- derived: rsg-sdk/external/packages/components/src/sg-nodes/effect.tsx#Effect.intro -->
 
-Properties for the Effect node.
+Hoist it into a `const` and pass that as the `effect` prop on a Rectangle or
+Poster to enable rounded corners, borders, and gradient fills. Set
+`shaderCompatible` on a Poster that takes one.
 
-Effect applies GPU shader-based rendering to a Rectangle or Poster, enabling rounded corners,
-borders, and gradient fills. Attach an Effect node to a Rectangle or Poster via the `effect`
-prop.
+Prefer the `<effect>` intrinsic for most uses. The `Effect` wrapper is a pure
+passthrough (`<effect {...props} />`) and exists for consistency with the component
+library.
 
-**Platform availability**: Effects require Roku OS 16.0 or later and the OpenGL graphics backend.
+## Platform availability
+<!-- generator-heading -->
+
+<!-- src: rsg-sdk/external/packages/components/src/sg-nodes/effect.tsx#Effect.platformAvailability -->
+
+Effects require Roku OS 16.0 or later and the OpenGL graphics backend.
 Elsewhere the `effect` prop is ignored without an error and the content renders unstyled. To branch
 on it, read `getDeviceInfo()` from `@roku-sdk/rsg-ts/runtime` once:
 `Number(info.osVersion.major) >= 16 && info.graphicsPlatform === "opengl"`. The node's own `supported`
 field is set when the node is created and cannot be read from TypeScript, and effects disabled by
 device configuration are invisible to that check.
 
-Hoist the effect into a `const`. A signal read by the `effect={...}` expression itself builds a new
-effect node on every change; signals read by the effect's own fields update it in place.
-
 ## Props
+<!-- generator-heading -->
 
 <!-- derived: rsg-sdk/external/packages/components/src/sg-nodes/effect.props.ts#IEffectProps.props -->
 
@@ -73,6 +71,7 @@ effect node on every change; signals read by the effect's own fields update it i
 Extends [INodeProps](doc:inodeprops) — see the base type page for inherited props.
 
 ## Examples
+<!-- generator-heading -->
 
 <!-- derived: rsg-sdk/external/packages/components/src/sg-nodes/effect.props.ts#IEffectProps.examples -->
 

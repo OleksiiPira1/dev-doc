@@ -1,6 +1,6 @@
 ---
 title: 'useFocusable'
-excerpt: 'Registers a component instance with the nearest FocusBoundary'
+excerpt: ''
 deprecated: false
 hidden: true
 metadata:
@@ -24,6 +24,7 @@ import { useFocusable } from "@roku-sdk/navigation";
 **Package:** `@roku-sdk/navigation`
 
 ### useFocusable
+<!-- generator-heading -->
 
 <!-- derived: rsg-sdk/external/packages/navigation/src/focus-boundary/focus-boundary.tsx#useFocusable.signature -->
 
@@ -32,6 +33,7 @@ useFocusable(options: UseFocusableOptions): { focus: () => void; focusId: object
 ```
 
 #### Description
+<!-- generator-heading -->
 
 <!-- src: rsg-sdk/external/packages/navigation/src/focus-boundary/focus-boundary.tsx#useFocusable.description -->
 
@@ -41,6 +43,7 @@ Must be called inside a component rendered within a `RootFocusBoundary` or `Focu
 Registration (and the ordering of focusables for navigation) follows render order.
 
 #### Parameters
+<!-- generator-heading -->
 
 <!-- derived: rsg-sdk/external/packages/navigation/src/focus-boundary/focus-boundary.tsx#useFocusable.params -->
 
@@ -49,6 +52,7 @@ Registration (and the ordering of focusables for navigation) follows render orde
 | `options` | [UseFocusableOptions](doc:usefocusable#usefocusableoptions) | Options passed to `useFocusable`. Extends `FocusHandlers` with an optional pre-created `focusId` identity. |
 
 #### Return values
+<!-- generator-heading -->
 
 <!-- src: rsg-sdk/external/packages/navigation/src/focus-boundary/focus-boundary.tsx#useFocusable.returns -->
 
@@ -66,6 +70,7 @@ Registration (and the ordering of focusables for navigation) follows render orde
 - `focus()` — imperatively move virtual focus to this component
 
 #### Example
+<!-- generator-heading -->
 
 <!-- derived: rsg-sdk/external/packages/navigation/src/focus-boundary/focus-boundary.tsx#useFocusable.example -->
 
@@ -88,8 +93,10 @@ return (
 ```
 
 ## Types
+<!-- generator-heading -->
 
 ### UseFocusableOptions
+<!-- generator-heading -->
 
 <!-- src: rsg-sdk/external/packages/navigation/src/focus-boundary/focus-boundary.tsx#UseFocusableOptions.description -->
 
@@ -105,6 +112,7 @@ Extends `FocusHandlers` with an optional pre-created `focusId` identity.
 Extends [FocusHandlers](doc:usefocusable#focushandlers).
 
 ### FocusHandlers
+<!-- generator-heading -->
 
 <!-- src: rsg-sdk/external/packages/navigation/src/focus-boundary/focus-boundary.tsx#FocusHandlers.description -->
 

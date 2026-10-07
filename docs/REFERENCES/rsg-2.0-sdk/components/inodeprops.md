@@ -1,6 +1,6 @@
 ---
 title: 'INodeProps'
-excerpt: 'Base properties for all SceneGraph nodes'
+excerpt: ''
 deprecated: false
 hidden: true
 metadata:
@@ -17,11 +17,7 @@ Base properties for all SceneGraph nodes
 
 > ⚠️ This page is generated — edit the source JSDoc in `rsg-sdk/external/packages/components/src/sg-nodes/node.ts`.
 
-```typescript
-import { INodeProps } from "@roku-sdk/components";
-```
-
-<!-- src: rsg-sdk/external/packages/components/src/sg-nodes/node.ts#INodeProps.intro -->
+<!-- derived: rsg-sdk/external/packages/components/src/sg-nodes/node.ts#INodeProps.intro -->
 
 Base properties for all SceneGraph nodes.
 
@@ -29,6 +25,7 @@ Node is the abstract base class for all SceneGraph nodes. It provides fundamenta
 and functionality that all nodes inherit, including identification, focus management, and event handling.
 
 ## Props
+<!-- generator-heading -->
 
 <!-- derived: rsg-sdk/external/packages/components/src/sg-nodes/node.ts#INodeProps.props -->
 
