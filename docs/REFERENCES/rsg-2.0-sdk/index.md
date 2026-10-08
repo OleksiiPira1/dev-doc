@@ -14,6 +14,6 @@ Reference for the RSG 2.0 SDK.
 
 ## Sections
 
-- [Components (RSG 2.0 SDK)](doc:rsg-sdk-components) — Component types and base properties.
-- [@roku-sdk/navigation](doc:rsg-sdk-navigation) — Navigation primitives for Roku SDK applications.
-- [Runtime (RSG 2.0 SDK)](doc:rsg-sdk-runtime) — Runtime APIs such as device info.
+- [Components (RSG 2.0 SDK)](doc:rsg-sdk-components): Component types and base properties.
+- [@roku-sdk/navigation](doc:rsg-sdk-navigation): Navigation primitives for Roku SDK applications.
+- [Runtime (RSG 2.0 SDK)](doc:rsg-sdk-runtime): Runtime APIs such as device info.

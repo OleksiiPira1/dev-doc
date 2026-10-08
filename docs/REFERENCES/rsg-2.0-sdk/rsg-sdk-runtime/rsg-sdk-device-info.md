@@ -98,11 +98,11 @@ corresponding OS event fires. Use inside a SolidJS reactive context
 <!-- src: rsg-sdk/external/packages/runtime/src/device-info-events.ts#useDeviceInfoEvents.returns -->
 
 An object with reactive signals:
-- `screensaverExited` — increments each time the screensaver exits.
-- `linkStatus` — increments each time the network link status changes.
-- `lowGeneralMemory` — `"NORMAL" | "LOW" | "CRITICAL" | "UNKNOWN"`, or `null` before the first callback.
+- `screensaverExited`: increments each time the screensaver exits.
+- `linkStatus`: increments each time the network link status changes.
+- `lowGeneralMemory`: `"NORMAL" | "LOW" | "CRITICAL" | "UNKNOWN"`, or `null` before the first callback.
   The runtime calls the handler with `"NORMAL"` immediately on registration.
-- `internetStatus` — increments each time internet connectivity changes.
+- `internetStatus`: increments each time internet connectivity changes.
 
 ### Example
 <!-- generator-heading -->

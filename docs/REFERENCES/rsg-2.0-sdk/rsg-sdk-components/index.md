@@ -14,5 +14,5 @@ Component types and base properties in the RSG 2.0 SDK.
 
 ## Pages
 
-- [Effect (RSG 2.0 SDK)](doc:rsg-sdk-effect) — Effect applies GPU shader-based rendering to a Rectangle or Poster.
-- [INodeProps](doc:rsg-sdk-inodeprops) — Base properties for all SceneGraph nodes.
+- [Effect (RSG 2.0 SDK)](doc:rsg-sdk-effect): Effect applies GPU shader-based rendering to a Rectangle or Poster.
+- [INodeProps](doc:rsg-sdk-inodeprops): Base properties for all SceneGraph nodes.

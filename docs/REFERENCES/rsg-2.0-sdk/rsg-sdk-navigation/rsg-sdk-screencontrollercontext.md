@@ -70,10 +70,10 @@ Callers may pass `null` (or omit the argument on `resetScreen`) to render the pr
 `fallback` factory at that slot.
 
 Two complementary navigation styles are supported:
-- **Stack navigation** via `pushScreen` / `popScreen` — every entry stays mounted, the top
+- **Stack navigation** via `pushScreen` / `popScreen`: every entry stays mounted, the top
   entry is rendered above the previous one, and lower-level component state is preserved
   in memory automatically.
-- **Replace navigation** via `setScreen` — the previous top is unmounted and replaced; if
+- **Replace navigation** via `setScreen`: the previous top is unmounted and replaced; if
   you need to preserve any state across the swap, save and restore it yourself.
 
 Apps that prefer addressing screens by string id can layer a thin "registry" wrapper on

@@ -39,10 +39,10 @@ RootFocusBoundary(props: IRootFocusBoundaryProps): JSX.Element
 The root of a virtual focus tree for a single anchor node.
 
 `RootFocusBoundary` owns every anchor-node-wired concern:
-  - `keyEvent` — the SceneGraph key input it dispatches through the tree
-  - `focusActive` — whether this anchor node holds SceneGraph focus
-  - `setHandledKeys` — the `handledKeys` output BrightScript reads to claim keys
-  - `setFocusPath` — optional automation output for the focused leaf's SG path
+  - `keyEvent`: the SceneGraph key input it dispatches through the tree
+  - `focusActive`: whether this anchor node holds SceneGraph focus
+  - `setHandledKeys`: the `handledKeys` output BrightScript reads to claim keys
+  - `setFocusPath`: optional automation output for the focused leaf's SG path
 
 Nested subtrees use `FocusBoundary` (with `focusId`) and receive key events
 through the dispatch chain.

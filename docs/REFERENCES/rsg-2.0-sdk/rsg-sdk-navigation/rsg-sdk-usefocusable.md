@@ -55,18 +55,18 @@ Registration (and the ordering of focusables for navigation) follows render orde
 
 <!-- src: rsg-sdk/external/packages/navigation/src/focus-boundary/focus-boundary.tsx#useFocusable.returns -->
 
-- `ref` — ref callback to attach to the root JSX element. Always defined — captures
+- `ref`: ref callback to attach to the root JSX element. Always defined. Captures
    the DomNode for `RootFocusBoundary` focus-path computation (no-op when the root
    boundary has no `setFocusPath`).
-- `focusId` — the stable identity object used by the focus system. Only needed when
+- `focusId`: the stable identity object used by the focus system. Only needed when
    you let `useFocusable` auto-create the identity and need to pass it elsewhere
    programmatically. When you pre-create the identity via `options.focusId`, you already
-   have it — `focusId` just mirrors it back.
-- `isFocused()` — reactive accessor; use to drive visual focus state
-- `hasFootprint()` — reactive accessor; `true` when this item is the remembered focus
+   have it. `focusId` just mirrors it back.
+- `isFocused()`: reactive accessor; use to drive visual focus state
+- `hasFootprint()`: reactive accessor; `true` when this item is the remembered focus
    target but the boundary is inactive (SG focus is elsewhere). Use to render a dimmed
    focus indicator so the user knows where focus will land on return.
-- `focus()` — imperatively move virtual focus to this component
+- `focus()`: imperatively move virtual focus to this component
 
 ## Example
 <!-- generator-heading -->
