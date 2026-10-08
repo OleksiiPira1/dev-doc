@@ -1,5 +1,5 @@
 ---
-title: 'Components (RSG 2.0 SDK)'
+title: 'Components'
 excerpt: ''
 deprecated: false
 hidden: false
