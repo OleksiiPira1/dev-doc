@@ -2,7 +2,7 @@
 title: 'computeSGPath'
 excerpt: ''
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: 'computeSGPath'
   description: 'Compute the SceneGraph tree index path from root to target by walking bottom-up using parent pointers.'

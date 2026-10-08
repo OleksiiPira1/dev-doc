@@ -2,7 +2,7 @@
 title: 'RSG 2.0 SDK'
 excerpt: ''
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: 'RSG 2.0 SDK'
   description: 'Reference for the RSG 2.0 SDK: components, navigation, and runtime APIs.'

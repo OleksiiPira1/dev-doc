@@ -2,7 +2,7 @@
 title: 'useFocusActions'
 excerpt: ''
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: 'useFocusActions'
   description: 'Returns imperative focus actions for the nearest FocusBoundary.'

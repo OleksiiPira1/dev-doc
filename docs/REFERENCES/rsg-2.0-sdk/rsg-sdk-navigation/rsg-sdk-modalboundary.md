@@ -2,7 +2,7 @@
 title: 'ModalBoundary'
 excerpt: ''
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: 'ModalBoundary'
   description: 'Renders a custom dialog with its own FocusBoundary, dismissed by the Back key.'

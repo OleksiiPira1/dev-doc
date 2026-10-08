@@ -2,7 +2,7 @@
 title: 'FocusBoundary'
 excerpt: ''
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: 'FocusBoundary'
   description: 'Establishes a virtual focus boundary for a subtree of TypeScript components.'

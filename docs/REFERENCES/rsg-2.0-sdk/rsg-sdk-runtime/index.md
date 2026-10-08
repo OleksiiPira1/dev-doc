@@ -2,7 +2,7 @@
 title: 'Runtime'
 excerpt: ''
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: 'Runtime'
   description: 'Runtime APIs in the RSG 2.0 SDK.'

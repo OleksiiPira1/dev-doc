@@ -2,7 +2,7 @@
 title: 'onPress'
 excerpt: ''
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: 'onPress'
   description: 'Wraps a handler so it fires only on key-down (press), removing the need for an if (press) guard inside onKey (or onUnhandledKey) handlers.'

@@ -2,7 +2,7 @@
 title: 'ScreenControllerProvider'
 excerpt: ''
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: 'ScreenControllerProvider'
   description: 'Provider for [ScreenControllerContext](doc:rsg-sdk-screencontrollercontext).'

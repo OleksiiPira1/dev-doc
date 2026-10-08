@@ -2,7 +2,7 @@
 title: 'Navigation'
 excerpt: ''
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: '@roku-sdk/navigation'
   description: 'Navigation primitives for Roku SDK applications.'

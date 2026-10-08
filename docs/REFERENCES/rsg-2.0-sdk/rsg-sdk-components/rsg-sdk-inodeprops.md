@@ -2,7 +2,7 @@
 title: 'INodeProps'
 excerpt: ''
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: 'INodeProps'
   description: 'Base properties for all SceneGraph nodes.'

@@ -2,7 +2,7 @@
 title: 'RootFocusBoundary'
 excerpt: ''
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: 'RootFocusBoundary'
   description: 'The root of a virtual focus tree for a single anchor node.'

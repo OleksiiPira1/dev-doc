@@ -2,7 +2,7 @@
 title: 'useModal'
 excerpt: ''
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: 'useModal'
   description: 'Creates modal open/close state and focus-transfer actions.'

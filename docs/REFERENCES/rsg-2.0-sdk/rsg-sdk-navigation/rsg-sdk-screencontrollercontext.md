@@ -2,7 +2,7 @@
 title: 'ScreenControllerContext'
 excerpt: ''
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: 'ScreenControllerContext'
   description: 'Context for managing the screen stack provided by [ScreenControllerProvider](doc:rsg-sdk-screencontrollerprovider).'

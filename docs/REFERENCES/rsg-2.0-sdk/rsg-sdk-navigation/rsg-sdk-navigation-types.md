@@ -2,7 +2,7 @@
 title: 'Navigation types'
 excerpt: ''
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: 'Navigation types'
   description: 'Types shared by several @roku-sdk/navigation exports, or used by none of them directly. Each is documented here once and linked from every page that uses it.'

@@ -2,7 +2,7 @@
 title: 'useFocusable'
 excerpt: ''
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: 'useFocusable'
   description: 'Registers a component instance with the nearest FocusBoundary.'

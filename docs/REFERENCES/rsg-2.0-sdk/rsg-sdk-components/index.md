@@ -2,7 +2,7 @@
 title: 'Components'
 excerpt: ''
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: 'Components (RSG 2.0 SDK)'
   description: 'Component types and base properties in the RSG 2.0 SDK.'

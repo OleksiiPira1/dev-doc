@@ -2,7 +2,7 @@
 title: 'Effect'
 excerpt: ''
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: 'Effect'
   description: 'Effect applies GPU shader-based rendering to a Rectangle or Poster.'

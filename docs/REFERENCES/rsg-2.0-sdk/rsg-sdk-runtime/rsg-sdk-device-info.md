@@ -2,7 +2,7 @@
 title: 'Device info'
 excerpt: ''
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: 'Device info'
   description: 'Static device properties and dynamic methods exposed by getDeviceInfo().'

@@ -2,7 +2,7 @@
 title: 'onRelease'
 excerpt: ''
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: 'onRelease'
   description: 'Wraps a handler so it fires only on key-up (release).'

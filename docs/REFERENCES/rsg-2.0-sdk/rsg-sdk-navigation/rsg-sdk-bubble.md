@@ -2,7 +2,7 @@
 title: 'bubble'
 excerpt: ''
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: 'bubble'
   description: 'Return from a key handler to pass the key on instead of consuming it.'

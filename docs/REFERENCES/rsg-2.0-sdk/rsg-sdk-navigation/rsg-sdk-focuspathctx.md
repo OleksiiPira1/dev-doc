@@ -2,7 +2,7 @@
 title: 'FocusPathCtx'
 excerpt: ''
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: 'FocusPathCtx'
   description: 'Context that RootFocusBoundary provides when its setFocusPath prop is set, so that useFocusable can report which SceneGraph node holds virtual focus.'
