@@ -667,9 +667,9 @@ Upload completed cue sheets to the Hub. If you have specific questions about Rok
 
 ## 8. Paper deliverables
 
-Roku uses a Deliverables Hub (“Hub”) to receive and retain specific production documents. The Hub is project specific and will serve as the portal for key paper deliverables. Please remember the materials and folders are confidential and may not be shared beyond authorized parties. With a few exceptions, the Hub is used in lieu of emailing various Roku teams’ relevant documentation.
+Roku uses a Deliverables Hub (“Hub”) to receive and retain specific production documents. The Hub is project specific and will serve as the portal for key paper deliverables. Please remember that the materials and folders are confidential and may not be shared beyond authorized parties. With a few exceptions, the Hub is used in lieu of emailing various Roku teams’ relevant documentation.
 
-Prior to pre-production you will receive an email with instructions for accessing the Hub.
+Prior to pre-production, you will receive an email with instructions for accessing the Hub.
 
 Due to the **<u>confidential</u>** nature of the required paper deliverables, access to the Hub will be limited to 4 key project personnel. Only those who are responsible for uploading deliverables noted in [Section 8.1](#81-required-paper-deliverables), should have access.
 
@@ -689,15 +689,15 @@ Below you’ll find a list of **paper** deliverables for Production, Post, and P
 - Exhibit G’s
 - One Liners (all approved and final versions)
 - Outlines and Scripts (all approved and final versions)
+- Production Calendar
 - Production Reports (Prelim no later than 24 hours after shoot | Approved when available)
+- Production Vendor List
 - Script Supervisor Continuity Breakdowns and Fully-Lined Scripts
 - Set Status Reports (First Shot, Lunch, Wrap)
 - Shooting Schedule
 - Staff and Crew Lists (all approved and final versions)
 - Talent Days Worked
 - Trade-Out Request Form(s)
-- Production Vendor List
-- Production Calendar
 - Workflow Documentation
 
 #### 8.1.2 Post
@@ -765,11 +765,10 @@ All Roku projects have a unique Project Title ID (PTID). You must follow specifi
 
 If items aren't delivered correctly, they won't be accepted. Please don't add or remove folders. If you have questions or can't find specific folders, please reach out to Roku Production.
 
-Examples:
+Examples of our naming convention:
 
-- `ShowCode_ProdNumber_CallSheet_Date`
-- `ShowCode_ProdNumber_ProductionReport_Date`
-- `ShowCode_ProdNumber_Oneliner_Date`
+- `ShowName_SC00000_AppearanceRelease_JohnSmith_ao05.13.26`
+- `ShowName_SC00000_CallSheet_Day01_ao05.13.26_FINAL`
 
 ### 8.4 Guidelines and templates
 
@@ -794,5 +793,4 @@ There is a “Guidelines & Templates'” section located on the Hub. Here you wi
 
 #### 8.4.3 Production – scripted folder
 
-- Scripted Production Guidelines
 - COA
