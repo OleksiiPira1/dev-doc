@@ -1,10 +1,10 @@
 ---
-title: 'Effect (RSG 2.0 SDK)'
+title: 'Effect'
 excerpt: ''
 deprecated: false
 hidden: false
 metadata:
-  title: 'Effect (RSG 2.0 SDK)'
+  title: 'Effect'
   description: 'Effect applies GPU shader-based rendering to a Rectangle or Poster.'
   robots: index
 next:
