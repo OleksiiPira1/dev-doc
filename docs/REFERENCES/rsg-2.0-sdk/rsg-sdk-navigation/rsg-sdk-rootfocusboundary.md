@@ -2,29 +2,28 @@
 title: 'RootFocusBoundary'
 excerpt: ''
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: 'RootFocusBoundary'
   description: 'The root of a virtual focus tree for a single anchor node.'
   robots: index
 next:
   description: ''
+  pages:
+    - slug: rsg-sdk-screencontrollercontext
+      title: 'ScreenControllerContext'
+      type: basic
 ---
 
 <!-- derived: rsg-sdk/external/packages/navigation/src/focus-boundary/root-focus-boundary.tsx#RootFocusBoundary.deck -->
 
 The root of a virtual focus tree for a single anchor node
 
-> ⚠️ This page is generated — edit the source JSDoc in `rsg-sdk/external/packages/navigation/src/focus-boundary/root-focus-boundary.tsx`.
+<!-- ⚠️ This page is generated — edit the source JSDoc in `rsg-sdk/external/packages/navigation/src/focus-boundary/root-focus-boundary.tsx`. -->
 
 ```typescript
 import { RootFocusBoundary } from "@roku-sdk/navigation";
 ```
-
-**Package:** `@roku-sdk/navigation`
-
-### RootFocusBoundary
-<!-- generator-heading -->
 
 <!-- derived: rsg-sdk/external/packages/navigation/src/focus-boundary/root-focus-boundary.tsx#RootFocusBoundary.signature -->
 
@@ -32,7 +31,7 @@ import { RootFocusBoundary } from "@roku-sdk/navigation";
 RootFocusBoundary(props: IRootFocusBoundaryProps): JSX.Element
 ```
 
-#### Description
+## Description
 <!-- generator-heading -->
 
 <!-- src: rsg-sdk/external/packages/navigation/src/focus-boundary/root-focus-boundary.tsx#RootFocusBoundary.description -->
@@ -53,16 +52,16 @@ extends `FocusBoundaryBase` (e.g. a scene plus a separately-rendered overlay).
 Each observes its own `keyEvent`, and only the one in the SceneGraph focus
 chain is active at a time via `focusActive`.
 
-#### Parameters
+## Parameters
 <!-- generator-heading -->
 
 <!-- derived: rsg-sdk/external/packages/navigation/src/focus-boundary/root-focus-boundary.tsx#RootFocusBoundary.params -->
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `props` | [IRootFocusBoundaryProps](doc:rootfocusboundary#irootfocusboundaryprops) |  |
+| :--- | :--- | :--- |
+| `props` | [IRootFocusBoundaryProps](doc:rsg-sdk-rootfocusboundary#irootfocusboundaryprops) | The anchor node's inputs and outputs, and the tree's content. |
 
-#### Example
+## Example
 <!-- generator-heading -->
 
 <!-- derived: rsg-sdk/external/packages/navigation/src/focus-boundary/root-focus-boundary.tsx#RootFocusBoundary.example -->
@@ -96,7 +95,7 @@ Props for the `RootFocusBoundary` component.
 <!-- derived: rsg-sdk/external/packages/navigation/src/focus-boundary/root-focus-boundary.tsx#IRootFocusBoundaryProps.table -->
 
 | Name | Type | Description |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | `captureKeyPress?` | `boolean` | When `true`, a key-down consumed by a handler this boundary owns binds the matching key-up to that handler. See `IFocusBoundaryProps.captureKeyPress`. |
 | `children?` | `Element` | The focus tree's content. Descendants that call `useFocusable` register with this boundary, unless a nearer `FocusBoundary` sits between them. |
 | `focusActive?` | `boolean` | Reactive signal indicating whether this anchor node currently has SceneGraph focus. Wire from the anchor node's `focusActive` input field. See `IFocusBoundaryProps.focusActive`. |

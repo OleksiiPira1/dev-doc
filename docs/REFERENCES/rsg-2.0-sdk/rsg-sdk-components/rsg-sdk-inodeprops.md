@@ -2,7 +2,7 @@
 title: 'INodeProps'
 excerpt: ''
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: 'INodeProps'
   description: 'Base properties for all SceneGraph nodes.'
@@ -15,11 +15,9 @@ next:
 
 Base properties for all SceneGraph nodes
 
-> ⚠️ This page is generated — edit the source JSDoc in `rsg-sdk/external/packages/components/src/sg-nodes/node.ts`.
+<!-- ⚠️ This page is generated — edit the source JSDoc in `rsg-sdk/external/packages/components/src/sg-nodes/node.ts`. -->
 
 <!-- derived: rsg-sdk/external/packages/components/src/sg-nodes/node.ts#INodeProps.intro -->
-
-Base properties for all SceneGraph nodes.
 
 Node is the abstract base class for all SceneGraph nodes. It provides fundamental properties
 and functionality that all nodes inherit, including identification, focus management, and event handling.
@@ -30,7 +28,7 @@ and functionality that all nodes inherit, including identification, focus manage
 <!-- derived: rsg-sdk/external/packages/components/src/sg-nodes/node.ts#INodeProps.props -->
 
 | Prop | Type | Default | Description |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | `children?` | `Element` | — | Child elements - handled by renderer's tree manipulation, not sent as a property |
 | `focusable?` | `boolean` | — | Provides a hint as to whether or not this node can take the key focus. |
 | `gainFocus?` | `boolean` | — | Declarative focus control - triggers focus on render |

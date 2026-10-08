@@ -2,29 +2,28 @@
 title: 'bubble'
 excerpt: ''
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: 'bubble'
   description: 'Return from a key handler to pass the key on instead of consuming it.'
   robots: index
 next:
   description: ''
+  pages:
+    - slug: rsg-sdk-computesgpath
+      title: 'computeSGPath'
+      type: basic
 ---
 
 <!-- derived: rsg-sdk/external/packages/navigation/src/focus-boundary/focus-boundary.tsx#bubble.deck -->
 
 Return from a key handler to pass the key on instead of consuming it
 
-> ⚠️ This page is generated — edit the source JSDoc in `rsg-sdk/external/packages/navigation/src/focus-boundary/focus-boundary.tsx`.
+<!-- ⚠️ This page is generated — edit the source JSDoc in `rsg-sdk/external/packages/navigation/src/focus-boundary/focus-boundary.tsx`. -->
 
 ```typescript
 import { bubble } from "@roku-sdk/navigation";
 ```
-
-**Package:** `@roku-sdk/navigation`
-
-### bubble
-<!-- generator-heading -->
 
 <!-- derived: rsg-sdk/external/packages/navigation/src/focus-boundary/focus-boundary.tsx#bubble.signature -->
 
@@ -32,7 +31,7 @@ import { bubble } from "@roku-sdk/navigation";
 const bubble: unique symbol
 ```
 
-#### Description
+## Description
 <!-- generator-heading -->
 
 <!-- src: rsg-sdk/external/packages/navigation/src/focus-boundary/focus-boundary.tsx#bubble.description -->
@@ -48,7 +47,7 @@ can end up with two copies (a version skew between a library's peer and the app'
 and a plain `Symbol()` from one copy would not be `===` to the other's, so a decline returned by
 a library would silently consume instead.
 
-#### Example
+## Example
 <!-- generator-heading -->
 
 <!-- derived: rsg-sdk/external/packages/navigation/src/focus-boundary/focus-boundary.tsx#bubble.example -->

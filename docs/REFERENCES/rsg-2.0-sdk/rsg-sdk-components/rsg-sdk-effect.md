@@ -1,10 +1,10 @@
 ---
-title: 'Effect (RSG SDK 2.0)'
+title: 'Effect'
 excerpt: ''
 deprecated: false
-hidden: true
+hidden: false
 metadata:
-  title: 'Effect (RSG SDK 2.0)'
+  title: 'Effect'
   description: 'Effect applies GPU shader-based rendering to a Rectangle or Poster.'
   robots: index
 next:
@@ -17,7 +17,7 @@ Effect applies GPU shader-based rendering to a Rectangle or Poster
 
 _Available since Roku OS 16.0_
 
-> ⚠️ This page is generated — edit the source JSDoc in `rsg-sdk/external/packages/components/src/sg-nodes/effect.tsx`.
+<!-- ⚠️ This page is generated — edit the source JSDoc in `rsg-sdk/external/packages/components/src/sg-nodes/effect.tsx`. -->
 
 ```typescript
 import { Effect } from "@roku-sdk/components";
@@ -54,7 +54,7 @@ device configuration are invisible to that check.
 <!-- derived: rsg-sdk/external/packages/components/src/sg-nodes/effect.props.ts#IEffectProps.props -->
 
 | Prop | Type | Default | Description |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | `borderColor?` | `string` | — | Border stroke color as an RGBA hex string (e.g. `"0xFF0000FF"`). |
 | `borderPadding?` | `number` | — | Padding in pixels between the border and the content rect. It changes nothing while `borderWidth` is 0, so it is not content padding. |
 | `borderRadius?` | `number \| [number, number, number, number]` | — | Per-corner border radius in pixels. A single number applies a uniform radius to all corners. A four-element tuple sets each corner independently: `[topLeft, topRight, bottomRight, bottomLeft]`. The tuple is one Vector4 field, so a `FloatFieldInterpolator` cannot animate it. |
@@ -68,7 +68,7 @@ device configuration are invisible to that check.
 | `gradientStops?` | `number[]` | — | Normalized stop positions `[0, 1]` corresponding to each entry in `gradientColors`. If omitted, colors are distributed evenly across the gradient. A length mismatch is not reported. |
 | `gradientStyle?` | `GradientStyle` | — | Gradient fill style applied over the content area. No gradient renders while this is `"none"`. |
 
-Extends [INodeProps](doc:inodeprops) — see the base type page for inherited props.
+Extends [INodeProps](doc:rsg-sdk-inodeprops) — see the base type page for inherited props.
 
 ## Examples
 <!-- generator-heading -->

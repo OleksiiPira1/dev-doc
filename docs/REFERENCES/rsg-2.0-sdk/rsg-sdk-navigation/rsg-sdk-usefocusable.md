@@ -2,29 +2,28 @@
 title: 'useFocusable'
 excerpt: ''
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: 'useFocusable'
   description: 'Registers a component instance with the nearest FocusBoundary.'
   robots: index
 next:
   description: ''
+  pages:
+    - slug: rsg-sdk-usefocusactions
+      title: 'useFocusActions'
+      type: basic
 ---
 
 <!-- derived: rsg-sdk/external/packages/navigation/src/focus-boundary/focus-boundary.tsx#useFocusable.deck -->
 
 Registers a component instance with the nearest `FocusBoundary`
 
-> ⚠️ This page is generated — edit the source JSDoc in `rsg-sdk/external/packages/navigation/src/focus-boundary/focus-boundary.tsx`.
+<!-- ⚠️ This page is generated — edit the source JSDoc in `rsg-sdk/external/packages/navigation/src/focus-boundary/focus-boundary.tsx`. -->
 
 ```typescript
 import { useFocusable } from "@roku-sdk/navigation";
 ```
-
-**Package:** `@roku-sdk/navigation`
-
-### useFocusable
-<!-- generator-heading -->
 
 <!-- derived: rsg-sdk/external/packages/navigation/src/focus-boundary/focus-boundary.tsx#useFocusable.signature -->
 
@@ -32,7 +31,7 @@ import { useFocusable } from "@roku-sdk/navigation";
 useFocusable(options: UseFocusableOptions): { focus: () => void; focusId: object; hasFootprint: () => boolean; isFocused: () => boolean; ref: (el: unknown) => void }
 ```
 
-#### Description
+## Description
 <!-- generator-heading -->
 
 <!-- src: rsg-sdk/external/packages/navigation/src/focus-boundary/focus-boundary.tsx#useFocusable.description -->
@@ -42,16 +41,16 @@ Registers a component instance with the nearest `FocusBoundary`.
 Must be called inside a component rendered within a `RootFocusBoundary` or `FocusBoundary`.
 Registration (and the ordering of focusables for navigation) follows render order.
 
-#### Parameters
+## Parameters
 <!-- generator-heading -->
 
 <!-- derived: rsg-sdk/external/packages/navigation/src/focus-boundary/focus-boundary.tsx#useFocusable.params -->
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `options` | [UseFocusableOptions](doc:usefocusable#usefocusableoptions) | Options passed to `useFocusable`. Extends `FocusHandlers` with an optional pre-created `focusId` identity. |
+| :--- | :--- | :--- |
+| `options` | [UseFocusableOptions](doc:rsg-sdk-usefocusable#usefocusableoptions) | Options passed to `useFocusable`. Extends `FocusHandlers` with an optional pre-created `focusId` identity. |
 
-#### Return values
+## Return values
 <!-- generator-heading -->
 
 <!-- src: rsg-sdk/external/packages/navigation/src/focus-boundary/focus-boundary.tsx#useFocusable.returns -->
@@ -69,7 +68,7 @@ Registration (and the ordering of focusables for navigation) follows render orde
    focus indicator so the user knows where focus will land on return.
 - `focus()` — imperatively move virtual focus to this component
 
-#### Example
+## Example
 <!-- generator-heading -->
 
 <!-- derived: rsg-sdk/external/packages/navigation/src/focus-boundary/focus-boundary.tsx#useFocusable.example -->
@@ -106,10 +105,10 @@ Extends `FocusHandlers` with an optional pre-created `focusId` identity.
 <!-- derived: rsg-sdk/external/packages/navigation/src/focus-boundary/focus-boundary.tsx#UseFocusableOptions.table -->
 
 | Name | Type | Description |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | `focusId?` | `FocusId` | A pre-created stable object to use as this component's virtual focus identity. Use this when you need to pass the identity to `FocusBoundary`'s `initialFocus` prop.  If omitted, `useFocusable` creates a new `{}` object automatically. |
 
-Extends [FocusHandlers](doc:usefocusable#focushandlers).
+Extends [FocusHandlers](doc:rsg-sdk-usefocusable#focushandlers).
 
 ### FocusHandlers
 <!-- generator-heading -->
@@ -122,7 +121,7 @@ All fields are optional.
 <!-- derived: rsg-sdk/external/packages/navigation/src/focus-boundary/focus-boundary.tsx#FocusHandlers.table -->
 
 | Name | Type | Description |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | `canReceiveFocus?` | `() => boolean` | If provided, the boundary will only move virtual focus here when this returns `true`. Defaults to always focusable. |
 | `onFocusGained?` | `() => void` | Called when this component gains virtual focus. |
 | `onFocusLost?` | `() => void` | Called when this component loses virtual focus. |

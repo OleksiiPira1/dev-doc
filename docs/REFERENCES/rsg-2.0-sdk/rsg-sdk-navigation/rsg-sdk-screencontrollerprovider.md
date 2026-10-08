@@ -2,29 +2,28 @@
 title: 'ScreenControllerProvider'
 excerpt: ''
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: 'ScreenControllerProvider'
-  description: 'Provider for [ScreenControllerContext](doc:screencontrollercontext).'
+  description: 'Provider for [ScreenControllerContext](doc:rsg-sdk-screencontrollercontext).'
   robots: index
 next:
   description: ''
+  pages:
+    - slug: rsg-sdk-usefocusable
+      title: 'useFocusable'
+      type: basic
 ---
 
 <!-- derived: rsg-sdk/external/packages/navigation/src/screen-controller/screen-controller.tsx#ScreenControllerProvider.deck -->
 
-Provider for [ScreenControllerContext](doc:screencontrollercontext)
+Provider for [ScreenControllerContext](doc:rsg-sdk-screencontrollercontext)
 
-> ⚠️ This page is generated — edit the source JSDoc in `rsg-sdk/external/packages/navigation/src/screen-controller/screen-controller.tsx`.
+<!-- ⚠️ This page is generated — edit the source JSDoc in `rsg-sdk/external/packages/navigation/src/screen-controller/screen-controller.tsx`. -->
 
 ```typescript
 import { ScreenControllerProvider } from "@roku-sdk/navigation";
 ```
-
-**Package:** `@roku-sdk/navigation`
-
-### ScreenControllerProvider
-<!-- generator-heading -->
 
 <!-- derived: rsg-sdk/external/packages/navigation/src/screen-controller/screen-controller.tsx#ScreenControllerProvider.signature -->
 
@@ -32,12 +31,12 @@ import { ScreenControllerProvider } from "@roku-sdk/navigation";
 ScreenControllerProvider(props: IScreenControllerProviderProps): JSX.Element
 ```
 
-#### Description
+## Description
 <!-- generator-heading -->
 
 <!-- src: rsg-sdk/external/packages/navigation/src/screen-controller/screen-controller.tsx#ScreenControllerProvider.description -->
 
-Provider for [ScreenControllerContext](doc:screencontrollercontext).
+Provider for [ScreenControllerContext](doc:rsg-sdk-screencontrollercontext).
 
 Holds a stack of screen factory functions. The provider itself does not render any chrome
 around the screens — it simply renders every stack entry bottom-to-top, so the consumer is
@@ -50,16 +49,16 @@ Pass `null` to render the provider's `fallback` factory at that slot.
 Apps that prefer addressing screens by string id can layer a thin "registry" wrapper on top
 of this controller; see the showcase's `ScreenRegistryContext` for a canonical example.
 
-#### Parameters
+## Parameters
 <!-- generator-heading -->
 
 <!-- derived: rsg-sdk/external/packages/navigation/src/screen-controller/screen-controller.tsx#ScreenControllerProvider.params -->
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `props` | [IScreenControllerProviderProps](doc:screencontrollerprovider#iscreencontrollerproviderprops) |  |
+| :--- | :--- | :--- |
+| `props` | [IScreenControllerProviderProps](doc:rsg-sdk-screencontrollerprovider#iscreencontrollerproviderprops) | The app content and the `fallback` screen factory. |
 
-#### Example
+## Example
 <!-- generator-heading -->
 
 <!-- derived: rsg-sdk/external/packages/navigation/src/screen-controller/screen-controller.tsx#ScreenControllerProvider.example -->
@@ -78,11 +77,11 @@ of this controller; see the showcase's `ScreenRegistryContext` for a canonical e
 
 <!-- src: rsg-sdk/external/packages/navigation/src/screen-controller/types.ts#IScreenControllerProviderProps.description -->
 
-Props accepted by [ScreenControllerProvider](doc:screencontrollerprovider).
+Props accepted by [ScreenControllerProvider](doc:rsg-sdk-screencontrollerprovider).
 
 <!-- derived: rsg-sdk/external/packages/navigation/src/screen-controller/types.ts#IScreenControllerProviderProps.table -->
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `children` | `Element` | The app content that can read [ScreenControllerContext](doc:screencontrollercontext). The provider renders only these children; the screen stack appears wherever a descendant places `getScreen()`. |
+| :--- | :--- | :--- |
+| `children` | `Element` | The app content that can read [ScreenControllerContext](doc:rsg-sdk-screencontrollercontext). The provider renders only these children; the screen stack appears wherever a descendant places `getScreen()`. |
 | `fallback` | `() => Element` | Factory for the fallback screen. Used when a stack entry's factory is `null`, when `resetScreen()` is called with no argument, or when the stack is empty. |

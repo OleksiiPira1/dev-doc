@@ -2,29 +2,28 @@
 title: 'useFocusActions'
 excerpt: ''
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: 'useFocusActions'
   description: 'Returns imperative focus actions for the nearest FocusBoundary.'
   robots: index
 next:
   description: ''
+  pages:
+    - slug: rsg-sdk-usemodal
+      title: 'useModal'
+      type: basic
 ---
 
 <!-- derived: rsg-sdk/external/packages/navigation/src/focus-boundary/focus-boundary.tsx#useFocusActions.deck -->
 
 Returns imperative focus actions for the nearest `FocusBoundary`
 
-> ⚠️ This page is generated — edit the source JSDoc in `rsg-sdk/external/packages/navigation/src/focus-boundary/focus-boundary.tsx`.
+<!-- ⚠️ This page is generated — edit the source JSDoc in `rsg-sdk/external/packages/navigation/src/focus-boundary/focus-boundary.tsx`. -->
 
 ```typescript
 import { useFocusActions } from "@roku-sdk/navigation";
 ```
-
-**Package:** `@roku-sdk/navigation`
-
-### useFocusActions
-<!-- generator-heading -->
 
 <!-- derived: rsg-sdk/external/packages/navigation/src/focus-boundary/focus-boundary.tsx#useFocusActions.signature -->
 
@@ -32,7 +31,7 @@ import { useFocusActions } from "@roku-sdk/navigation";
 useFocusActions(): FocusActions
 ```
 
-#### Description
+## Description
 <!-- generator-heading -->
 
 <!-- src: rsg-sdk/external/packages/navigation/src/focus-boundary/focus-boundary.tsx#useFocusActions.description -->
@@ -43,7 +42,7 @@ Use this when a component inside a boundary needs to move focus to a
 different registered child ref, such as transferring focus to a sibling
 nested boundary.
 
-#### Return values
+## Return values
 <!-- generator-heading -->
 
 <!-- derived: rsg-sdk/external/packages/navigation/src/focus-boundary/focus-boundary.tsx#useFocusActions.returns -->
@@ -63,7 +62,7 @@ Imperative focus actions exposed by `useFocusActions`.
 <!-- derived: rsg-sdk/external/packages/navigation/src/focus-boundary/focus-boundary.tsx#FocusActions.table -->
 
 | Name | Type | Description |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | `dispatchKey` | `(key: string, press: boolean) => boolean` | Push a key event into the nearest boundary's dispatch chain and report whether it was consumed.  This is the entry point for code that already owns a key stream from somewhere other than a SceneGraph `keyEvent` field — most notably a FlexGrid cell's `KeyDelegate`, which receives keys from the grid and wants to offer them to a boundary it renders internally. It is the same dispatch a nested boundary receives from its parent, exposed publicly.  The return value is the whole point: `false` means no focusable consumed the key and no navigation moved, so the caller remains free to handle it or decline it and let its own caller's fallback run. A boundary driven this way therefore never silently swallows a key the caller needed back.  A release runs the same chain as a press, minus directional navigation. Always dispatch releases — that is how a consumer learns a hold ended — and treat `false` the same way you would for a press. Note that a directional press consumed by navigation returns `true` while its release returns `false`, since navigation does not run on key-up.  `false` from a *root* boundary goes nowhere: `FocusBoundaryBase.brs` forwards the key by writing a field and reports it handled before TypeScript has run. Only nested boundaries can hand a key back to a caller that might still want it. |
 | `focusedId` | `Accessor<object \| null>` | Reactive accessor for the nearest boundary's currently focused child focusId. |
 | `isActive` | `Accessor<boolean>` | Whether the nearest boundary is itself active — i.e. it holds focus within its parent, all the way up the chain. `false` means focus currently sits outside this boundary entirely, so no key will be routed here.  Distinct from a child's `isFocused()`: this says nothing about *which* child is focused, only whether this whole subtree is in the focus path. Use it to tear down state that should not outlive the boundary holding focus — a hold timer armed by a key-down whose key-up will now be routed somewhere else, for instance, since a release follows current focus and so may never arrive here. |

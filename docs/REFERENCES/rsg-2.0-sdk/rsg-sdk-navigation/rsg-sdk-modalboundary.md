@@ -2,29 +2,28 @@
 title: 'ModalBoundary'
 excerpt: ''
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: 'ModalBoundary'
   description: 'Renders a custom dialog with its own FocusBoundary, dismissed by the Back key.'
   robots: index
 next:
   description: ''
+  pages:
+    - slug: rsg-sdk-onpress
+      title: 'onPress'
+      type: basic
 ---
 
 <!-- derived: rsg-sdk/external/packages/navigation/src/modal-boundary/modal-boundary.tsx#ModalBoundary.deck -->
 
 Renders a custom dialog with its own `FocusBoundary`, dismissed by the Back key
 
-> ⚠️ This page is generated — edit the source JSDoc in `rsg-sdk/external/packages/navigation/src/modal-boundary/modal-boundary.tsx`.
+<!-- ⚠️ This page is generated — edit the source JSDoc in `rsg-sdk/external/packages/navigation/src/modal-boundary/modal-boundary.tsx`. -->
 
 ```typescript
 import { ModalBoundary } from "@roku-sdk/navigation";
 ```
-
-**Package:** `@roku-sdk/navigation`
-
-### ModalBoundary
-<!-- generator-heading -->
 
 <!-- derived: rsg-sdk/external/packages/navigation/src/modal-boundary/modal-boundary.tsx#ModalBoundary.signature -->
 
@@ -32,7 +31,7 @@ import { ModalBoundary } from "@roku-sdk/navigation";
 ModalBoundary(props: IModalBoundaryProps): JSX.Element
 ```
 
-#### Description
+## Description
 <!-- generator-heading -->
 
 <!-- src: rsg-sdk/external/packages/navigation/src/modal-boundary/modal-boundary.tsx#ModalBoundary.description -->
@@ -40,21 +39,21 @@ ModalBoundary(props: IModalBoundaryProps): JSX.Element
 Renders a custom dialog with its own `FocusBoundary`, dismissed by the Back key.
 
 Set `dismissKeys` to dismiss on other keys instead. Render it as a sibling of the content it covers, under a common ancestor
-`FocusBoundary`, and drive it with [useModal](doc:usemodal), which owns the `show` state and
+`FocusBoundary`, and drive it with [useModal](doc:rsg-sdk-usemodal), which owns the `show` state and
 moves focus into the dialog when it opens. If the dialog has focusable children,
 such as Confirm and Cancel buttons, pass `initialFocus`. If it has none, such as a
 help overlay, omit `initialFocus` and a hidden focus target is added for you.
 
-#### Parameters
+## Parameters
 <!-- generator-heading -->
 
 <!-- derived: rsg-sdk/external/packages/navigation/src/modal-boundary/modal-boundary.tsx#ModalBoundary.params -->
 
 | Name | Type | Description |
-| --- | --- | --- |
-| `props` | [IModalBoundaryProps](doc:modalboundary#imodalboundaryprops) |  |
+| :--- | :--- | :--- |
+| `props` | [IModalBoundaryProps](doc:rsg-sdk-modalboundary#imodalboundaryprops) | Visibility, focus identity, dismissal and dialog content. |
 
-#### Example
+## Example
 <!-- generator-heading -->
 
 <!-- derived: rsg-sdk/external/packages/navigation/src/modal-boundary/modal-boundary.tsx#ModalBoundary.example -->
@@ -80,7 +79,7 @@ Props for the `ModalBoundary` component.
 <!-- derived: rsg-sdk/external/packages/navigation/src/modal-boundary/modal-boundary.tsx#IModalBoundaryProps.table -->
 
 | Name | Type | Description |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | `children?` | `Element` | The dialog's visual content (and, in Case 1, its focusable children). |
 | `dim?` | `string \| boolean` | Simple scrim behind the dialog. `true` uses the default dark overlay (`0x000000AA`); a string sets a custom color/opacity; `false`/`undefined` renders no scrim. Ignored when `scrim` is provided. |
 | `dismissKeys?` | `string[]` | Remote key names that dismiss the modal, wired to the inner boundary's `onUnhandledKey`. Each fires `onDismiss` on key-down. |
