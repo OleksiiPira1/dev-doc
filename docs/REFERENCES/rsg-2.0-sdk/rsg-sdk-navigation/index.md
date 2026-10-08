@@ -1,5 +1,5 @@
 ---
-title: '@roku-sdk/navigation'
+title: 'Navigation'
 excerpt: ''
 deprecated: false
 hidden: false
