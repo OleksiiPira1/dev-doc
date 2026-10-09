@@ -175,7 +175,7 @@ To create a purchase option for a product, follow these steps:
       </td>
 
       <td>
-        Select the billing period to be used for the subscription product: <strong>monthly</strong>, <strong>quarterly</strong>, or <strong>annual</strong>. Using quartely billing requires <a href="https://developer.roku.com/dev/docs/add-ons-integration#appendix-a-add-on-api-reference">additional API work</a>.
+        Select the billing period to be used for the subscription product: <strong>monthly</strong>, <strong>quarterly</strong>, or <strong>annual</strong>. Using quarterly billing requires <a href="https://developer.roku.com/dev/docs/add-ons-integration#appendix-a-add-on-api-reference">additional API work</a>.
       </td>
     </tr>
 

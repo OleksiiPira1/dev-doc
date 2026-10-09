@@ -371,7 +371,7 @@ Roku Production will attend in person or via dial-in. It is asked that a phone d
 
 ### 4.3 Internal ad sales needs
 
-As The Roku Channel is 100% ad supported, we'll reach out prior to commencement of principal photography to discuss the B2B sizzle as welll as if there is a need to capture a very simple, straight forward message from talent about the show to be used internally only.
+As The Roku Channel is 100% ad supported, we'll reach out prior to commencement of principal photography to discuss the B2B sizzle as welll as if there is a need to capture a very simple, straightforward message from talent about the show to be used internally only.
 
 - B2B Sizzle – this is a 30-45 second sizzle to be used internally only for business to business purposes.
   - Important notes: the sizzle does not require any clearance or music licensing or formal finishing (e.g. color, mix)
