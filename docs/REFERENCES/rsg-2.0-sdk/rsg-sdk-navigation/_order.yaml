@@ -3,7 +3,6 @@
 - rsg-sdk-focusboundary
 - rsg-sdk-focuspathctx
 - rsg-sdk-modalboundary
-- rsg-sdk-navigation-types
 - rsg-sdk-onpress
 - rsg-sdk-onrelease
 - rsg-sdk-rootfocusboundary
@@ -12,3 +11,4 @@
 - rsg-sdk-usefocusable
 - rsg-sdk-usefocusactions
 - rsg-sdk-usemodal
+- rsg-sdk-navigation-types

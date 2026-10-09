@@ -2,28 +2,29 @@
 title: 'ScreenControllerContext'
 excerpt: ''
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: 'ScreenControllerContext'
-  description: 'Context for managing the screen stack provided by [ScreenControllerProvider](doc:rsg-sdk-screencontrollerprovider).'
+  description: 'Context for managing the screen stack provided by [ScreenControllerProvider](screencontrollerprovider.md).'
   robots: index
 next:
   description: ''
-  pages:
-    - slug: rsg-sdk-screencontrollerprovider
-      title: 'ScreenControllerProvider'
-      type: basic
 ---
 
 <!-- derived: rsg-sdk/external/packages/navigation/src/screen-controller/screen-controller.tsx#ScreenControllerContext.deck -->
 
-Context for managing the screen stack provided by [ScreenControllerProvider](doc:rsg-sdk-screencontrollerprovider)
+Context for managing the screen stack provided by [ScreenControllerProvider](screencontrollerprovider.md)
 
-<!-- ⚠️ This page is generated — edit the source JSDoc in `rsg-sdk/external/packages/navigation/src/screen-controller/screen-controller.tsx`. -->
+> ⚠️ This page is generated — edit the source JSDoc in `rsg-sdk/external/packages/navigation/src/screen-controller/screen-controller.tsx`.
 
 ```typescript
 import { ScreenControllerContext } from "@roku-sdk/navigation";
 ```
+
+**Package:** `@roku-sdk/navigation`
+
+### ScreenControllerContext
+<!-- generator-heading -->
 
 <!-- derived: rsg-sdk/external/packages/navigation/src/screen-controller/screen-controller.tsx#ScreenControllerContext.signature -->
 
@@ -31,17 +32,17 @@ import { ScreenControllerContext } from "@roku-sdk/navigation";
 const ScreenControllerContext: Context<IScreenControllerContext>
 ```
 
-## Description
+#### Description
 <!-- generator-heading -->
 
 <!-- src: rsg-sdk/external/packages/navigation/src/screen-controller/screen-controller.tsx#ScreenControllerContext.description -->
 
-Context for managing the screen stack provided by [ScreenControllerProvider](doc:rsg-sdk-screencontrollerprovider).
+Context for managing the screen stack provided by [ScreenControllerProvider](screencontrollerprovider.md).
 
 Read it with `useContext(ScreenControllerContext)` to push, pop, and replace
 screens. Every method throws if no `ScreenControllerProvider` is above the caller.
 
-## Example
+#### Example
 <!-- generator-heading -->
 
 <!-- derived: rsg-sdk/external/packages/navigation/src/screen-controller/screen-controller.tsx#ScreenControllerContext.example -->
@@ -59,7 +60,7 @@ pushScreen(() => <DetailsScreen onBack={popScreen} />);
 
 <!-- src: rsg-sdk/external/packages/navigation/src/screen-controller/types.ts#IScreenControllerContext.description -->
 
-Public API of the [ScreenControllerProvider](doc:rsg-sdk-screencontrollerprovider).
+Public API of the [ScreenControllerProvider](screencontrollerprovider.md).
 
 The controller owns:
 - a stack of currently-active screen factories that drives what `getScreen()` renders,
@@ -70,10 +71,10 @@ Callers may pass `null` (or omit the argument on `resetScreen`) to render the pr
 `fallback` factory at that slot.
 
 Two complementary navigation styles are supported:
-- **Stack navigation** via `pushScreen` / `popScreen`: every entry stays mounted, the top
+- **Stack navigation** via `pushScreen` / `popScreen` — every entry stays mounted, the top
   entry is rendered above the previous one, and lower-level component state is preserved
   in memory automatically.
-- **Replace navigation** via `setScreen`: the previous top is unmounted and replaced; if
+- **Replace navigation** via `setScreen` — the previous top is unmounted and replaced; if
   you need to preserve any state across the swap, save and restore it yourself.
 
 Apps that prefer addressing screens by string id can layer a thin "registry" wrapper on
@@ -82,10 +83,10 @@ top of this controller; see the showcase's `ScreenRegistryContext` for a canonic
 <!-- derived: rsg-sdk/external/packages/navigation/src/screen-controller/types.ts#IScreenControllerContext.table -->
 
 | Name | Type | Description |
-| :--- | :--- | :--- |
-| `getScreen` | `() => Element` | Returns the JSX rendering every screen currently on the stack (bottom-to-top). Entries below the top stay mounted so their component state is preserved.<br /><br />The controller does not draw any background or "cover" of its own; whatever the top screen returns is laid directly on top of the screen below. If you want lower screens fully hidden you must paint your own opaque background (or set `visible={false}`). |
-| `onScreenCovered` | `(callback: () => void) => void` | Registers a callback fired when the current top screen becomes covered by a newly pushed screen. Intended to be called from a screen component's `onMount`; automatically unregisters via Solid's `onCleanup` when the calling owner disposes.<br /><br />Typical uses: release resources that aren't needed while hidden (free heavy textures, pause timers, stop polling), or hide off-screen elements to save render time. |
-| `onScreenUncovered` | `(callback: () => void) => void` | Registers a callback fired when the screen directly above is popped and this screen becomes the top again. Intended to be called from a screen component's `onMount`; automatically unregisters via Solid's `onCleanup` when the calling owner disposes.<br /><br />Typical uses: restore previously released state (re-fetch data that may have changed while hidden, restore the previously focused element, resume timers). |
+| --- | --- | --- |
+| `getScreen` | `() => Element` | Returns the JSX rendering every screen currently on the stack (bottom-to-top). Entries below the top stay mounted so their component state is preserved.  The controller does not draw any background or "cover" of its own; whatever the top screen returns is laid directly on top of the screen below. If you want lower screens fully hidden you must paint your own opaque background (or set `visible={false}`). |
+| `onScreenCovered` | `(callback: () => void) => void` | Registers a callback fired when the current top screen becomes covered by a newly pushed screen. Intended to be called from a screen component's `onMount`; automatically unregisters via Solid's `onCleanup` when the calling owner disposes.  Typical uses: release resources that aren't needed while hidden (free heavy textures, pause timers, stop polling), or hide off-screen elements to save render time. |
+| `onScreenUncovered` | `(callback: () => void) => void` | Registers a callback fired when the screen directly above is popped and this screen becomes the top again. Intended to be called from a screen component's `onMount`; automatically unregisters via Solid's `onCleanup` when the calling owner disposes.  Typical uses: restore previously released state (re-fetch data that may have changed while hidden, restore the previously focused element, resume timers). |
 | `popScreen` | `() => void` | Removes and destroys the screen at the top of the stack, revealing the one below. No-op when the stack is empty; popping the last entry shows the provider's `fallback`. |
 | `pushScreen` | `(factory: () => Element \| null) => void` | Pushes a new screen on top of the stack, instantiating it above the existing one. Screens below remain mounted and preserve their state, so this is the right tool when you want to "drill down" into a sub-view and return without losing context. |
 | `resetScreen` | `(factory: () => Element \| null) => void` | Clears the entire screen stack and replaces it with a single entry. Use this to escape a deeply nested navigation (for example, jumping to a top-level screen from anywhere). |

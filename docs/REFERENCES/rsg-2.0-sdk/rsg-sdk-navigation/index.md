@@ -4,7 +4,7 @@ excerpt: ''
 deprecated: false
 hidden: true
 metadata:
-  title: '@roku-sdk/navigation'
+  title: 'Navigation'
   description: 'Navigation primitives for Roku SDK applications.'
   robots: index
 next:
@@ -20,8 +20,6 @@ next:
 Navigation primitives for Roku SDK applications
 
 <!-- ⚠️ This page is generated — edit the package README in `rsg-sdk/external/packages/navigation/README.md` and the JSDoc of each export. -->
-
-**Package:** `@roku-sdk/navigation`
 
 ## Pages
 <!-- generator-heading -->

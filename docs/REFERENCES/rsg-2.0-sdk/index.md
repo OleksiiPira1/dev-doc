@@ -5,15 +5,21 @@ deprecated: false
 hidden: true
 metadata:
   title: 'RSG 2.0 SDK'
-  description: 'Reference for the RSG 2.0 SDK: components, navigation, and runtime APIs.'
+  description: 'Reference for the RSG 2.0 SDK.'
   robots: index
 next:
   description: ''
 ---
-Reference for the RSG 2.0 SDK.
+
+<!-- derived: tools/jsdoc-reference/src/index.mjs#index.rsg-2-0-sdk.deck -->
+
+Reference for the RSG 2.0 SDK
 
 ## Sections
+<!-- generator-heading -->
 
-- [Components (RSG 2.0 SDK)](doc:rsg-sdk-components): Component types and base properties.
-- [@roku-sdk/navigation](doc:rsg-sdk-navigation): Navigation primitives for Roku SDK applications.
-- [Runtime (RSG 2.0 SDK)](doc:rsg-sdk-runtime): Runtime APIs such as device info.
+<!-- derived: tools/jsdoc-reference/src/index.mjs#index.rsg-2-0-sdk.pages -->
+
+- [Components](doc:rsg-sdk-components)
+- [Navigation](doc:rsg-sdk-navigation)
+- [Runtime](doc:rsg-sdk-runtime)

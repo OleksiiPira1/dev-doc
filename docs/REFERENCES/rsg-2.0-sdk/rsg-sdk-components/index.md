@@ -4,15 +4,25 @@ excerpt: ''
 deprecated: false
 hidden: true
 metadata:
-  title: 'Components (RSG 2.0 SDK)'
-  description: 'Component types and base properties in the RSG 2.0 SDK.'
+  title: 'Components'
+  description: 'Components APIs in the RSG 2.0 SDK.'
   robots: index
 next:
   description: ''
+  pages:
+    - slug: rsg-sdk-effect
+      title: 'Effect'
+      type: basic
 ---
-Component types and base properties in the RSG 2.0 SDK.
+
+<!-- derived: tools/jsdoc-reference/src/index.mjs#index.rsg-sdk-components.deck -->
+
+Components APIs in the RSG 2.0 SDK
 
 ## Pages
+<!-- generator-heading -->
 
-- [Effect (RSG 2.0 SDK)](doc:rsg-sdk-effect): Effect applies GPU shader-based rendering to a Rectangle or Poster.
-- [INodeProps](doc:rsg-sdk-inodeprops): Base properties for all SceneGraph nodes.
+<!-- derived: tools/jsdoc-reference/src/index.mjs#index.rsg-sdk-components.pages -->
+
+- [Effect](doc:rsg-sdk-effect)
+- [INodeProps](doc:rsg-sdk-inodeprops)

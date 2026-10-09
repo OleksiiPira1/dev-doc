@@ -2,32 +2,35 @@
 title: 'Device info'
 excerpt: ''
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   title: 'Device info'
   description: 'Static device properties and dynamic methods exposed by getDeviceInfo().'
   robots: index
 next:
   description: ''
-  pages:
-    - slug: rsg-sdk-getappinfo
-      title: 'getAppInfo'
-      type: basic
 ---
 
 <!-- derived: rsg-sdk/external/packages/runtime/src/device-info.ts#DeviceInfoStatic.deck -->
 
 Static device properties and dynamic methods exposed by `getDeviceInfo()`
 
-<!-- ⚠️ This page is generated — edit the source JSDoc in `rsg-sdk/external/packages/runtime/src/device-info.ts`. -->
+> ⚠️ This page is generated — edit the source JSDoc in `rsg-sdk/external/packages/runtime/src/device-info.ts`.
 
 ```typescript
-import {
-    getDeviceInfo,
-    useUiResolution,
-    useDeviceInfoEvents,
-} from "@roku-sdk/rsg-ts/runtime";
+import { getDeviceInfo, useUiResolution, useDeviceInfoEvents } from "@roku-sdk/rsg-ts/runtime";
 ```
+
+**Package:** `@roku-sdk/rsg-ts/runtime`
+
+<!-- derived: rsg-sdk/external/packages/runtime/src/device-info.ts#DeviceInfoStatic.intro -->
+
+Static device properties and dynamic methods exposed by `getDeviceInfo()`.
+
+This type is the subset of `DeviceInfo` that is safe to cache and pass around:
+it includes all static properties (model, locale, OS version, etc.) and the
+`getRandomUUID()` method, but excludes the event-handler setters — use the
+corresponding hooks (`useUiResolution`, `useDeviceInfoEvents`) for reactive data.
 
 ## Access
 <!-- generator-heading -->
@@ -67,10 +70,10 @@ Hook that delivers the device's current UI resolution once, at registration.
 Resolution-change notifications are not supported yet and will be available
 in a future OS build.
 
-Returns an object with a `uiResolution` signal that holds a [UIResolution](doc:rsg-sdk-device-info#uiresolution)
+Returns an object with a `uiResolution` signal that holds a [UIResolution](device-info.md#uiresolution)
 value delivered synchronously when the handler is registered.
 
-### Example: useUiResolution
+#### Example
 <!-- generator-heading -->
 
 <!-- derived: rsg-sdk/external/packages/runtime/src/device-info-events.ts#useUiResolution.example -->
@@ -102,13 +105,13 @@ corresponding OS event fires. Use inside a SolidJS reactive context
 <!-- src: rsg-sdk/external/packages/runtime/src/device-info-events.ts#useDeviceInfoEvents.returns -->
 
 An object with reactive signals:
-- `screensaverExited`: increments each time the screensaver exits.
-- `linkStatus`: increments each time the network link status changes.
-- `lowGeneralMemory`: `"NORMAL" | "LOW" | "CRITICAL" | "UNKNOWN"`, or `null` before the first callback.
+- `screensaverExited` — increments each time the screensaver exits.
+- `linkStatus` — increments each time the network link status changes.
+- `lowGeneralMemory` — `"NORMAL" | "LOW" | "CRITICAL" | "UNKNOWN"`, or `null` before the first callback.
   The runtime calls the handler with `"NORMAL"` immediately on registration.
-- `internetStatus`: increments each time internet connectivity changes.
+- `internetStatus` — increments each time internet connectivity changes.
 
-### Example: useDeviceInfoEvents
+#### Example
 <!-- generator-heading -->
 
 <!-- derived: rsg-sdk/external/packages/runtime/src/device-info-events.ts#useDeviceInfoEvents.example -->
@@ -167,11 +170,11 @@ const randomUUID = info?.getRandomUUID() ?? "(not available)";
 <!-- derived: rsg-sdk/external/packages/runtime/src/device-info.ts#events -->
 
 | Event | Description |
-| :--- | :--- |
+| --- | --- |
 | `uiResolution` | Delivered once at registration. Resolution-change notifications are not supported yet and will come in a future OS build. Subscribe via `useUiResolution()`. |
 | `screensaverExited` | increments each time the screensaver exits. |
 | `linkStatus` | increments each time the network link status changes. |
-| `lowGeneralMemory` | `"NORMAL" \| "LOW" \| "CRITICAL" \| "UNKNOWN"`, or `null` before the first callback. The runtime calls the handler with `"NORMAL"` immediately on registration. |
+| `lowGeneralMemory` | `"NORMAL" | "LOW" | "CRITICAL" | "UNKNOWN"`, or `null` before the first callback. The runtime calls the handler with `"NORMAL"` immediately on registration. |
 | `internetStatus` | increments each time internet connectivity changes. |
 
 ## Types
@@ -192,7 +195,7 @@ corresponding hooks (`useUiResolution`, `useDeviceInfoEvents`) for reactive data
 <!-- derived: rsg-sdk/external/packages/runtime/src/device-info.ts#DeviceInfoStatic.table -->
 
 | Property | Type | Description |
-| :--- | :--- | :--- |
+| --- | --- | --- |
 | `apiVersion` | `number` | Version of the DeviceInfo runtime API (currently `0`). |
 | `channelClientId` | `string` | A UUID identifying this device for this channel. Changes if the account is relinked or in auto-sign-out (guest) mode. |
 | `currentLocale` | `string` | Active locale string combining language and region (e.g. `"en_US"`, `"fr_FR"`). |
@@ -206,7 +209,7 @@ corresponding hooks (`useUiResolution`, `useDeviceInfoEvents`) for reactive data
 | `osVersion` | `OsVersion` | Parsed Roku OS version object. Use `osVersion.major` and `osVersion.minor` for comparisons. |
 | `rida` | `string` | Roku ID for Advertisers (UUID). Used for ad targeting and measurement. May be a random temporary ID if the user has enabled **Limit ad tracking**. |
 | `timezone` | `string` | Device timezone string (e.g. `"US/Eastern"`, `"Europe/London"`). |
-| `userCountryCode` | `string` | Channel-store territory, usually an ISO 3166-1 alpha-2 code (e.g. `"US"`). May instead be `"OT"` or a partner-store identifier. Defaults to `"US"` on unlinked devices without a configured territory (product locale/country defaults may override this). This is not the user's address country or physical location.<br /><br />For account country, use the ChannelStore `getUserData` command and its `IUserData.country` result (`@roku-sdk/components`), not this field. BrightScript exposes this through `GetUserRegionData`. |
+| `userCountryCode` | `string` | Channel-store territory, usually an ISO 3166-1 alpha-2 code (e.g. `"US"`). May instead be `"OT"` or a partner-store identifier. Defaults to `"US"` on unlinked devices without a configured territory (product locale/country defaults may override this). This is not the user's address country or physical location.  For account country, use the ChannelStore `getUserData` command and its `IUserData.country` result (`@roku-sdk/components`), not this field. BrightScript exposes this through `GetUserRegionData`. |
 | `videoMode` | `string` | Current video output mode string (e.g. `"1080p"`, `"2160p60"`, `"2160p60b10"`). |
 
 ### OsVersion
@@ -219,7 +222,7 @@ Roku OS version components returned by `DeviceInfo.osVersion`.
 <!-- derived: rsg-sdk/external/packages/interfaces/src/runtime/device-info.ts#OsVersion.table -->
 
 | Property | Type | Description |
-| :--- | :--- | :--- |
+| --- | --- | --- |
 | `build` | `string` | Build identifier string. |
 | `major` | `string` | Major version number as a numeric string (e.g. `"16"`). |
 | `minor` | `string` | Minor version number as a numeric string (e.g. `"0"`). |
@@ -238,7 +241,7 @@ app logic, and the display dimensions in pixels.
 <!-- derived: rsg-sdk/external/packages/runtime/src/device-info-events.ts#UIResolution.table -->
 
 | Property | Type | Description |
-| :--- | :--- | :--- |
+| --- | --- | --- |
 | `height` | `number` | Pixel height of the display surface. |
 | `name` | `"HD" \| "FHD" \| "SD" \| "UNKNOWN"` | Raw resolution name from OS: "HD", "FHD", "SD", or "UNKNOWN" |
 | `res` | `"hd" \| "fhd"` | Normalized resolution for app use: only "hd" or "fhd". SD/UNKNOWN default to "fhd". Apps should not support SD mode. Resolution is known within one tick of app start. |
@@ -254,7 +257,7 @@ Raw UI resolution event payload from the Roku OS runtime.
 <!-- derived: rsg-sdk/external/packages/interfaces/src/runtime/device-info.ts#UIResolutionRaw.table -->
 
 | Property | Type | Description |
-| :--- | :--- | :--- |
+| --- | --- | --- |
 | `height` | `number` | Pixel height of the UI surface. |
 | `name` | `number` | Raw resolution integer identifier from the OS. |
 | `width` | `number` | Pixel width of the UI surface. |
