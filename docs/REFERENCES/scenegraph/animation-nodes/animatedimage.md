@@ -70,3 +70,7 @@ end function
 | error           | string   | -              | READ_ONLY         | Error message if failed.                                     |
 | mediaWidth      | int      | 0              | READ_ONLY         | Decoded image width.                                         |
 | mediaHeight     | int      | 0              | READ_ONLY         | Decoded image height.                                        |
+| loadingBitmapUri | string | -              | READ_WRITE        | Specifies a bitmap file to display while the animated image is loading. The loading bitmap is rendered when the node is in the `downloading` or `init` state. This must be a single image, not an animated image. |
+| loadingBitmapOpacity | float | 1.0         | READ_WRITE        | Controls the rendering opacity of the image that indicates the animated image is loading. This value multiplies the AnimatedImage node opacity. |
+| failedBitmapUri | string   | -              | READ_WRITE        | Specifies a bitmap file to display when the animated image failed to load. The failed bitmap is rendered when the node is in the `error` state. This must be a single image, not an animated image. |
+| failedBitmapOpacity | float | 1.0           | READ_WRITE        | Controls the rendering opacity of the image that indicates the animated image failed to load. This value multiplies the AnimatedImage node opacity. |
