@@ -1176,7 +1176,7 @@ For our consumer release notes, visit the [Roku Blog](https://blog.roku.com/roku
 
 - Updated components:
   - ifChannelStore: [GetIdentity()](doc:ifchannelstore#getidentity-as-integer) - returns a unique number for this object that can be used to identify whether events originated from this object by comparing with [roChannelStoreEvent](doc:rochannelstoreevent).GetSourceIdentity().
-  - [ifTuner](doc:iftuner#getchannelinfo-channel_id-as-string-asobject): GetChannelInfo().delivery_system, source_data.network_id, source_data.transport_stream_id
+  - ifTuner: GetChannelInfo().delivery_system, source_data.network_id, source_data.transport_stream_id
   - ifAppManager: [SetAutomaticAudioGuideEnabled(enabled as Boolean)](doc:ifappmanager#setautomaticaudioguideenabledenabled-as-boolean-as-void)
     - enable/disable automatic Audio Guide and override any manifest setting
   - Content Meta-Data - [Playback Configuration Attributes](doc:content-metadata#playback-configuration-attributes):
@@ -1268,7 +1268,7 @@ This release adds two notable features. A text to speech feature has been added 
 
 ##### Component updates
 
-- roVideoPlayer and roVideoScreen interface Prebuffer() method added to allow buffering of video playback prior to the user starting the video ([ifVideoPlayer](doc:ifvideoplayer), [ifVideoScreen](doc:ifvideoscreen), [Fast Video Start](doc:fast-video-start)).
+- roVideoPlayer and roVideoScreen interface Prebuffer() method added to allow buffering of video playback prior to the user starting the video ([ifVideoPlayer](doc:ifvideoplayer), ifVideoScreen, [Fast Video Start](doc:fast-video-start)).
 - A text-to-speech component has been added to support audible spoken versions of the user interface ([roTextToSpeech](doc:rotexttospeech), [ifTextToSpeech](doc:iftexttospeech), [roTextToSpeechEvent](doc:rotexttospeechevent), [Text to Speech](doc:text-to-speech)).
 - New methods have been added to roUniversalControlEvent that improve distinguishing between remote control and keyboard key presses, and the key press and release events ([roUniversalControlEvent](doc:rouniversalcontrolevent)).
 
@@ -1348,7 +1348,7 @@ Now:
 
 - roTuner and associated interfaces have been added to support playing broadcast and cable content from a tuner (**roTuner**)
 - roProgramGuide and associated interfaces have been added to support broadcast content program guide data ([roProgramGuide](doc:roprogramguide))
-- roSlideShow SetLoop added ([roSlideShow](doc:roslideshow))
+- roSlideShow SetLoop added
 - roTextureManager ifHttpAgent added ([roTextureManager](doc:rotexturemanager))
 - roUrlTransfer GetToString(), AsyncGetToString() now support UTF-16 files ([roUrlTransfer](doc:rourltransfer))
 - roAppManager/ifAppManager SetUserSignedIn() method added to indicate that a user has signed into the app ([roAppManager](doc:roappmanager))
@@ -1469,7 +1469,7 @@ An install command has been added to the ECP to allow deep-linking to uninstalle
 ##### New in this release
 
 - Two new content metadata structures for controlling closed captions: SubtitleConfig and SubtitleTracks. Details of how to use these to control captions [can be found here](doc:closed-caption).
-- Two new caption renderer functions for retrieving all caption tracks in a stream and for setting the current track: ifCaptionRenderer.GetSubtitleTracks() and ChangeSubtitleTrack(). Details about these two new functions [can be found here](doc:ifcaptionrenderer#getsubtitletracks-as-object).
+- Two new caption renderer functions for retrieving all caption tracks in a stream and for setting the current track: ifCaptionRenderer.GetSubtitleTracks() and ChangeSubtitleTrack().
 - Bug fix: On the 2450X and 2500X platforms, the ifChannelStore.DoOrder() function was always returning false even if the corresponding purchase was successful.
 
 ## Roku OS 5.3
