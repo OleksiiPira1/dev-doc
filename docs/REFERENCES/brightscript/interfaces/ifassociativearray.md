@@ -162,7 +162,7 @@ Returns the number of keys in the associative array.
 
 The number of keys in the associative array.
 
-### Values(aa as Object) as Object
+### Values() as Object
 
 _Available since Roku OS 15.3_
 
@@ -170,12 +170,6 @@ _Available since Roku OS 15.3_
 
 Returns the values within the associative array in key order.
 
-##### Parameters
+#### Return Value
 
-| Name | Type   | Description                                 |
-| ---- | ------ | ------------------------------------------- |
-| aa   | Object | The associative array to be ordered by key. |
-
-##### Return Value
-
-An array of the associative array's values only (no keys), in key order (for example, for {b: 2, a: 1}, Values() returns \[1, 2] (ordered by key: a, b)).
+An array of associative array values, sorted in key order.
