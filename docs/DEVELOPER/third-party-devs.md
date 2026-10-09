@@ -494,7 +494,7 @@ Below is a list of studios that have demonstrated success in effectively develop
 <p>Global</p>
 </td>
 <td class="long-line" colspan="1" rowspan="1">
-<p><a href="mailto:ankur.tripathi@tothenew.com%60HY">Ankur Tripathi</a></p>
+<p><a href="mailto:ankur.tripathi@tothenew.com">Ankur Tripathi</a></p>
 </td>
 <td class="long-line" colspan="1" rowspan="1">
 <p>Stretch (US), Stadium (US), Birde (AU), Intelivideo (US)</p>
